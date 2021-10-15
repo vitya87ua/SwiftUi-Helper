@@ -59,7 +59,8 @@ final class DeepLinkBuilder {
 }
 
 /*
-print(DeepLinkBuilder() // widgets://widget_activity?activity=one&custom&breast=right&trigger_timer=543&cid=viktor
+print( // widgets://widget_activity?activity=one&custom&breast=right&trigger_timer=543&cid=viktor
+ DeepLinkBuilder()
         .activity("one")
         .customQueryItem(URLQueryItem(name: "custom", value: nil))
         .breast(.right)
