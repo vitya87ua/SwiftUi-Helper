@@ -12,7 +12,7 @@ struct Colors: View {
     let colors: [Color] = [
         .turquoiseBlue, .eastBay, .scooter, .citrine, .corn, .burntSienna,
         .deepCarrotOrange, .roseBudCherry, .jazzberryJam, .wildSand, .birdFlower,
-        .violaFlover, .eggPlant, .magentaLight, .magentaDark, .lynch
+        .violaFlover, .eggPlant, .magentaLight, .magentaDark, .lynch, .lightGray
     ]
 
     var body: some View {
@@ -30,11 +30,13 @@ struct Colors: View {
     }
 }
 
+#if DEBUG
 struct Colors_Previews: PreviewProvider {
     static var previews: some View {
         Colors()
     }
 }
+#endif
 
 extension Color {
 
@@ -104,6 +106,10 @@ extension Color {
 
     static var lynch: Color {
         Color(hex: "#6A849D")
+    }
+    
+    static var lightGray: Color {
+        Color(hex: "#DDDDDD")
     }
 }
 
