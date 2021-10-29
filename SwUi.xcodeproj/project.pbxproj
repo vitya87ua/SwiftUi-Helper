@@ -55,6 +55,7 @@
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		C9E6599226EF55240024246D /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
+		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +258,7 @@
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
 				C92887E026DF9E5A000EDD1C /* TEMP.swift */,
 				C9A215EA26F1CC1F00E47389 /* TempViewModel.swift */,
-				C9E6599226EF55240024246D /* TextFields.swift */,
+				D0A6D234272BF460001F23DD /* TextFields */,
 				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
 				C98364222711D263007BE5B0 /* UITestToggle.swift */,
 				C9CC76C5267D38C800EB5436 /* Assets.xcassets */,
@@ -306,6 +308,15 @@
 				C9D563B72716BAF80094C04D /* WidgetExtraLarge.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D0A6D234272BF460001F23DD /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				C9E6599226EF55240024246D /* TextFields.swift */,
+				D0A6D235272BF46F001F23DD /* HeaderTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +461,7 @@
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
+				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				C92887E126DF9E5A000EDD1C /* TEMP.swift in Sources */,
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,

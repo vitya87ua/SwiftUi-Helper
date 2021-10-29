@@ -12,13 +12,11 @@ struct TextFields: View {
     @State var myText: String = ""
     @State var toggleSwitch: Bool = false
     
+    @State var amount: Double = 5
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text("Odometer")
-                .font(.caption)
-                .foregroundColor(.gray)
-            TextField("Odometer", text: $myText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+        VStack(spacing: 5) {
+            HeaderTextField(header: "Odometer", text: $myText)
         }
         .padding(.horizontal)
 
