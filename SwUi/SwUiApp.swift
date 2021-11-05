@@ -41,7 +41,7 @@ struct SwUiApp: App {
 //            ContentView()
 //                .environmentObject(state)
 //            TEMP()
-            ClockInUI()
+            CombineUI()
         }
     }
 }
