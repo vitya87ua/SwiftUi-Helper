@@ -17,48 +17,38 @@ struct TEMP: View {
 
     var body: some View {
         VStack {
-            Text("fsgsgs")
-
-            Text(tesss)
-
-            SmallTEMP(str: "Joe") { res in
-                pr(text: res)
+            HStack {
+                Button {
+                    
+                } label: {
+                    HStack(spacing: 18) {
+                        Text("main").font(.system(size: 18)).bold()
+                        Image("group").font(.system(size: 26))
+                    }
+                    .foregroundColor(.black)
+                    .frame(width: 151, height: 62)
+                    .background(Color.lightGray)
+                    .cornerRadius(18)
+                }
+                
+                Button {
+                    
+                } label: {
+                    HStack(spacing: 18) {
+                        Text("journal").font(.system(size: 18)).bold()
+                        Image("writing").font(.system(size: 26))
+                    }
+                    .foregroundColor(.black)
+                    .frame(width: 151, height: 62)
+                    .background(Color.lightGray)
+                    .cornerRadius(18)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .strokeBorder(Color.red, lineWidth: 3)
+                    )
+                }
             }
-
-            SmallTEMP(str: "Body") { res in
-                pr(text: res)
-            }
-
-            Circle()
-                .fill(LinearGradient(colors: [Color.green, .red], startPoint: .top, endPoint: .bottom))
-
-            ZStack {
-                Color.red
-                Circle()
-                    .fill(.green)
-                    .frame(width: 200, height: 200)
-                Text("fsgsgs")
-            }
-            .clipShape(Circle())
-
         }
-    }
-
-    func pr(text: String) {
-        tesss = text
-    }
-}
-
-struct SmallTEMP: View {
-
-    let str: String
-    let act: (String) -> Void
-
-    var body: some View {
-        Text(str)
-            .onTapGesture {
-                act(str + "Hello")
-            }
     }
 }
 
