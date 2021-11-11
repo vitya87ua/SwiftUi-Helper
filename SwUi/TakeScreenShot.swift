@@ -37,7 +37,7 @@ struct TakeScreenShot: View {
             Color.windRush
                 .ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 10) {
                 
                 textView
                 
