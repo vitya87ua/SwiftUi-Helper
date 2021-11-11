@@ -56,11 +56,14 @@
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
+		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
+		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
 		D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */; };
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
+		D0CB5402273D4CD1003F476E /* InstagramSharingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,9 +149,12 @@
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
+		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
+		D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 			children = (
 				C90EB03C273593CC002F54F6 /* CombineJSON.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
+				D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -260,6 +267,7 @@
 				C9CC76C3267D38C500EB5436 /* ContentView.swift */,
 				C9A69FAC2715CB3000042099 /* Colors.swift */,
 				C931482E27074B0700A75297 /* ClockInUI.swift */,
+				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
 				C9E6599026EF4AB10024246D /* DateTimePicker.swift */,
 				C924AE8F26DCE6C600CCD4B2 /* MenuWithImageButton.swift */,
 				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
@@ -329,6 +337,7 @@
 				C919EDFE26EBA5B800A15A27 /* MenuButton.swift */,
 				D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */,
 				D025A34F273ACA7A005AD490 /* RoundedButton.swift */,
+				D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -488,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
@@ -501,8 +511,10 @@
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,
 				C9190EA727049EC700D71907 /* Extension+String.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
+				D0CB5402273D4CD1003F476E /* InstagramSharingUtils.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
+				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,

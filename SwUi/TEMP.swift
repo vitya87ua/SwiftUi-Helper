@@ -22,7 +22,7 @@ struct TEMP: View {
                     
                 } label: {
                     HStack(spacing: 18) {
-                        Text("main").font(.system(size: 18)).bold()
+                        Text("main2").font(.system(size: 18)).bold()
                         Image("group").font(.system(size: 26))
                     }
                     .foregroundColor(.black)
@@ -35,7 +35,7 @@ struct TEMP: View {
                     
                 } label: {
                     HStack(spacing: 18) {
-                        Text("journal").font(.system(size: 18)).bold()
+                        Text("journal2").font(.system(size: 18)).bold()
                         Image("writing").font(.system(size: 26))
                     }
                     .foregroundColor(.black)

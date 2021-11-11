@@ -12,7 +12,8 @@ struct Colors: View {
     let colors: [Color] = [
         .turquoiseBlue, .eastBay, .scooter, .citrine, .corn, .burntSienna,
         .deepCarrotOrange, .roseBudCherry, .jazzberryJam, .wildSand, .birdFlower,
-        .violaFlover, .eggPlant, .magentaLight, .magentaDark, .lynch, .lightGray
+        .violaFlover, .eggPlant, .magentaLight, .magentaDark, .lynch, .lightGray,
+        .lightSand, .neroBlack, .darkGraphite, .cinder, .windRush
     ]
 
     var body: some View {
@@ -110,6 +111,26 @@ extension Color {
     
     static var lightGray: Color {
         Color(hex: "#DDDDDD")
+    }
+    
+    static var lightSand: Color {
+        Color(hex: "#EEEAE5")
+    }
+    
+    static var neroBlack: Color {
+        Color(hex: "#161616")
+    }
+    
+    static var darkGraphite: Color {
+        Color(hex: "#202020")
+    }
+    
+    static var cinder: Color {
+        Color(hex: "#696868")
+    }
+    
+    static var windRush: Color {
+        Color(hex: "#DCD2C7")
     }
 }
 
