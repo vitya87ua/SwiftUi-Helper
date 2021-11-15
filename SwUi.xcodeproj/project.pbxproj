@@ -29,6 +29,7 @@
 		C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983641F27108F17007BE5B0 /* SheetWithNavigationView.swift */; };
 		C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98364222711D263007BE5B0 /* UITestToggle.swift */; };
 		C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */; };
+		C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986FAD72742EA4800FAA759 /* VersionAttributes.swift */; };
 		C9A215EB26F1CC1F00E47389 /* TempViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A215EA26F1CC1F00E47389 /* TempViewModel.swift */; };
 		C9A69FAD2715CB3100042099 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A69FAC2715CB3000042099 /* Colors.swift */; };
 		C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */; };
@@ -122,6 +123,7 @@
 		C98364282711D3CE007BE5B0 /* SwUiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwUiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwUiUITests.swift; sourceTree = "<group>"; };
 		C983642C2711D3CE007BE5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C986FAD72742EA4800FAA759 /* VersionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAttributes.swift; sourceTree = "<group>"; };
 		C9A215EA26F1CC1F00E47389 /* TempViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewModel.swift; sourceTree = "<group>"; };
 		C9A69FAC2715CB3000042099 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollingStringView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				C90EB03C273593CC002F54F6 /* CombineJSON.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */,
+				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
 				D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */,
+				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
