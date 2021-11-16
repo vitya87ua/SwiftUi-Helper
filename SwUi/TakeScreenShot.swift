@@ -5,9 +5,11 @@
 //  Created by Viktor Berezhnytskyi on 11.11.2021.
 //
 
+// Important: In order to save image to photoLibrary in UIActivityViewController() you must add the NSPhotoLibraryAddUsageDescription key to your Info.plist and explain to the user why you want to write images. If you fail to do this UIActivityViewController "save photo library" button will not exist.
 // Important: In order to call UIImageWriteToSavedPhotosAlbum() you must add the NSPhotoLibraryAddUsageDescription key to your Info.plist and explain to the user why you want to write images. If you fail to do this your app will crash when you attempt to write out the image.
 
 import SwiftUI
+import LinkPresentation
 
 struct TakeScreenShot: View {
     
@@ -47,6 +49,12 @@ struct TakeScreenShot: View {
                     }
                 }
                 
+                RoundedButton(title: "Share via STANDART ActionSheet") {
+                    toScreeen.saveAsImage { image in
+                        actionSheetSTANDART(image: image)
+                    }
+                }
+                
                 RoundedButton(title: "Share via ActionSheet") {
                     toScreeen.saveAsImage { image in
                         actionSheet(image: image)
@@ -63,8 +71,14 @@ struct TakeScreenShot: View {
         }
     }
     
-    func actionSheet(image: UIImage) {
+    func actionSheetSTANDART(image: UIImage) {
         let activityVC = UIActivityViewController(activityItems: [image, "SHARE IMAGE"], applicationActivities: nil)
+        UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+    }
+    
+    func actionSheet(image: UIImage) {
+        let data = MyActivityItemSource(title: "hello", subTitle: "hello my friends", image: image)
+        let activityVC = UIActivityViewController(activityItems: [data], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }
 }
@@ -83,6 +97,19 @@ extension View {
             controller.view.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
         }
         completion(image)
+    }
+    
+    func saveAsImage0() -> UIImage {
+        let screen = UIScreen.main.bounds
+        
+        let controller = UIHostingController(rootView: self.frame(width: screen.width, height: screen.height))
+        controller.view.bounds = CGRect(origin: .zero, size: screen.size)
+        
+        let renderer = UIGraphicsImageRenderer(size: controller.view.bounds.size)
+        let image = renderer.image { _ in
+            controller.view.drawHierarchy(in: controller.view.bounds, afterScreenUpdates: true)
+        }
+        return image
     }
     
     // Only View (Works with bugs)
@@ -110,3 +137,43 @@ struct TakeScreenShot_Previews: PreviewProvider {
     }
 }
 #endif
+
+// MARK: - Use if you want to add some data like text? description? icon or image to UIActivityViewController
+// Required "import LinkPresentation"
+
+class MyActivityItemSource: NSObject, UIActivityItemSource {
+    var title: String
+    var subTitle: String?
+    var image: UIImage
+    
+    init(title: String, subTitle: String?, image: UIImage) {
+        self.title = title
+        self.subTitle = subTitle
+        self.image = image
+        super.init()
+    }
+    
+    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return image
+    }
+    
+    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        return image
+    }
+    
+    func activityViewController(_ activityViewController: UIActivityViewController, subjectForActivityType activityType: UIActivity.ActivityType?) -> String {
+        return title
+    }
+
+    func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+        let metadata = LPLinkMetadata()
+        metadata.title = title
+        metadata.imageProvider = NSItemProvider(object: image)
+        
+        if let subTitle = subTitle {
+            metadata.originalURL = URL(fileURLWithPath: subTitle)
+        }
+        
+        return metadata
+    }
+}
