@@ -63,7 +63,7 @@ struct TakeScreenShot: View {
                 
                 RoundedButton(title: "SHARE TO IG") {
                     toScreeen.saveAsImage { image in
-                        InstagramSharingUtils.shareToInstagramStories(image: image)
+                        InstagramUtils.shareToStories(image: image)
                     }
                 }
             }
