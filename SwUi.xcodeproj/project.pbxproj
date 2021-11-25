@@ -54,6 +54,18 @@
 		C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6599026EF4AB10024246D /* DateTimePicker.swift */; };
 		C9E6599326EF55240024246D /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6599226EF55240024246D /* TextFields.swift */; };
 		D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D01DCE46274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
+		D01DCE47274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
+		D01DCE49274FA5EF0022C93C /* NeueMontreal-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */; };
+		D01DCE4A274FA5EF0022C93C /* NeueMontreal-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */; };
+		D01DCE4C274FA5FE0022C93C /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */; };
+		D01DCE4D274FA5FE0022C93C /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */; };
+		D01DCE4F274FA6040022C93C /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE4E274FA6040022C93C /* Poppins-Regular.otf */; };
+		D01DCE50274FA6040022C93C /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE4E274FA6040022C93C /* Poppins-Regular.otf */; };
+		D01DCE52274FA6110022C93C /* Roboto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE51274FA6110022C93C /* Roboto-Regular.otf */; };
+		D01DCE53274FA6110022C93C /* Roboto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE51274FA6110022C93C /* Roboto-Regular.otf */; };
+		D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
+		D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
@@ -150,6 +162,12 @@
 		C9D563C02716BD870094C04D /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
 		C9E6599026EF4AB10024246D /* DateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
 		C9E6599226EF55240024246D /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
+		D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Bold.otf"; sourceTree = "<group>"; };
+		D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Regular.otf"; sourceTree = "<group>"; };
+		D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		D01DCE4E274FA6040022C93C /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		D01DCE51274FA6110022C93C /* Roboto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.otf"; sourceTree = "<group>"; };
+		D01DCE54274FA6A20022C93C /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -207,6 +225,7 @@
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
+				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,6 +311,7 @@
 				C98364222711D263007BE5B0 /* UITestToggle.swift */,
 				C90EB03E273595FA002F54F6 /* CombineUI.swift */,
 				C9CC76C5267D38C800EB5436 /* Assets.xcassets */,
+				D01DCE41274FA58B0022C93C /* Fonts */,
 				C9058F3F2719FF7500D1CE08 /* Utilities */,
 				C9190EA527049EB300D71907 /* Extensions */,
 				C9CC76C7267D38C800EB5436 /* Preview Content */,
@@ -338,6 +358,42 @@
 				C9D563B72716BAF80094C04D /* WidgetExtraLarge.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D01DCE41274FA58B0022C93C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D01DCE44274FA5C70022C93C /* Roboto */,
+				D01DCE43274FA5BB0022C93C /* Poppins */,
+				D01DCE42274FA5AA0022C93C /* NeueMontreal */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D01DCE42274FA5AA0022C93C /* NeueMontreal */ = {
+			isa = PBXGroup;
+			children = (
+				D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */,
+				D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */,
+			);
+			path = NeueMontreal;
+			sourceTree = "<group>";
+		};
+		D01DCE43274FA5BB0022C93C /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				D01DCE4E274FA6040022C93C /* Poppins-Regular.otf */,
+				D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		D01DCE44274FA5C70022C93C /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				D01DCE51274FA6110022C93C /* Roboto-Regular.otf */,
+			);
+			path = Roboto;
 			sourceTree = "<group>";
 		};
 		D025A349273A9C73005AD490 /* Buttons */ = {
@@ -486,6 +542,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01DCE4F274FA6040022C93C /* Poppins-Regular.otf in Resources */,
+				D01DCE46274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */,
+				D01DCE49274FA5EF0022C93C /* NeueMontreal-Regular.otf in Resources */,
+				D01DCE52274FA6110022C93C /* Roboto-Regular.otf in Resources */,
+				D01DCE4C274FA5FE0022C93C /* Poppins-Bold.otf in Resources */,
 				C9CC76C9267D38C800EB5436 /* Preview Assets.xcassets in Resources */,
 				C9CC76C6267D38C800EB5436 /* Assets.xcassets in Resources */,
 			);
@@ -495,7 +556,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D01DCE4A274FA5EF0022C93C /* NeueMontreal-Regular.otf in Resources */,
 				C9D563A12716B1E70094C04D /* Assets.xcassets in Resources */,
+				D01DCE4D274FA5FE0022C93C /* Poppins-Bold.otf in Resources */,
+				D01DCE47274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */,
+				D01DCE50274FA6040022C93C /* Poppins-Regular.otf in Resources */,
+				D01DCE53274FA6110022C93C /* Roboto-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +621,7 @@
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
+				D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */,
 				C9CC76C2267D38C500EB5436 /* SwUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,6 +636,7 @@
 				D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */,
 				C9D563BF2716BB2A0094C04D /* WidgetLarge.swift in Sources */,
 				C9D563C22716BD870094C04D /* Extension+Color.swift in Sources */,
+				D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */,
 				C9D563BC2716BB290094C04D /* WidgetExtraLarge.swift in Sources */,
 				D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */,
 				C9D563BD2716BB2A0094C04D /* WidgetMedium.swift in Sources */,

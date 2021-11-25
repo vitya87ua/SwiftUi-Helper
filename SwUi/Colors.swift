@@ -13,7 +13,7 @@ struct Colors: View {
         .turquoiseBlue, .eastBay, .scooter, .citrine, .corn, .burntSienna,
         .deepCarrotOrange, .roseBudCherry, .jazzberryJam, .wildSand, .birdFlower,
         .violaFlover, .eggPlant, .magentaLight, .magentaDark, .lynch, .lightGray,
-        .lightSand, .neroBlack, .darkGraphite, .cinder, .windRush
+        .lightSand, .neroBlack, .darkGraphite, .cinder, .windRush, .timberWolf
     ]
 
     var body: some View {
@@ -131,6 +131,10 @@ extension Color {
     
     static var windRush: Color {
         Color(hex: "#DCD2C7")
+    }
+    
+    static var timberWolf: Color {
+        Color(hex: "#DAD9D7")
     }
 }
 

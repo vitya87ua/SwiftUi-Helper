@@ -10,196 +10,84 @@ import WidgetKit
 
 struct WidgetMedium: View {
     
-    @Environment(\.colorScheme) var colorScheme
-
+    var todayIsWake: Bool = false
+    
     var body: some View {
         ZStack {
-            backgroundColor
-                .overlay(Image("logo").padding(10), alignment: .topTrailing)
-
-            HStack(alignment: .top, spacing: 8) {
-                
-                sleepView
-                    .padding(.trailing, 8)
-
-                Divider().background(colorScheme == .light ? Color.lightGray : Color.white)
-
-                nursingView
-            }
-            .padding(.top)
-        }
-    }
-
-    private var backgroundColor: some View {
-        colorScheme == .light ? Color.white : Color.eggPlant
-    }
-
-    private var sleepView: some View {
-        VStack(spacing: 5) {
-            HStack {
-                Text("Sleep")
-                    .font(.system(size: 14))
-                    .fontWeight(.semibold)
-                    .foregroundColor(colorScheme == .light ? .eastBay : .white)
-            }
-
-            Link(destination: URL(string: "widget://activity=sleep")!) {
-                VStack(spacing: 10) {
-
-                    Image(systemName: true ? "pause.fill" : "play.fill")
-
-                    if true {
-                        HStack(alignment: .center) {
-                            Spacer()
-                            Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                .multilineTextAlignment(.center)
-                            Spacer()
+            Color.lightSand
+            
+            HStack(alignment: .center, spacing: 1) {
+                ZStack {
+                    Color.neroBlack
+                    
+                    if todayIsWake {
+                        VStack(spacing: -3) {
+                            Text("Today")
+                                .font(.neueMontrealBold(size: 25))
+                            
+                            Text("05:34")
+                                .font(.neueMontrealBold(size: 40))
+                            
+                            Text("AM")
+                                .font(.neueMontrealBold(size: 25))
                         }
+                        .foregroundColor(.lightSand)
                     } else {
-                        Text("00:00")
+                        Text("woke up".uppercased())
+                            .font(.neueMontrealBold(size: 25))
+                            .foregroundColor(.lightSand)
+                            .fixedSize()
                     }
                 }
-                .font(.system(size: 16))
-                .foregroundColor(Color.white)
-                .frame(width: 80, height: 80)
-                .background(Color.scooter)
-                .clipShape(Circle())
-            }
-
-            if 1 == 1 {
-                VStack {
-                    Text("duration・")
-                        .fontWeight(.semibold)
+//                .frame(width: 140, height: 140)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .padding(10)
+                
+                Spacer(minLength: 5)
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    // ForEach(0..<4) { item in
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("10/14/21")
+                        Text("My life changeda lot..")
+                            .lineLimit(0)
+                    }
+                    .background(Color.timberWolf)
                     
-                    Text("lastSleepDate")
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("11/14/21")
+                        Text("I feel better.Today was...")
+                            .lineLimit(0)
+                    }
+                    .background(Color.timberWolf)
+                    
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("8/14/21")
+                        Text("Today was goodday and I’m....")
+                            .lineLimit(0)
+                    }
+                    .background(Color.timberWolf)
+                    //                    }
                 }
-                .font(.system(size: 12))
-                .foregroundColor(colorScheme == .light ? .eastBay : .white)
-            } else {
+                .frame(width: 170)
+                .font(.neueMontrealRegular(size: 15))
+                .foregroundColor(.neroBlack)
+                
                 Spacer()
             }
+//            .padding(.horizontal)
         }
-    }
 
-    private var nursingView: some View {
-        VStack(spacing: 5) {
-            HStack {
-                Text("Nursing")
-                    .font(.system(size: 14))
-                    .fontWeight(.semibold)
-                    .foregroundColor(colorScheme == .light ? .eastBay : .white)
-            }
-
-            HStack(spacing: 20) {
-                Link(destination: URL(string: "widget://activity=nursing")!) {
-                    ZStack(alignment: .top) {
-                        VStack(spacing: 10) {
-
-                            Image(systemName: true ? "pause.fill" : "play.fill")
-
-                            if true {
-                                HStack(alignment: .center) {
-                                    Spacer()
-                                    Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                        .multilineTextAlignment(.center)
-                                    Spacer()
-                                }
-                            } else {
-                                Text("Left")
-                            }
-                        }
-                        .font(.system(size: 16))
-                        .foregroundColor(Color.white)
-                        .frame(width: 80, height: 80)
-                        .background(Color.burntSienna)
-                        .clipShape(Circle())
-                    }
-                }
-
-                Link(destination: URL(string: "widget://activity=nursing")!) {
-                    ZStack(alignment: .top) {
-                        VStack(spacing: 10) {
-                            Image(systemName: true ? "pause.fill" : "play.fill")
-
-                            if true {
-                                HStack(alignment: .center) {
-                                    Spacer()
-                                    Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                        .multilineTextAlignment(.center)
-                                    Spacer()
-                                }
-                            } else {
-                                Text("Right")
-                            }
-                        }
-                        .font(.system(size: 16))
-                        .foregroundColor(Color.white)
-                        .frame(width: 80, height: 80)
-                        .background(Color.burntSienna)
-                        .clipShape(Circle())
-                    }
-                    .overlay(
-                        Circle()
-                            .fill(Color.lynch)
-                            .frame(width: 20, height: 20)
-                            .overlay(
-                                Text("LS")
-                                    .font(.system(size: 10, weight: .bold))
-                                    .foregroundColor(.white)
-                            ), alignment: .topTrailing)
-                }
-            }
-
-            nursingStatView
-        }
-        .padding(.leading, 15)
-    }
-    
-    var nursingStatView: some View {
-        HStack(spacing: 2) {
-            Text("1d ago・")
-            
-            ZStack(alignment: .center) {
-                Circle()
-                    .fill(Color.burntSienna)
-                    .frame(width: 13, height: 13)
-                
-                Text("L")
-                    .font(.system(size: 10))
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
-            }
-            
-            Text("7m")
-                .fontWeight(.semibold)
-            
-            ZStack(alignment: .center) {
-                Circle()
-                    .fill(Color.burntSienna)
-                    .frame(width: 13, height: 13)
-                
-                Text("R")
-                    .font(.system(size: 10))
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
-            }
-            .padding(.leading, 5)
-            
-            Text("7m")
-                .fontWeight(.semibold)
-        }
-        .font(.system(size: 12))
-        .foregroundColor(colorScheme == .light ? .eastBay : .white)
     }
 }
 
 #if DEBUG
 struct WidgetMedium_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetMedium()
+        WidgetMedium(todayIsWake: true)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environment(\.colorScheme, .light)
-        WidgetMedium()
+        WidgetMedium(todayIsWake: false)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environment(\.colorScheme, .dark)
     }
