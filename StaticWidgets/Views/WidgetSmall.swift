@@ -10,7 +10,7 @@ import WidgetKit
 
 struct WidgetSmall: View {
     
-    var todayIsWake: Bool = false
+    var todayIsWake: Bool = true
     
     var body: some View {
         ZStack {

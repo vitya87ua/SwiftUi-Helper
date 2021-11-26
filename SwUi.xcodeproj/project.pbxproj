@@ -74,6 +74,8 @@
 		D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */; };
 		D04379402746457C00B5F30A /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043793F2746457C00B5F30A /* CustomModifier.swift */; };
 		D043794227464EDC00B5F30A /* RainbowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043794127464EDC00B5F30A /* RainbowText.swift */; };
+		D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDB275108A000DA8752 /* ButtonStylies.swift */; };
+		D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */; };
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
@@ -175,6 +177,8 @@
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D043793F2746457C00B5F30A /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		D043794127464EDC00B5F30A /* RainbowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowText.swift; sourceTree = "<group>"; };
+		D056FDDB275108A000DA8752 /* ButtonStylies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylies.swift; sourceTree = "<group>"; };
+		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 				C931482C2706EADC00A75297 /* Alerts.swift */,
 				C93148302707500C00A75297 /* AlertWithTextField.swift */,
 				C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */,
+				D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */,
 				D05F6A94271EC86100D97434 /* BounceView.swift */,
 				D025A349273A9C73005AD490 /* Buttons */,
 				C901EB1126A80CA6002AF155 /* CircularProgressView.swift */,
@@ -400,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				C919EDFE26EBA5B800A15A27 /* MenuButton.swift */,
+				D056FDDB275108A000DA8752 /* ButtonStylies.swift */,
 				D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */,
 				D025A34F273ACA7A005AD490 /* RoundedButton.swift */,
 				D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */,
@@ -591,6 +597,8 @@
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				C92887E126DF9E5A000EDD1C /* TEMP.swift in Sources */,
+				D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */,
+				D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */,
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,
 				C9190EA727049EC700D71907 /* Extension+String.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,

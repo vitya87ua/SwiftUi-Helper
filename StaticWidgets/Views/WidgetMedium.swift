@@ -10,74 +10,75 @@ import WidgetKit
 
 struct WidgetMedium: View {
     
-    var todayIsWake: Bool = false
+    var todayIsWake: Bool = true
     
     var body: some View {
         ZStack {
             Color.lightSand
             
-            HStack(alignment: .center, spacing: 1) {
-                ZStack {
-                    Color.neroBlack
-                    
-                    if todayIsWake {
-                        VStack(spacing: -3) {
-                            Text("Today")
-                                .font(.neueMontrealBold(size: 25))
-                            
-                            Text("05:34")
-                                .font(.neueMontrealBold(size: 40))
-                            
-                            Text("AM")
-                                .font(.neueMontrealBold(size: 25))
-                        }
-                        .foregroundColor(.lightSand)
-                    } else {
-                        Text("woke up".uppercased())
-                            .font(.neueMontrealBold(size: 25))
+            HStack(alignment: .center, spacing: 0) {
+                GeometryReader { size in
+                    ZStack {
+                        Color.neroBlack
+                        
+                        if todayIsWake {
+                            VStack(spacing: -3) {
+                                Text("Today")
+                                    .font(.neueMontrealBold(size: 25))
+                                
+                                Text("05:34")
+                                    .font(.neueMontrealBold(size: 40))
+                                    .fixedSize()
+                                
+                                Text("AM")
+                                    .font(.neueMontrealBold(size: 25))
+                            }
                             .foregroundColor(.lightSand)
-                            .fixedSize()
+                        } else {
+                            Text("woke up".uppercased())
+                                .font(.neueMontrealBold(size: 25))
+                                .foregroundColor(.lightSand)
+                                .fixedSize()
+                        }
                     }
+                    .frame(width: size.size.height, height: size.size.height)
+                    .clipShape(ContainerRelativeShape())
                 }
-//                .frame(width: 140, height: 140)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .padding(10)
                 
-                Spacer(minLength: 5)
+//                Spacer(minLength: 5)
                 
                 VStack(alignment: .leading, spacing: 10) {
                     // ForEach(0..<4) { item in
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("10/14/21")
-                        Text("My life changeda lot..")
-                            .lineLimit(0)
-                    }
-                    .background(Color.timberWolf)
-                    
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("11/14/21")
-                        Text("I feel better.Today was...")
-                            .lineLimit(0)
-                    }
-                    .background(Color.timberWolf)
-                    
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("8/14/21")
-                        Text("Today was goodday and I’m....")
-                            .lineLimit(0)
-                    }
-                    .background(Color.timberWolf)
+                    rowCell(date: "10/14/21", note: "My life changeda lot..")
+                    rowCell(date: "11/14/21", note: "I feel better.Today was...")
+                    rowCell(date: "8/14/21", note: "Today was goodday and I’m....")
+//                    Spacer()
                     //                    }
                 }
-                .frame(width: 170)
+//                .frame(width: 170)
                 .font(.neueMontrealRegular(size: 15))
                 .foregroundColor(.neroBlack)
+                .padding(.leading, -6)
                 
-                Spacer()
             }
-//            .padding(.horizontal)
+            .padding(10)
         }
 
+    }
+    
+    func rowCell(date: String, note: String) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(date)
+                .font(.neueMontrealBold(size: 12))
+            Text(note)
+                .font(.neueMontrealRegular(size: 13))
+                .lineLimit(0)
+        }
+        .padding(.vertical, 3)
+        .padding(.horizontal)
+        .fillSpace(alignment: .leading, expanding: .horizontal)
+        .background(Color.timberWolf)
+        .clipShape(ContainerRelativeShape())
     }
 }
 
@@ -87,9 +88,11 @@ struct WidgetMedium_Previews: PreviewProvider {
         WidgetMedium(todayIsWake: true)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environment(\.colorScheme, .light)
+        
         WidgetMedium(todayIsWake: false)
             .previewContext(WidgetPreviewContext(family: .systemMedium))
             .environment(\.colorScheme, .dark)
+//            .previewDevice(PreviewDevice(rawValue: "iPhone 12 mini"))
     }
 }
 #endif
