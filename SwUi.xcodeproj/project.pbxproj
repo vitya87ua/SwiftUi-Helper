@@ -66,6 +66,7 @@
 		D01DCE53274FA6110022C93C /* Roboto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE51274FA6110022C93C /* Roboto-Regular.otf */; };
 		D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
 		D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
+		D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */; };
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
@@ -171,6 +172,7 @@
 		D01DCE4E274FA6040022C93C /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
 		D01DCE51274FA6110022C93C /* Roboto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.otf"; sourceTree = "<group>"; };
 		D01DCE54274FA6A20022C93C /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
+		D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalPixelsAndPointsView.swift; sourceTree = "<group>"; };
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */,
 				D05F6A94271EC86100D97434 /* BounceView.swift */,
 				D025A349273A9C73005AD490 /* Buttons */,
+				D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */,
 				C901EB1126A80CA6002AF155 /* CircularProgressView.swift */,
 				C9CC76C3267D38C500EB5436 /* ContentView.swift */,
 				C9A69FAC2715CB3000042099 /* Colors.swift */,
@@ -617,6 +620,7 @@
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
 				C92CD41226FE629600E3C552 /* CellRowModel.swift in Sources */,
 				C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */,
+				D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */,
 				C972052D26FB68C2005FCE7B /* NavigationControllers.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
