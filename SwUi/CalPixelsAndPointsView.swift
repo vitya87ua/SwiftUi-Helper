@@ -15,6 +15,7 @@ struct CalPixelsAndPointsView: View {
     @State var location2: CGFloat = 500
 
     @State var coe: CGFloat = 0
+    @State var coePo: CGFloat = 0
     
     let realHeight: CGFloat = 1702.0
     
@@ -30,7 +31,8 @@ struct CalPixelsAndPointsView: View {
                     Text("Po \(getSize())")
                     Text("Px \(getSize() * coe)")
                 }
-                .padding(.bottom, 0)
+                
+                Text("PoSize \(getSize() * coePo)")
                 
                 GeometryReader { geoSize in
                     ZStack {
@@ -51,7 +53,7 @@ struct CalPixelsAndPointsView: View {
                                 simpleDrag22(size: geoSize.size)
                             )
                     }
-                }
+                }.border(Color.green, width: 1)
             }
         }
     }
@@ -92,6 +94,7 @@ struct CalPixelsAndPointsView: View {
     
     func getCoe(size: CGSize) {
        coe = realHeight / size.height
+        coePo = 1 / size.height
     }
 }
 

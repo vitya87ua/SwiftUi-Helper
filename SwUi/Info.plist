@@ -48,17 +48,18 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>instagram-stories</string>
-    </array>
-    <key>UIAppFonts</key>
-    <array>
-        <string>NeueMontreal-Bold.otf</string>
-        <string>NeueMontreal-Regular.otf</string>
-        <string>Poppins-Bold.otf</string>
-        <string>Poppins-Regular.otf</string>
-        <string>Roboto-Regular.otf</string>
-    </array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram-stories</string>
+		<string>instagram://</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NeueMontreal-Bold.otf</string>
+		<string>NeueMontreal-Regular.otf</string>
+		<string>Poppins-Bold.otf</string>
+		<string>Poppins-Regular.otf</string>
+		<string>Roboto-Regular.otf</string>
+	</array>
 </dict>
 </plist>

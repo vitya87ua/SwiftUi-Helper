@@ -61,9 +61,15 @@ struct TakeScreenShot: View {
                     }
                 }
                 
-                RoundedButton(title: "SHARE TO IG") {
+                RoundedButton(title: "SHARE TO IG STORIES") {
                     toScreeen.saveAsImage { image in
                         InstagramUtils.shareToStories(image: image)
+                    }
+                }
+                
+                RoundedButton(title: "SHARE WITH OPTIONS") {
+                    toScreeen.saveAsImage { image in
+                        InstagramSharingFeedAndStories.shared.shareToFeed(image: image)
                     }
                 }
             }

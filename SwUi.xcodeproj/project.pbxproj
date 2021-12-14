@@ -67,6 +67,7 @@
 		D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
 		D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
 		D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */; };
+		D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CA8A27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift */; };
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
@@ -82,7 +83,7 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
-		D0CB5402273D4CD1003F476E /* InstagramSharingUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */; };
+		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		D01DCE51274FA6110022C93C /* Roboto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.otf"; sourceTree = "<group>"; };
 		D01DCE54274FA6A20022C93C /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
 		D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalPixelsAndPointsView.swift; sourceTree = "<group>"; };
+		D022CA8A27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingFeedAndStories.swift; sourceTree = "<group>"; };
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -186,7 +188,7 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
-		D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingUtils.swift; sourceTree = "<group>"; };
+		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +224,7 @@
 				C90EB03C273593CC002F54F6 /* CombineJSON.swift */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
-				D0CB5401273D4CD1003F476E /* InstagramSharingUtils.swift */,
+				D022CA8927687ADD0002A5BB /* Instagram */,
 				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
 			);
 			path = Utilities;
@@ -405,6 +407,15 @@
 				D01DCE51274FA6110022C93C /* Roboto-Regular.otf */,
 			);
 			path = Roboto;
+			sourceTree = "<group>";
+		};
+		D022CA8927687ADD0002A5BB /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */,
+				D022CA8A27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift */,
+			);
+			path = Instagram;
 			sourceTree = "<group>";
 		};
 		D025A349273A9C73005AD490 /* Buttons */ = {
@@ -609,7 +620,8 @@
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,
 				C9190EA727049EC700D71907 /* Extension+String.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
-				D0CB5402273D4CD1003F476E /* InstagramSharingUtils.swift in Sources */,
+				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
+				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
