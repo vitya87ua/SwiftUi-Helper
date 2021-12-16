@@ -14,10 +14,22 @@ class Model: ObservableObject {
 struct TEMP: View {
 
     @State var tesss = ""
+    
+    let columns = [
+        GridItem(.fixed(100), spacing: 10, alignment: .center),
+        GridItem(.fixed(100), spacing: 10, alignment: .center),
+        GridItem(.fixed(100), spacing: 10, alignment: .center)
+    ]
 
     var body: some View {
         VStack {
             Text("Hello")
+            
+            LazyVGrid(columns: columns, alignment: .center, spacing: 30) {
+                ForEach(0..<6, id: \.self) { item in
+                    Text("Hello \(item)")
+                }
+            }
         }
     }
 }

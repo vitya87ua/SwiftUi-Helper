@@ -68,6 +68,7 @@
 		D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DCE54274FA6A20022C93C /* Extension+Font.swift */; };
 		D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */; };
 		D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CA8A27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift */; };
+		D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D022CAAC2768A1D60002A5BB /* WheelPicker.swift */; };
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
@@ -84,6 +85,7 @@
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
+		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,7 @@
 		D01DCE54274FA6A20022C93C /* Extension+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Font.swift"; sourceTree = "<group>"; };
 		D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalPixelsAndPointsView.swift; sourceTree = "<group>"; };
 		D022CA8A27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingFeedAndStories.swift; sourceTree = "<group>"; };
+		D022CAAC2768A1D60002A5BB /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
+		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,8 @@
 				D0A6D234272BF460001F23DD /* TextFields */,
 				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
+				D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */,
+				D022CAAC2768A1D60002A5BB /* WheelPicker.swift */,
 				C98364222711D263007BE5B0 /* UITestToggle.swift */,
 				C90EB03E273595FA002F54F6 /* CombineUI.swift */,
 				C9CC76C5267D38C800EB5436 /* Assets.xcassets */,
@@ -609,6 +615,7 @@
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
+				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				C90EB03D273593CC002F54F6 /* CombineJSON.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
@@ -638,6 +645,7 @@
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
+				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
 				C9A215EB26F1CC1F00E47389 /* TempViewModel.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,

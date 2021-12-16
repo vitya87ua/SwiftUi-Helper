@@ -41,7 +41,8 @@ struct SwUiApp: App {
 //            ContentView()
 //                .environmentObject(state)
 //            TEMP()
-            TakeScreenShot()
+//            TakeScreenShot()
+            CalPixelsAndPointsView()
         }
     }
 }

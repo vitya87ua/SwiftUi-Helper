@@ -87,6 +87,7 @@ struct CalPixelsAndPointsView: View {
                 }
             }
     }
+
     
     func getSize() -> CGFloat {
         location1 > location2 ? location1 - location2 : location2 - location1
