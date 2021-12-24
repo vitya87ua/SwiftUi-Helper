@@ -71,6 +71,7 @@
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
+		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
 		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
 		D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */; };
@@ -183,6 +184,7 @@
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D043793F2746457C00B5F30A /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */,
+				D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */,
 				D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */,
 				D0AACCAF27708A9D0078DF2E /* RotationAnimation.swift */,
 				D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */,
@@ -670,6 +673,7 @@
 				C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */,
 				D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */,
 				C972052D26FB68C2005FCE7B /* NavigationControllers.swift in Sources */,
+				D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,

@@ -25,6 +25,16 @@ struct TEMP: View {
         VStack {
             Text("Hello")
             
+            Image("soundcloud-icon-dark-grey")
+                .renderingMode(.template)
+                .resizable()
+                .frame(width: 200, height: 200)
+            
+            Image(uiImage: UIImage.animatedImageNamed("soundcloud-icon-dark-grey", duration: 1) ?? UIImage())
+                .renderingMode(.template)
+                .resizable()
+                .frame(width: 200, height: 200)
+            
             LazyVGrid(columns: columns, alignment: .center, spacing: 30) {
                 ForEach(0..<6, id: \.self) { item in
                     Text("Hello \(item)")
