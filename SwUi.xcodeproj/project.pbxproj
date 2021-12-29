@@ -83,6 +83,7 @@
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 		D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */; };
 		D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */; };
@@ -194,6 +195,7 @@
 		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
+		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 		D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimations.swift; sourceTree = "<group>"; };
 		D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
 				C924AE9126DD055100CCD4B2 /* PopUpMenu.swift */,
 				D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */,
+				D097F87F277C48A900770BD8 /* Representable */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
 				C9836421271091FC007BE5B0 /* Sheets */,
@@ -457,6 +460,14 @@
 				D043793F2746457C00B5F30A /* CustomModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D097F87F277C48A900770BD8 /* Representable */ = {
+			isa = PBXGroup;
+			children = (
+				D097F880277C48C300770BD8 /* RepresentableView.swift */,
+			);
+			path = Representable;
 			sourceTree = "<group>";
 		};
 		D0A6D234272BF460001F23DD /* TextFields */ = {
@@ -656,6 +667,7 @@
 				D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */,
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,
 				C9190EA727049EC700D71907 /* Extension+String.swift in Sources */,
+				D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
 				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
