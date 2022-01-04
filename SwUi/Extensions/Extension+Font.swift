@@ -32,4 +32,8 @@ extension Font {
     static func robotoRegular1(size: CGFloat) -> Font {
         return Font.custom("roboto-regular", size: size)
     }
+    
+    static func staatlichesRegular(size: CGFloat) -> Font {
+        return Font.custom("Staatliches-Regular", size: size)
+    }
 }

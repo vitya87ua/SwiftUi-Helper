@@ -84,6 +84,8 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
+		D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A41BA12784781E006C3669 /* StrokeText.swift */; };
+		D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 		D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */; };
 		D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */; };
@@ -196,6 +198,8 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
+		D0A41BA12784781E006C3669 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
+		D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Staatliches-Regular.ttf"; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 		D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimations.swift; sourceTree = "<group>"; };
 		D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -334,7 +338,7 @@
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
 				C92887E026DF9E5A000EDD1C /* TEMP.swift */,
 				D0A6D234272BF460001F23DD /* TextFields */,
-				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
+				D0A41BA627847910006C3669 /* Text */,
 				C98364222711D263007BE5B0 /* UITestToggle.swift */,
 				D022CAAC2768A1D60002A5BB /* WheelPicker.swift */,
 				C9CC76C5267D38C800EB5436 /* Assets.xcassets */,
@@ -392,6 +396,7 @@
 		D01DCE41274FA58B0022C93C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D0A41BA3278478A6006C3669 /* Staatliches */,
 				D01DCE44274FA5C70022C93C /* Roboto */,
 				D01DCE43274FA5BB0022C93C /* Poppins */,
 				D01DCE42274FA5AA0022C93C /* NeueMontreal */,
@@ -468,6 +473,23 @@
 				D097F880277C48C300770BD8 /* RepresentableView.swift */,
 			);
 			path = Representable;
+			sourceTree = "<group>";
+		};
+		D0A41BA3278478A6006C3669 /* Staatliches */ = {
+			isa = PBXGroup;
+			children = (
+				D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */,
+			);
+			path = Staatliches;
+			sourceTree = "<group>";
+		};
+		D0A41BA627847910006C3669 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
+				D0A41BA12784781E006C3669 /* StrokeText.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		D0A6D234272BF460001F23DD /* TextFields */ = {
@@ -617,6 +639,7 @@
 				D01DCE4C274FA5FE0022C93C /* Poppins-Bold.otf in Resources */,
 				C9CC76C9267D38C800EB5436 /* Preview Assets.xcassets in Resources */,
 				C9CC76C6267D38C800EB5436 /* Assets.xcassets in Resources */,
+				D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */,
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
