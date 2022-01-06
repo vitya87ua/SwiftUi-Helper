@@ -81,6 +81,7 @@
 		D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDB275108A000DA8752 /* ButtonStylies.swift */; };
 		D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */; };
 		D05E9106278718BF004EA46F /* GridTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E9105278718BF004EA46F /* GridTabView.swift */; };
+		D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E910727871AA4004EA46F /* Extension+Array.swift */; };
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
@@ -197,6 +198,7 @@
 		D056FDDB275108A000DA8752 /* ButtonStylies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylies.swift; sourceTree = "<group>"; };
 		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05E9105278718BF004EA46F /* GridTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTabView.swift; sourceTree = "<group>"; };
+		D05E910727871AA4004EA46F /* Extension+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array.swift"; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
@@ -252,10 +254,11 @@
 		C9190EA527049EB300D71907 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D05F6A91271EC75100D97434 /* Extension+View.swift */,
-				C9190EA627049EC700D71907 /* Extension+String.swift */,
+				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				C9190EA627049EC700D71907 /* Extension+String.swift */,
+				D05F6A91271EC75100D97434 /* Extension+View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
+				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
