@@ -34,4 +34,18 @@ extension Array {
         
         return resultArray
     }
+    
+    func cutArray(forCount: Int) -> [Element] {
+        var resultArray: [Element] = []
+
+        if forCount <= count {
+            for item in 0..<forCount {
+                resultArray.append(self[item])
+            }
+        } else {
+            print(#fileID, #line, "Error: forCount bigger than Array count")
+        }
+
+        return resultArray
+    }
 }

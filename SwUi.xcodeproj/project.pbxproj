@@ -85,6 +85,7 @@
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A41BA12784781E006C3669 /* StrokeText.swift */; };
 		D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */; };
@@ -201,6 +202,7 @@
 		D05E910727871AA4004EA46F /* Extension+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array.swift"; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
+		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D0A41BA12784781E006C3669 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Staatliches-Regular.ttf"; sourceTree = "<group>"; };
@@ -324,7 +326,6 @@
 				D05F6A94271EC86100D97434 /* BounceView.swift */,
 				D025A349273A9C73005AD490 /* Buttons */,
 				D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */,
-				C901EB1126A80CA6002AF155 /* CircularProgressView.swift */,
 				C931482E27074B0700A75297 /* ClockInUI.swift */,
 				C9A69FAC2715CB3000042099 /* Colors.swift */,
 				C9CC76C3267D38C500EB5436 /* ContentView.swift */,
@@ -333,7 +334,7 @@
 				C924AE8F26DCE6C600CCD4B2 /* MenuWithImageButton.swift */,
 				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
 				C924AE9126DD055100CCD4B2 /* PopUpMenu.swift */,
-				D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */,
+				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
 				D097F87F277C48A900770BD8 /* Representable */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
@@ -471,6 +472,16 @@
 				D043793F2746457C00B5F30A /* CustomModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		D06ADBF2278C6CE800CD7E2E /* ProgressViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */,
+				C901EB1126A80CA6002AF155 /* CircularProgressView.swift */,
+				D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */,
+			);
+			path = ProgressViews;
 			sourceTree = "<group>";
 		};
 		D097F87F277C48A900770BD8 /* Representable */ = {
@@ -685,6 +696,7 @@
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
+				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,

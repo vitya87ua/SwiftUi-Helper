@@ -26,6 +26,15 @@ struct TEMP: View {
         VStack {
             Text("Hello")
             
+            Circle()
+                .frame(width: 200, height: 200)
+            
+            Circle()
+                .frame(width: 200, height: 200)
+                .foregroundColor(.red)
+                .padding(.top, -50)
+//                .clipped()
+            
 //            Image("soundcloud-icon-dark-grey")
 //                .renderingMode(.template)
 //                .resizable()
