@@ -28,6 +28,7 @@ struct ProgressCircleView: View {
                     .stroke(style: StrokeStyle(lineWidth: lineWidth(diameter: geometry.size.height), lineCap: .butt, lineJoin: .round))
                     .foregroundColor(.yellow)
                     .rotationEffect(Angle(degrees: 270))
+                    .animation(.default, value: progressValue)
                 
                 Text(getText())
                     .font(.system(size: geometry.size.height / 2.14))
