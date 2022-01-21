@@ -15,6 +15,9 @@ struct TEMP: View {
 
     @State var tesss = ""
     @State private var currentIndex: Int = 0
+    
+    @Environment(\.multiplayerKey) var mult
+    @Environment(\.fetcherKey) var fetch
 
     let columns = [
         GridItem(.fixed(100), spacing: 10, alignment: .center),
@@ -24,10 +27,25 @@ struct TEMP: View {
 
     var body: some View {
         VStack {
-            Text("Hello")
+            Text("Hello \(mult) " + tesss)
+            
+            Text("fetch2 \(fetch.getMul(5))")
+            
+            Text("fetch3 \(fetch.getRan())")
+            
+            Text("fetch4 \(fetch.coun)")
+            
+            Text("\(5 * mult)")
+            
+            Button("Add 1") {
+                environment(\.multiplayerKey, 2)
+                tesss = String(Int.random(in: 0...100))
+                fetch.incr()
+            }
             
             Circle()
                 .frame(width: 200, height: 200)
+                
             
             Circle()
                 .frame(width: 200, height: 200)
