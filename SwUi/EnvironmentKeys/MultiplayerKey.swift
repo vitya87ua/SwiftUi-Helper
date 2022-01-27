@@ -4,6 +4,7 @@
 //
 //  Created by Viktor Berezhnytskyi on 21.01.2022.
 //
+// https://www.fivestars.blog/articles/custom-environment-values-cheatsheet/
 
 import Foundation
 import SwiftUI
@@ -20,7 +21,7 @@ extension EnvironmentValues {
 }
 
 
-// You van use this EnvironmentKey & EnvironmentValues for following forEx; LoginState of ColorTheme
+// You van use this EnvironmentKey & EnvironmentValues for following forEx; LoginState of ColorTheme. See link in header
 struct FetcherKey: EnvironmentKey {
     static let defaultValue: Fetcher = Fetcher()
 }

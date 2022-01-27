@@ -23,6 +23,15 @@ final class DeepLinkBuilder {
     private let breastUrl: String = "breast"
 
     private var queryItems: [URLQueryItem] = []
+    
+    private var path: String = ""
+    private var pathLeaderboard: String = "/leaderboard"
+    private var pathAddress: String = "/address"
+    
+    func getLeaderboard(address: String) -> DeepLinkBuilder {
+        path = pathLeaderboard + pathAddress + "/" + address
+        return self
+    }
 
     func cid(_ cid: String) -> DeepLinkBuilder {
         queryItems.append(URLQueryItem(name: cidUrl, value: cid))
@@ -53,10 +62,23 @@ final class DeepLinkBuilder {
         var urlComp = URLComponents()
         urlComp.scheme = scheme
         urlComp.host = host
-        urlComp.queryItems = queryItems
+        urlComp.path = path
+        
+        if !queryItems.isEmpty {
+            urlComp.queryItems = queryItems
+        }
+        
         return urlComp.url!
     }
 }
+
+/*
+ widgets://widget_activity/leaderboard/address/0x5848fh3
+ 
+ DeepLinkBuilder()
+     .getLeaderboard(address: "0x5848fh3")
+     .build()
+ */
 
 /*
 print( // widgets://widget_activity?activity=one&custom&breast=right&trigger_timer=543&cid=viktor
