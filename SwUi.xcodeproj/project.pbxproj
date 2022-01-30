@@ -31,6 +31,7 @@
 		C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */; };
 		C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986FAD72742EA4800FAA759 /* VersionAttributes.swift */; };
 		C9A69FAD2715CB3100042099 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A69FAC2715CB3000042099 /* Colors.swift */; };
+		C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */; };
 		C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */; };
 		C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73BAD26B05D3C000EB45F /* TextStyle.swift */; };
 		C9CC76C2267D38C500EB5436 /* SwUiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CC76C1267D38C500EB5436 /* SwUiApp.swift */; };
@@ -157,6 +158,7 @@
 		C983642C2711D3CE007BE5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C986FAD72742EA4800FAA759 /* VersionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAttributes.swift; sourceTree = "<group>"; };
 		C9A69FAC2715CB3000042099 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWithDelegate.swift; sourceTree = "<group>"; };
 		C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollingStringView.swift; sourceTree = "<group>"; };
 		C9C73BAD26B05D3C000EB45F /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		C9CC76BE267D38C500EB5436 /* SwUi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwUi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -344,6 +346,7 @@
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
 				D025A34C273AC436005AD490 /* TabViews */,
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
+				C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */,
 				C92887E026DF9E5A000EDD1C /* TEMP.swift */,
 				D0A6D234272BF460001F23DD /* TextFields */,
 				D0A41BA627847910006C3669 /* Text */,
@@ -731,6 +734,7 @@
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
+				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
 				D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */,
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,

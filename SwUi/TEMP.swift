@@ -6,53 +6,100 @@
 //
 
 import SwiftUI
+import UIKit
 
 class Model: ObservableObject {
     @Published var textOb: String = "firstText"
-    @Published var tim: Int = 0
-    
-    var timer: Timer = Timer()
+    @Published var showImage: Bool = false
+
+    var uiImage: UIImage?// = UIImage()
+    var bundleName: String = ""
+    var bundle: Bundle?
+
+    let image: String = """
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="100%" height="100%">
+<rect fill="white" x="0" y="0" width="100%" height="100%" />
+<rect fill="red" x="0" y="0" width="90%" height="90%" rx="1em"/>
+</svg>
+"""
     
     func startTim() {
-        if !timer.isValid {
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                self.tim += 1
-            }
+        var save = FileManager.default.urls(for: .documentDirectory, in: .allDomainsMask)[0]
+        var path = save.appendingPathComponent("1111.svg")
+        do {
+            try image.write(to: path, atomically: false, encoding: .utf8)
+        } catch {
+            print(#fileID, #function, #line, "")
         }
     }
     
     func stopTim() {
-        timer.invalidate()
+//        uiImage = loadImageFromDiskWith(fileName: "1111.svg")
+        uiImage = loadImageFromDiskWith(fileName: "1111.svg")
+        let name = Bundle.main.path(forResource: "123", ofType: "png")
+        bundleName = name ?? "zero"
+    }
+
+    func loadImageFromDiskWith(fileName: String) -> UIImage? {
+
+      let documentDirectory = FileManager.SearchPathDirectory.documentDirectory
+
+        let userDomainMask = FileManager.SearchPathDomainMask.allDomainsMask
+        let paths = NSSearchPathForDirectoriesInDomains(documentDirectory, userDomainMask, true)
+
+        if let dirPath = paths.first {
+            let imageUrl = URL(fileURLWithPath: dirPath).appendingPathComponent(fileName)
+            let imageRet = UIImage(contentsOfFile: imageUrl.path)
+
+//            bundle = Bundle(path: dirPath)
+            bundle = Bundle(url: URL(fileURLWithPath: dirPath))
+
+            return imageRet
+
+        }
+
+        return nil
     }
 }
 
 struct TEMP: View {
 
-    @ObservedObject var viewModel: Model = Model()
-    @State var opac = 1.0
-    @State private var currentIndex: Int = 0
-    
-    @Environment(\.multiplayerKey) var mult
-    @Environment(\.fetcherKey) var fetch
+    @ObservedObject var viewModel = Model()
 
     var body: some View {
         ZStack {
-            Color.pink.opacity(opac)
+
+            if viewModel.showImage {
+                VStack {
+//                    Image(uiImage: viewModel.uiImage!)
+
+                    Image("1111", bundle: viewModel.bundle)
+                }
+
+            }
+
             VStack {
-                Text("\(viewModel.tim)")
                 
                 HStack {
-                    Button("START") {
+                    Button("startTim") {
                         viewModel.startTim()
                     }
                     
-                    Button("PAUSE") {
+                    Button("stopTim") {
                         viewModel.stopTim()
                     }
                 }
                 
-                Button("COLOR") {
-                    opac = CGFloat.random(in: 0.0...1.0)
+                Button("SHOW") {
+                    viewModel.showImage.toggle()
                 }
             }
         }
