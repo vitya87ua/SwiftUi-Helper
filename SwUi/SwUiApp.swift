@@ -41,8 +41,8 @@ struct SwUiApp: App {
 //            ContentView()
 //                .environmentObject(state)
 //            TEMP()
-            TimerWithDelegate()
-//            CalPixelsAndPointsView()
+//            TimerWithDelegate()
+            AppleHierarchicalListView()
         }
     }
 }

@@ -31,6 +31,10 @@
 		C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */; };
 		C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986FAD72742EA4800FAA759 /* VersionAttributes.swift */; };
 		C9A69FAD2715CB3100042099 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A69FAC2715CB3000042099 /* Colors.swift */; };
+		C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99327AEBA3600713F69 /* HierarchicalListView.swift */; };
+		C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99527AEBA4600713F69 /* HierarchicalListViewModel.swift */; };
+		C9BDC99A27AEC08A00713F69 /* AppleHierarchicalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99927AEC08A00713F69 /* AppleHierarchicalListView.swift */; };
+		C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99B27AEC09500713F69 /* AppleHierarchicalListViewModel.swift */; };
 		C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */; };
 		C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */; };
 		C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C73BAD26B05D3C000EB45F /* TextStyle.swift */; };
@@ -158,6 +162,10 @@
 		C983642C2711D3CE007BE5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C986FAD72742EA4800FAA759 /* VersionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAttributes.swift; sourceTree = "<group>"; };
 		C9A69FAC2715CB3000042099 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C9BDC99327AEBA3600713F69 /* HierarchicalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalListView.swift; sourceTree = "<group>"; };
+		C9BDC99527AEBA4600713F69 /* HierarchicalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalListViewModel.swift; sourceTree = "<group>"; };
+		C9BDC99927AEC08A00713F69 /* AppleHierarchicalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHierarchicalListView.swift; sourceTree = "<group>"; };
+		C9BDC99B27AEC09500713F69 /* AppleHierarchicalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleHierarchicalListViewModel.swift; sourceTree = "<group>"; };
 		C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWithDelegate.swift; sourceTree = "<group>"; };
 		C9C73BA726AFF66B000EB45F /* AutoScrollingStringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollingStringView.swift; sourceTree = "<group>"; };
 		C9C73BAD26B05D3C000EB45F /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
@@ -275,6 +283,8 @@
 				C92CD41126FE629600E3C552 /* CellRowModel.swift */,
 				C92CD40C26FE4D9C00E3C552 /* Lists.swift */,
 				C92CD40E26FE5F2D00E3C552 /* ListWithSelection.swift */,
+				C9BDC99827AEC06F00713F69 /* AppleHierarchicalList */,
+				C9BDC99727AEBA4D00713F69 /* MyHierarchicalList */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -295,6 +305,24 @@
 				C983642C2711D3CE007BE5B0 /* Info.plist */,
 			);
 			path = SwUiUITests;
+			sourceTree = "<group>";
+		};
+		C9BDC99727AEBA4D00713F69 /* MyHierarchicalList */ = {
+			isa = PBXGroup;
+			children = (
+				C9BDC99327AEBA3600713F69 /* HierarchicalListView.swift */,
+				C9BDC99527AEBA4600713F69 /* HierarchicalListViewModel.swift */,
+			);
+			path = MyHierarchicalList;
+			sourceTree = "<group>";
+		};
+		C9BDC99827AEC06F00713F69 /* AppleHierarchicalList */ = {
+			isa = PBXGroup;
+			children = (
+				C9BDC99927AEC08A00713F69 /* AppleHierarchicalListView.swift */,
+				C9BDC99B27AEC09500713F69 /* AppleHierarchicalListViewModel.swift */,
+			);
+			path = AppleHierarchicalList;
 			sourceTree = "<group>";
 		};
 		C9CC76B5267D38C500EB5436 = {
@@ -712,6 +740,7 @@
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
+				C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,
 				C90EB03D273593CC002F54F6 /* CombineJSON.swift in Sources */,
@@ -736,6 +765,7 @@
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
+				C9BDC99A27AEC08A00713F69 /* AppleHierarchicalListView.swift in Sources */,
 				D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */,
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
@@ -757,11 +787,13 @@
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
 				D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */,
+				C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */,
 				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
 				D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */,
+				C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */,
 				C9CC76C2267D38C500EB5436 /* SwUiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
