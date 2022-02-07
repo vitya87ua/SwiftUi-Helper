@@ -42,7 +42,8 @@ struct SwUiApp: App {
 //                .environmentObject(state)
 //            TEMP()
 //            TimerWithDelegate()
-            AppleHierarchicalListView()
+//            AppleHierarchicalListView()
+            HierarchicalListView()
         }
     }
 }

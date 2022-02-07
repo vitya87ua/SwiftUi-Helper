@@ -26,6 +26,25 @@ struct SubCategoryRowModel: Hashable, Identifiable {
 
 final class HierarchicalListViewModel: ObservableObject {
 
+    @Published var isExpanded: [[Bool]] = [[true, false, false], [false, true, false]]
+
+    func expandAll() {
+        for (index, value) in isExpanded.enumerated() {
+            for j in value.indices {
+                isExpanded[index][j] = true
+            }
+        }
+    }
+
+    func collapseAll() {
+        for (index, value) in isExpanded.enumerated() {
+            for j in value.indices {
+                isExpanded[index][j] = false
+            }
+        }
+    }
+
+
     @Published var newList: [ServiceRowModel] = [
         ServiceRowModel(name: "Complete basement finishing", children: [
             CategoryRowModel(name: "1. Basement Base Price", children: [
@@ -61,10 +80,12 @@ final class HierarchicalListViewModel: ObservableObject {
     ]
 
     func addService(name: String) {
+        isExpanded[0].append(false)
         newList.append(ServiceRowModel(name: name, children: []))
     }
 
     func addCat(toServive: Int, name: String) {
+        isExpanded[1].append(false)
         newList[toServive].children.append(CategoryRowModel(name: name, children: []))
     }
 
