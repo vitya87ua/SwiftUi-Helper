@@ -25,37 +25,33 @@ struct SubCategoryRowModel: Hashable, Identifiable {
 }
 
 final class HierarchicalListViewModel: ObservableObject {
-
-    @Published var isExpanded: [[Bool]] = [[true, false, false], [false, true, false]]
-
-    func expandAll() {
-        for (index, value) in isExpanded.enumerated() {
-            for j in value.indices {
-                isExpanded[index][j] = true
-            }
-        }
-    }
-
-    func collapseAll() {
-        for (index, value) in isExpanded.enumerated() {
-            for j in value.indices {
-                isExpanded[index][j] = false
-            }
-        }
-    }
-
-
-    @Published var newList: [ServiceRowModel] = [
+    
+    // Uncomment for real data
+//    @Published var isExpandedService: [Bool] = []
+//    @Published var isExpandedCategory: [[Bool]] = []
+//
+//    @Published var listModel: [ServiceRowModel] = []
+//
+//    init(listModel: [ServiceRowModel]) {
+//        self.createIsExpanded(listFrom: listModel)
+//        self.listModel = listModel
+//    }
+    
+    
+    // Mock object! Only for Preview
+    @Published var isExpandedService: [Bool] = [false, false, false]
+    @Published var isExpandedCategory: [[Bool]] = [[false, false, false], [false, false, false], [false, false, false]]
+    @Published var listModel: [ServiceRowModel] = [
         ServiceRowModel(name: "Complete basement finishing", children: [
-            CategoryRowModel(name: "1. Basement Base Price", children: [
+            CategoryRowModel(name: "5. Basement Base Price", children: [
                 SubCategoryRowModel(name: "General"),
                 SubCategoryRowModel(name: "Insulation and Soundproofing")
             ]),
-            CategoryRowModel(name: "2. Basement Upgrades", children: [
+            CategoryRowModel(name: "8. Rough-In Upgrades", children: [
                 SubCategoryRowModel(name: "Design and other"),
-                SubCategoryRowModel(name: "HVAC and Supplemental Heat")
+                SubCategoryRowModel(name: "HVAC and Supplemental")
             ]),
-            CategoryRowModel(name: "3. Basement Rough-In", children: [])
+            CategoryRowModel(name: "6. Basement Upgrades", children: [])
         ]),
         ServiceRowModel(name: "Partial basement remodeling", children: [
             CategoryRowModel(name: "3. Basement Base Price", children: [
@@ -78,18 +74,44 @@ final class HierarchicalListViewModel: ObservableObject {
             ])
         ])
     ]
+    //
 
     func addService(name: String) {
-        isExpanded[0].append(false)
-        newList.append(ServiceRowModel(name: name, children: []))
+        isExpandedService.append(false)
+        isExpandedCategory.append([])
+        listModel.append(ServiceRowModel(name: name, children: []))
     }
 
-    func addCat(toServive: Int, name: String) {
-        isExpanded[1].append(false)
-        newList[toServive].children.append(CategoryRowModel(name: name, children: []))
+    func addCat(toServive serOffset: Int, name: String) {
+        isExpandedCategory[serOffset].append(false)
+        listModel[serOffset].children.append(CategoryRowModel(name: name, children: []))
     }
 
-    func addSubCat(toServive: Int, toCategory: Int, name: String) {
-        newList[toServive].children[toCategory].children.append(SubCategoryRowModel(name: name))
+    func addSubCat(toServive serOffset: Int, toCategory catOffset: Int, name: String) {
+        listModel[serOffset].children[catOffset].children.append(SubCategoryRowModel(name: name))
+    }
+    
+    func allRows(isExpanded expand: Bool) {
+        for (section, categoties) in isExpandedCategory.enumerated() {
+            for categoty in categoties.indices {
+                isExpandedCategory[section][categoty] = expand
+            }
+        }
+        
+        for section in isExpandedService.indices {
+            isExpandedService[section] = expand
+        }
+    }
+    
+    private func createIsExpanded(listFrom: [ServiceRowModel]) {
+        let serviceResult: [Bool] = Array(repeating: false, count: listFrom.count)
+        var categoryResult: [[Bool]] = []
+        
+        for service in listFrom {
+            let category = Array(repeating: false, count: service.children.count)
+            categoryResult.append(category)
+        }
+        isExpandedService = serviceResult
+        isExpandedCategory = categoryResult
     }
 }
