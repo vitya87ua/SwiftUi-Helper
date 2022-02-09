@@ -40,10 +40,10 @@ struct SwUiApp: App {
         WindowGroup {
 //            ContentView()
 //                .environmentObject(state)
-//            TEMP()
+            TEMP()
 //            TimerWithDelegate()
 //            AppleHierarchicalListView()
-            HierarchicalListView()
+//            HierarchicalListView()
         }
     }
 }
