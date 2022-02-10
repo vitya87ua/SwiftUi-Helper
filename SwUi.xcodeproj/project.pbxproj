@@ -30,6 +30,7 @@
 		C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98364222711D263007BE5B0 /* UITestToggle.swift */; };
 		C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */; };
 		C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C986FAD72742EA4800FAA759 /* VersionAttributes.swift */; };
+		C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A5F18F27B3F686001B2222 /* ExpandableMenuView.swift */; };
 		C9A69FAD2715CB3100042099 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A69FAC2715CB3000042099 /* Colors.swift */; };
 		C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99327AEBA3600713F69 /* HierarchicalListView.swift */; };
 		C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BDC99527AEBA4600713F69 /* HierarchicalListViewModel.swift */; };
@@ -163,6 +164,7 @@
 		C983642A2711D3CE007BE5B0 /* SwUiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwUiUITests.swift; sourceTree = "<group>"; };
 		C983642C2711D3CE007BE5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C986FAD72742EA4800FAA759 /* VersionAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAttributes.swift; sourceTree = "<group>"; };
+		C9A5F18F27B3F686001B2222 /* ExpandableMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableMenuView.swift; sourceTree = "<group>"; };
 		C9A69FAC2715CB3000042099 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C9BDC99327AEBA3600713F69 /* HierarchicalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalListView.swift; sourceTree = "<group>"; };
 		C9BDC99527AEBA4600713F69 /* HierarchicalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalListViewModel.swift; sourceTree = "<group>"; };
@@ -311,6 +313,16 @@
 			path = SwUiUITests;
 			sourceTree = "<group>";
 		};
+		C9A5F18E27B3F65D001B2222 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				C924AE8F26DCE6C600CCD4B2 /* MenuWithImageButton.swift */,
+				C924AE9126DD055100CCD4B2 /* PopUpMenu.swift */,
+				C9A5F18F27B3F686001B2222 /* ExpandableMenuView.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
 		C9BDC99727AEBA4D00713F69 /* MyHierarchicalList */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,9 +380,8 @@
 				C9E6599026EF4AB10024246D /* DateTimePicker.swift */,
 				D0080BA227B1690900C42096 /* DropDownMenuView.swift */,
 				C92CD41026FE61CB00E3C552 /* Lists */,
-				C924AE8F26DCE6C600CCD4B2 /* MenuWithImageButton.swift */,
+				C9A5F18E27B3F65D001B2222 /* Menus */,
 				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
-				C924AE9126DD055100CCD4B2 /* PopUpMenu.swift */,
 				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
 				D097F87F277C48A900770BD8 /* Representable */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
@@ -747,6 +758,7 @@
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
+				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
 				C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,

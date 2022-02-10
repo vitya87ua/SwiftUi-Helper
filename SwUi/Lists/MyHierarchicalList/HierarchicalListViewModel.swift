@@ -76,6 +76,7 @@ final class HierarchicalListViewModel: ObservableObject {
     ]
     //
 
+    // Add Functionality
     func addService(name: String) {
         isExpandedService.append(false)
         isExpandedCategory.append([])
@@ -90,7 +91,27 @@ final class HierarchicalListViewModel: ObservableObject {
     func addSubCat(toServive serOffset: Int, toCategory catOffset: Int, name: String) {
         listModel[serOffset].children[catOffset].children.append(SubCategoryRowModel(name: name))
     }
-    
+
+
+    // Delete Functionality
+    func deleteService(index: Int) {
+        isExpandedService.remove(at: index)
+        isExpandedCategory.remove(at: index)
+        listModel.remove(at: index)
+    }
+
+    func deleteCategory(fromServive serIndex: Int, category catIndex: Int) {
+        isExpandedCategory[serIndex].remove(at: catIndex)
+        listModel[serIndex].children.remove(at: catIndex)
+    }
+
+    func deleteSubCategory(fromServive serIndex: Int, fromCategory catIndex: Int, subCategoryId: UUID) {
+        if let index = listModel[serIndex].children[catIndex].children.firstIndex(where: { $0.id == subCategoryId }) {
+            listModel[serIndex].children[catIndex].children.remove(at: index)
+        }
+    }
+
+
     func allRows(isExpanded expand: Bool) {
         for (section, categoties) in isExpandedCategory.enumerated() {
             for categoty in categoties.indices {

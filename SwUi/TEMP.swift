@@ -74,33 +74,16 @@ struct TEMP: View {
 
     @ObservedObject var viewModel = Model()
 
+    @State var sel: String = ""
+
     var body: some View {
         ZStack {
-
-            if viewModel.showImage {
-                VStack {
-//                    Image(uiImage: viewModel.uiImage!)
-
-                    Image("1111", bundle: viewModel.bundle)
-                }
-
-            }
-
             VStack {
-                
-                HStack {
-                    Button("startTim") {
-                        viewModel.startTim()
-                    }
-                    
-                    Button("stopTim") {
-                        viewModel.stopTim()
-                    }
-                }
-                
-                Button("SHOW") {
-                    viewModel.showImage.toggle()
-                }
+//                List {
+                ExpandableMenuView(image: "group", title: "Hello", items: ["One", "Two", "Three"], isSelected: $sel)
+                ExpandableMenuView(image: "group", title: "Hello2", items: ["5One", "Tgwo", "Threse"], isSelected: $sel)
+                Spacer()
+//                }
             }
         }
     }
