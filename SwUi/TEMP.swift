@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-class Model: ObservableObject {
+final class Model: ObservableObject {
     @Published var textOb: String = "firstText"
     @Published var showImage: Bool = false
 

@@ -16,7 +16,7 @@ protocol TimerProtocol: AnyObject {
     func timerAction(timer: TimerModel)
 }
 
-class TimerModel {
+final class TimerModel {
     let name: TimerName
     private let timeInterval: Double
     private let repeats: Bool
@@ -56,7 +56,7 @@ class TimerModel {
     }
 }
 
-class TimerViewModel: ObservableObject, TimerProtocol {
+final class TimerViewModel: ObservableObject, TimerProtocol {
 
     @Published var tim1Cou: Int = 0
 

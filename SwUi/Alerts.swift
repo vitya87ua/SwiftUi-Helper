@@ -11,7 +11,7 @@ struct User: Identifiable {
     let id: String
 }
 
-class AnotherAlert: ObservableObject {
+final class AnotherAlert: ObservableObject {
     @Published var alert: Alert?
 
     func createAlert() {

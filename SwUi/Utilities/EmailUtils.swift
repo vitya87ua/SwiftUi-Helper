@@ -8,7 +8,7 @@
 import Foundation
 import MessageUI
 
-class EmailUtils: NSObject, MFMailComposeViewControllerDelegate {
+final class EmailUtils: NSObject, MFMailComposeViewControllerDelegate {
     
     static let shared = EmailUtils()
     

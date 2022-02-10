@@ -12,7 +12,7 @@
 import Foundation
 import UIKit
 
-class InstagramUtils {
+final class InstagramUtils {
     
     private static let storiesUrl: URL? = URL(string: "instagram-stories://share?source_application=your-app-bundle-identifier")
     

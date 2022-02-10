@@ -26,17 +26,17 @@ struct Rectangle3DButtonStyle: ButtonStyle {
                 .offset(x: 0, y: configuration.isPressed ? 0 : 12)
                 .animation(.easeInOut(duration: 0.15), value: configuration.isPressed)
             
-            RoundedRectangle(cornerRadius: BtnConstant.cornerRadius)
-                .stroke(lineWidth: BtnConstant.lineWidth)
-                .background(btnColor)
-                .frame(height: BtnConstant.btnHeight)
-                .frame(maxWidth: .infinity)
-            
-            RoundedRectangle(cornerRadius: BtnConstant.cornerRadius)
-                .stroke(lineWidth: BtnConstant.lineWidth)
-                .background(Color.black.opacity(0.35))
-                .frame(height: BtnConstant.btnHeight)
-                .frame(maxWidth: .infinity)
+            ZStack {
+                btnColor
+                Color.black.opacity(0.35)
+            }
+            .frame(height: BtnConstant.btnHeight)
+            .frame(maxWidth: .infinity)
+            .cornerRadius(BtnConstant.cornerRadius)
+            .overlay(
+                RoundedRectangle(cornerRadius: BtnConstant.cornerRadius)
+                    .stroke(lineWidth: BtnConstant.lineWidth)
+            )
             
             configuration.label
                 .font(.staatlichesRegular(size: 32))
@@ -52,6 +52,7 @@ struct Rectangle3DButtonStyle: ButtonStyle {
                 .offset(x: configuration.isPressed ? 0 : 13, y: 0)
                 .animation(.easeInOut(duration: 0.15), value: configuration.isPressed)
         }
+        .offset(x: -6.5, y: 0)
     }
     
     private struct BtnConstant {

@@ -14,7 +14,7 @@ struct Repository: Codable {
     var full_name: String
 }
 
-class CombineJSON: ObservableObject {
+final class CombineJSON: ObservableObject {
 
     @Published var repo: Repository?
 

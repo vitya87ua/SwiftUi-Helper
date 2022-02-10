@@ -33,7 +33,7 @@ extension EnvironmentValues {
     }
 }
 
-class Fetcher {
+final class Fetcher {
         
     var coun: Int = 0
     

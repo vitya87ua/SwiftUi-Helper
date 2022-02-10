@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class Lock: ObservableObject {
+final class Lock: ObservableObject {
     @Published var count: Int
     
     @Published var isOn: Bool {

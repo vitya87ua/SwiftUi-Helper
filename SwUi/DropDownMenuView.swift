@@ -7,21 +7,14 @@
 
 import SwiftUI
 
-/// For comform enum under DropDownMenuProtocol enum must have Raw Values, like this "enum SortBy: String, DropDownMenuProtocol"
-protocol DropDownMenuProtocol: CaseIterable & RawRepresentable where Self.RawValue == String {
-    static var allRawCases: [String] { get }
-}
+/// For comform enum under DropDownMenuProtocol enum must have String Raw Values, like this "enum SortBy: String, DropDownMenuProtocol { }"
+protocol DropDownMenuProtocol: CaseIterable & RawRepresentable where Self.RawValue == String { }
 
 enum SortBy: String, DropDownMenuProtocol {
-    
     case older = "older"
     case newest = "newest"
     case acs = "acs"
     case desc = "desc"
-    
-    static var allRawCases: [String] {
-        allCases.map { $0.rawValue }
-    }
 }
 
 struct DropDownMenuView<T: DropDownMenuProtocol>: View {
@@ -36,7 +29,7 @@ struct DropDownMenuView<T: DropDownMenuProtocol>: View {
     
     var body: some View {
         Menu {
-            ForEach(T.allRawCases, id: \.self) { item in
+            ForEach(T.allCases.map { $0.rawValue }, id: \.self) { item in
                 Button {
                     if let data = T(rawValue: item) {
                         selectedItem = data
@@ -54,9 +47,9 @@ struct DropDownMenuView<T: DropDownMenuProtocol>: View {
                     Text(selectedItem.rawValue)
                         .foregroundColor(Color.blue)
                     
-                    Text("  \(Image("arrow_down"))")
+                    Text("  \(Image(systemName: "chevron.down"))")
                 }
-                .font(.custom("Poppins", size: 12))
+                .font(.custom("Poppins", size: 16))
             } icon: {
                 
             }

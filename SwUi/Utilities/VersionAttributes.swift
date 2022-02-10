@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SomeName {
+final class SomeName {
 
     // MARK: - Marking whole methods and classes with
     @available(iOS 15.0, *)

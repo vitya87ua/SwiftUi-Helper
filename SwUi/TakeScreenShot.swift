@@ -147,7 +147,7 @@ struct TakeScreenShot_Previews: PreviewProvider {
 // MARK: - Use if you want to add some data like text? description? icon or image to UIActivityViewController
 // Required "import LinkPresentation"
 
-class MyActivityItemSource: NSObject, UIActivityItemSource {
+final class MyActivityItemSource: NSObject, UIActivityItemSource {
     var title: String
     var subTitle: String?
     var image: UIImage
