@@ -103,6 +103,7 @@
 		D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */; };
 		D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAF27708A9D0078DF2E /* RotationAnimation.swift */; };
 		D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */; };
+		D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -229,6 +230,7 @@
 		D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		D0AACCAF27708A9D0078DF2E /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
 		D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsWithTransitions.swift; sourceTree = "<group>"; };
+		D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -539,6 +541,7 @@
 				D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */,
 				C901EB1126A80CA6002AF155 /* CircularProgressView.swift */,
 				D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */,
+				D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */,
 			);
 			path = ProgressViews;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
 				D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */,
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
+				D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
