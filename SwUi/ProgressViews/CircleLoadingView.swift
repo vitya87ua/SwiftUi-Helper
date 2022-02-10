@@ -5,6 +5,7 @@
 //  Created by Viktor Berezhnytskyi on 10.02.2022.
 //
 
+// A lot of animations https://github.com/amosgyamfi/swiftui-animation-library
 import SwiftUI
 
 struct CircleLoadingView: View {
