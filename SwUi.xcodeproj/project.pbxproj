@@ -60,6 +60,8 @@
 		C9E6599326EF55240024246D /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6599226EF55240024246D /* TextFields.swift */; };
 		D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0079D85279ABD7B0019CF74 /* MultiplayerKey.swift */; };
 		D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080BA227B1690900C42096 /* DropDownMenuView.swift */; };
+		D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */; };
+		D00AFA9D27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */; };
 		D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D01DCE46274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
 		D01DCE47274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
@@ -196,6 +198,8 @@
 		C9E6599226EF55240024246D /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		D0079D85279ABD7B0019CF74 /* MultiplayerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerKey.swift; sourceTree = "<group>"; };
 		D0080BA227B1690900C42096 /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
+		D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootExample.swift; sourceTree = "<group>"; };
+		D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootNavigationUtil.swift; sourceTree = "<group>"; };
 		D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Bold.otf"; sourceTree = "<group>"; };
 		D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Regular.otf"; sourceTree = "<group>"; };
 		D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
@@ -383,7 +387,7 @@
 				D0080BA227B1690900C42096 /* DropDownMenuView.swift */,
 				C92CD41026FE61CB00E3C552 /* Lists */,
 				C9A5F18E27B3F65D001B2222 /* Menus */,
-				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
+				D00AFA9927BD0A51004CE8AF /* NavigationViews */,
 				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
 				D097F87F277C48A900770BD8 /* Representable */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
@@ -457,6 +461,24 @@
 				D0079D85279ABD7B0019CF74 /* MultiplayerKey.swift */,
 			);
 			path = EnvironmentKeys;
+			sourceTree = "<group>";
+		};
+		D00AFA9827BD0A46004CE8AF /* BackToRootExample */ = {
+			isa = PBXGroup;
+			children = (
+				D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */,
+				D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */,
+			);
+			path = BackToRootExample;
+			sourceTree = "<group>";
+		};
+		D00AFA9927BD0A51004CE8AF /* NavigationViews */ = {
+			isa = PBXGroup;
+			children = (
+				C972052C26FB68C1005FCE7B /* NavigationControllers.swift */,
+				D00AFA9827BD0A46004CE8AF /* BackToRootExample */,
+			);
+			path = NavigationViews;
 			sourceTree = "<group>";
 		};
 		D01DCE41274FA58B0022C93C /* Fonts */ = {
@@ -750,8 +772,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00AFA9D27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift in Sources */,
 				D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */,
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
+				D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */,
 				D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
 				D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */,
