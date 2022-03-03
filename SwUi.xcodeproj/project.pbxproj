@@ -107,6 +107,7 @@
 		D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */; };
 		D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
+		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +237,7 @@
 		D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsWithTransitions.swift; sourceTree = "<group>"; };
 		D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
+		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -598,6 +600,7 @@
 			children = (
 				C9E6599226EF55240024246D /* TextFields.swift */,
 				D0A6D235272BF46F001F23DD /* HeaderTextField.swift */,
+				D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -818,6 +821,7 @@
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
+				D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */,
 				C92CD41226FE629600E3C552 /* CellRowModel.swift in Sources */,
 				C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */,
 				D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */,
