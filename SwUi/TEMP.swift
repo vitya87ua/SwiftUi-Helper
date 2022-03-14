@@ -80,19 +80,11 @@ struct TEMP: View {
     var body: some View {
         ZStack {
             VStack {
-//                List {
-//                ExpandableMenuView(image: "group", title: "Hello", items: ["One", "Two", "Three"], isSelected: $sel)
-//                ExpandableMenuView(image: "group", title: "Hello2", items: ["5One", "Tgwo", "Threse"], isSelected: $sel)
-//                Spacer()
-//                }
+                Circle()
+                    .equalFrame(50)
                 
-                TextField("Hello", text: $sel)
-                    .keyboardType(.numberPad)
-                
-//                TextField("Hello Num", value: $num, format: .number)
-                    .keyboardType(.decimalPad)
-                
-//                TextField("", value: $num, formatter: .n)
+                Circle()
+                    .equalFrame(100)
             }
         }
     }
