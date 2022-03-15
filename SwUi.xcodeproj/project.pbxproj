@@ -98,6 +98,7 @@
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
+		D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */; };
 		D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A41BA12784781E006C3669 /* StrokeText.swift */; };
 		D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
@@ -229,6 +230,7 @@
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
+		D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightText.swift; sourceTree = "<group>"; };
 		D0A41BA12784781E006C3669 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Staatliches-Regular.ttf"; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
@@ -594,6 +596,7 @@
 			children = (
 				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
 				D0A41BA12784781E006C3669 /* StrokeText.swift */,
+				D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -793,6 +796,7 @@
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
+				D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */,
 				C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,
@@ -1054,7 +1058,7 @@
 				DEVELOPMENT_TEAM = ST445B2P7K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwUi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1077,7 +1081,7 @@
 				DEVELOPMENT_TEAM = ST445B2P7K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwUi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
