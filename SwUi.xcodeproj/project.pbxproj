@@ -63,6 +63,7 @@
 		D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */; };
 		D00AFA9D27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */; };
 		D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DA78327E4CA9F00F19796 /* Extension+Date.swift */; };
 		D01DCE46274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
 		D01DCE47274FA5E50022C93C /* NeueMontreal-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */; };
 		D01DCE49274FA5EF0022C93C /* NeueMontreal-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */; };
@@ -111,6 +112,7 @@
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
+		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,6 +205,7 @@
 		D0080BA227B1690900C42096 /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
 		D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootExample.swift; sourceTree = "<group>"; };
 		D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootNavigationUtil.swift; sourceTree = "<group>"; };
+		D01DA78327E4CA9F00F19796 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Bold.otf"; sourceTree = "<group>"; };
 		D01DCE48274FA5EF0022C93C /* NeueMontreal-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Regular.otf"; sourceTree = "<group>"; };
 		D01DCE4B274FA5FE0022C93C /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
@@ -243,6 +246,7 @@
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
+		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +295,7 @@
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
+				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				C9E6599026EF4AB10024246D /* DateTimePicker.swift */,
 				D0080BA227B1690900C42096 /* DropDownMenuView.swift */,
 				C92CD41026FE61CB00E3C552 /* Lists */,
+				D0E7EFED27E4CF5A00C76065 /* MapKit */,
 				C9A5F18E27B3F65D001B2222 /* Menus */,
 				D00AFA9927BD0A51004CE8AF /* NavigationViews */,
 				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
@@ -632,6 +638,14 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		D0E7EFED27E4CF5A00C76065 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -835,8 +849,10 @@
 				C972052D26FB68C2005FCE7B /* NavigationControllers.swift in Sources */,
 				D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */,
 				D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */,
+				D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
+				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,

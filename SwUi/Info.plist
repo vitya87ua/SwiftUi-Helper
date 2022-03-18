@@ -62,5 +62,7 @@
 		<string>Roboto-Regular.otf</string>
 		<string>Staatliches-Regular.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please Allow</string>
 </dict>
 </plist>
