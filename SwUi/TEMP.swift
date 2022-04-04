@@ -11,11 +11,11 @@ import UIKit
 final class Model: ObservableObject {
     @Published var textOb: String = "firstText"
     @Published var showImage: Bool = false
-
+    
     var uiImage: UIImage?// = UIImage()
     var bundleName: String = ""
     var bundle: Bundle?
-
+    
     let image: String = """
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
@@ -42,41 +42,51 @@ final class Model: ObservableObject {
     }
     
     func stopTim() {
-//        uiImage = loadImageFromDiskWith(fileName: "1111.svg")
+        //        uiImage = loadImageFromDiskWith(fileName: "1111.svg")
         uiImage = loadImageFromDiskWith(fileName: "1111.svg")
         let name = Bundle.main.path(forResource: "123", ofType: "png")
         bundleName = name ?? "zero"
     }
-
+    
     func loadImageFromDiskWith(fileName: String) -> UIImage? {
-
-      let documentDirectory = FileManager.SearchPathDirectory.documentDirectory
-
+        
+        let documentDirectory = FileManager.SearchPathDirectory.documentDirectory
+        
         let userDomainMask = FileManager.SearchPathDomainMask.allDomainsMask
         let paths = NSSearchPathForDirectoriesInDomains(documentDirectory, userDomainMask, true)
-
+        
         if let dirPath = paths.first {
             let imageUrl = URL(fileURLWithPath: dirPath).appendingPathComponent(fileName)
             let imageRet = UIImage(contentsOfFile: imageUrl.path)
-
-//            bundle = Bundle(path: dirPath)
+            
+            //            bundle = Bundle(path: dirPath)
             bundle = Bundle(url: URL(fileURLWithPath: dirPath))
-
+            
             return imageRet
-
+            
         }
-
+        
         return nil
     }
+    
+    func gogo() async -> String {
+        try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+        return "Bye"
+    }
+    
+    func changeText()  {
+        Task {
+            textOb =  await gogo()
+        }
+    }
 }
-
 struct TEMP: View {
-
+    
     @ObservedObject var viewModel = Model()
-
-    @State var sel: String = ""
+    
+    @State var sel: String = "Hello"
     @State var num: Int = 0
-
+    
     var body: some View {
         ZStack {
             VStack {
@@ -85,8 +95,23 @@ struct TEMP: View {
                 
                 Circle()
                     .equalFrame(100)
+                
+                Text(viewModel.textOb)
+                    .fontWeight(.bold)
+                
+                Button("GOGO") {
+                    viewModel.changeText()
+                }
             }
         }
+        .task {
+            await changeText()
+        }
+    }
+    
+    func changeText() async {
+        try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+        sel = "Bye"
     }
 }
 
