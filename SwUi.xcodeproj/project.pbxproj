@@ -117,6 +117,7 @@
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
+		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -256,6 +257,7 @@
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
+		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
 		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -657,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */,
+				D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */,
 			);
 			path = AsyncAwait;
 			sourceTree = "<group>";
@@ -844,6 +847,7 @@
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
 				D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */,
+				D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */,
 				C92887E126DF9E5A000EDD1C /* TEMP.swift in Sources */,
 				D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */,
 				D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */,
