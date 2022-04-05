@@ -86,6 +86,7 @@ struct TEMP: View {
     
     @State var sel: String = "Hello"
     @State var num: Int = 0
+    @State var isPresented: Bool = false
     
     var body: some View {
         ZStack {
@@ -98,11 +99,47 @@ struct TEMP: View {
                 
                 Text(viewModel.textOb)
                     .fontWeight(.bold)
+                    .background(Color.red)
+//                    .brightness(0.5)
+//                    .contrast(0.5)
+//                    .saturation(0.5)
+//                    .grayscale(0.5)
+//                    .luminanceToAlpha()
+//                    .colorInvert()
                 
                 Button("GOGO") {
                     viewModel.changeText()
                 }
+                
+                Button("PopOwer") {
+                    isPresented.toggle()
+                }
+                .foregroundColor(.gray)
+                .opacity(0.5)
+                
+                Button("PopOwer") {
+                    isPresented.toggle()
+                }.disabled(true)
+                
+                Text("viewModel.textOb").flipsForRightToLeftLayoutDirection(true)
+                Text("viewModel.textOb").flipsForRightToLeftLayoutDirection(false)
+                
+                HStack(alignment: .top) {
+                        VStack(alignment: .leading) {
+                            Button("Delete 111 messages") {}
+                            Button("Delete 222 messages") {}
+                        }.textCase(.lowercase)
+                    
+                        VStack(alignment: .leading) {
+                            Button("Delete 1114 messages") {}
+                            Button("Delete 2110 messages") {}
+                        }
+                        .monospacedDigit()
+                    }
+                    .padding()
+                
             }
+            
         }
         .task {
             await changeText()

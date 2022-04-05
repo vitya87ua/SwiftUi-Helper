@@ -23,7 +23,7 @@ final class AsyncAwaitTaskGroupExampleViewModel: ObservableObject {
             for i in 0..<10 {
                 taskGroup.addTask {
                     return await self.newText("Task \(i)")
-                }
+                }                
             }
             
             var childTaskResults: [String] = []
