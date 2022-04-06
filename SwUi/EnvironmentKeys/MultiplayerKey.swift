@@ -21,7 +21,7 @@ extension EnvironmentValues {
 }
 
 
-// You van use this EnvironmentKey & EnvironmentValues for following forEx; LoginState of ColorTheme. See link in header
+// You сan use this EnvironmentKey & EnvironmentValues for following forEx; LoginState of ColorTheme. See link in header
 struct FetcherKey: EnvironmentKey {
     static let defaultValue: Fetcher = Fetcher()
 }
