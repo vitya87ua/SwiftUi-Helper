@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import Combine
 
 final class Model: ObservableObject {
     @Published var textOb: String = "firstText"
@@ -79,6 +80,23 @@ final class Model: ObservableObject {
             textOb =  await gogo()
         }
     }
+    
+    @Published var textField: String = "textField"
+    var cancelable: AnyCancellable?
+    var cancelable2: Set<AnyCancellable> = []
+    func deb() {
+        $textField
+            .debounce(for: .milliseconds(1000), scheduler: RunLoop.main)
+//            .filter { output in
+//                output == "123"
+//            }
+//            .map { Int($0) }
+            .compactMap { Int($0) }
+            .sink { index in
+                print("Received index \(index)", self.textField)
+            }
+            .store(in: &cancelable2)
+    }
 }
 struct TEMP: View {
     
@@ -100,12 +118,18 @@ struct TEMP: View {
                 Text(viewModel.textOb)
                     .fontWeight(.bold)
                     .background(Color.red)
-//                    .brightness(0.5)
-//                    .contrast(0.5)
-//                    .saturation(0.5)
-//                    .grayscale(0.5)
-//                    .luminanceToAlpha()
-//                    .colorInvert()
+                //                    .brightness(0.5)
+                //                    .contrast(0.5)
+                //                    .saturation(0.5)
+                //                    .grayscale(0.5)
+                //                    .luminanceToAlpha()
+                //                    .colorInvert()
+                
+                TextField("textField!", text: $viewModel.textField)
+                
+                Button("DEB") {
+                    viewModel.deb()
+                }
                 
                 Button("GOGO") {
                     viewModel.changeText()
@@ -119,24 +143,8 @@ struct TEMP: View {
                 
                 Button("PopOwer") {
                     isPresented.toggle()
-                }.disabled(true)
-                
-                Text("viewModel.textOb").flipsForRightToLeftLayoutDirection(true)
-                Text("viewModel.textOb").flipsForRightToLeftLayoutDirection(false)
-                
-                HStack(alignment: .top) {
-                        VStack(alignment: .leading) {
-                            Button("Delete 111 messages") {}
-                            Button("Delete 222 messages") {}
-                        }.textCase(.lowercase)
-                    
-                        VStack(alignment: .leading) {
-                            Button("Delete 1114 messages") {}
-                            Button("Delete 2110 messages") {}
-                        }
-                        .monospacedDigit()
-                    }
-                    .padding()
+                }
+//                .disabled(true)
                 
             }
             

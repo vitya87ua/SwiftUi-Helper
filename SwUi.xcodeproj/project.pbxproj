@@ -121,6 +121,8 @@
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */; };
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
+		D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */; };
+		D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54E22805B03C00914059 /* PHImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +265,8 @@
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
 		D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUrlView.swift; sourceTree = "<group>"; };
 		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
+		D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDisabledModifier.swift; sourceTree = "<group>"; };
+		D0EE54E22805B03C00914059 /* PHImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,12 +417,13 @@
 				C9A69FAC2715CB3000042099 /* Colors.swift */,
 				C9CC76C3267D38C500EB5436 /* ContentView.swift */,
 				C9E6599026EF4AB10024246D /* DateTimePicker.swift */,
-				D0E536EB27FB2AC500F45D08 /*  DragAndDrop */,
+				D0E536EB27FB2AC500F45D08 /* DragAndDrop */,
 				C92CD41026FE61CB00E3C552 /* Lists */,
 				D0E7EFED27E4CF5A00C76065 /* MapKit */,
 				C9A5F18E27B3F65D001B2222 /* Menus */,
 				D00AFA9927BD0A51004CE8AF /* NavigationViews */,
 				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
+				D0EE54E12805B00A00914059 /* Pickers */,
 				D097F87F277C48A900770BD8 /* Representable */,
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
@@ -595,6 +600,7 @@
 				D043793F2746457C00B5F30A /* CustomModifier.swift */,
 				D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */,
 				D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */,
+				D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -678,12 +684,12 @@
 			path = AsyncAwait;
 			sourceTree = "<group>";
 		};
-		D0E536EB27FB2AC500F45D08 /*  DragAndDrop */ = {
+		D0E536EB27FB2AC500F45D08 /* DragAndDrop */ = {
 			isa = PBXGroup;
 			children = (
 				D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */,
 			);
-			path = " DragAndDrop";
+			path = DragAndDrop;
 			sourceTree = "<group>";
 		};
 		D0E7EFED27E4CF5A00C76065 /* MapKit */ = {
@@ -692,6 +698,14 @@
 				D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */,
 			);
 			path = MapKit;
+			sourceTree = "<group>";
+		};
+		D0EE54E12805B00A00914059 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				D0EE54E22805B03C00914059 /* PHImagePicker.swift */,
+			);
+			path = Pickers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -880,6 +894,7 @@
 				D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
 				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
+				D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
@@ -923,6 +938,7 @@
 				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
+				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
 				D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */,
 				C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */,
