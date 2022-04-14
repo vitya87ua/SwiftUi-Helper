@@ -10,19 +10,22 @@ import SwiftUI
 struct IsHiddenModifier: ViewModifier {
     
     var hidden: Bool
+    var remove: Bool
     
     func body(content: Content) -> some View {
-        if hidden {
-            content.hidden()
-        } else {
-            content
+        if !remove {
+            if hidden {
+                content.hidden()
+            } else {
+                content
+            }
         }
     }
 }
 
 extension View {
-    func isHidden(_ hidden: Bool) -> some View {
-        self.modifier(IsHiddenModifier(hidden: hidden))
+    func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
+        self.modifier(IsHiddenModifier(hidden: hidden, remove: remove))
     }
 }
 
@@ -39,6 +42,13 @@ struct IsHiddenModifier_Previews: PreviewProvider {
                 .fill(Color.yellow)
                 .equalFrame(100)
                 .isHidden(true)
+                .border(Color.red, width: 1)
+            
+            // Hidden View & Removed!
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color.yellow)
+                .equalFrame(100)
+                .isHidden(true, remove: true)
                 .border(Color.red, width: 1)
             
             RoundedRectangle(cornerRadius: 10)
