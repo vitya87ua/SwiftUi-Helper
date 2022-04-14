@@ -92,6 +92,7 @@
 		D04379402746457C00B5F30A /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043793F2746457C00B5F30A /* CustomModifier.swift */; };
 		D043794227464EDC00B5F30A /* RainbowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043794127464EDC00B5F30A /* RainbowText.swift */; };
 		D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */; };
+		D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D846828083D2900D3D71A /* IsHiddenModifier.swift */; };
 		D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDB275108A000DA8752 /* ButtonStylies.swift */; };
 		D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */; };
 		D05E9106278718BF004EA46F /* GridTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E9105278718BF004EA46F /* GridTabView.swift */; };
@@ -237,6 +238,7 @@
 		D043793F2746457C00B5F30A /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		D043794127464EDC00B5F30A /* RainbowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowText.swift; sourceTree = "<group>"; };
 		D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
+		D04D846828083D2900D3D71A /* IsHiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHiddenModifier.swift; sourceTree = "<group>"; };
 		D056FDDB275108A000DA8752 /* ButtonStylies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylies.swift; sourceTree = "<group>"; };
 		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05E9105278718BF004EA46F /* GridTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTabView.swift; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 				D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */,
 				D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */,
 				D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */,
+				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -909,6 +912,7 @@
 				C9BDC99A27AEC08A00713F69 /* AppleHierarchicalListView.swift in Sources */,
 				D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */,
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
+				D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
