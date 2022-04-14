@@ -93,6 +93,7 @@
 		D043794227464EDC00B5F30A /* RainbowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043794127464EDC00B5F30A /* RainbowText.swift */; };
 		D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */; };
 		D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D846828083D2900D3D71A /* IsHiddenModifier.swift */; };
+		D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D846D2808453000D3D71A /* IfConditionModifier.swift */; };
 		D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDB275108A000DA8752 /* ButtonStylies.swift */; };
 		D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */; };
 		D05E9106278718BF004EA46F /* GridTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E9105278718BF004EA46F /* GridTabView.swift */; };
@@ -239,6 +240,7 @@
 		D043794127464EDC00B5F30A /* RainbowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowText.swift; sourceTree = "<group>"; };
 		D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
 		D04D846828083D2900D3D71A /* IsHiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHiddenModifier.swift; sourceTree = "<group>"; };
+		D04D846D2808453000D3D71A /* IfConditionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfConditionModifier.swift; sourceTree = "<group>"; };
 		D056FDDB275108A000DA8752 /* ButtonStylies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylies.swift; sourceTree = "<group>"; };
 		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05E9105278718BF004EA46F /* GridTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTabView.swift; sourceTree = "<group>"; };
@@ -604,6 +606,7 @@
 				D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */,
 				D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */,
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
+				D04D846D2808453000D3D71A /* IfConditionModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -933,6 +936,7 @@
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
+				D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */,
 				C9E6599326EF55240024246D /* TextFields.swift in Sources */,
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
