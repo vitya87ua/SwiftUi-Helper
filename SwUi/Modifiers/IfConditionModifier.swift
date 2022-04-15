@@ -24,6 +24,7 @@ struct IfConditionModifier: View {
                         .foregroundColor(.yellow)
                         .padding(.leading, 20)
                 }
+                .foregroundColor(.red)
             
             Button("Toggle") {
                 isTrue.toggle()

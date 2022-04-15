@@ -118,6 +118,7 @@
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
+		D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
@@ -264,6 +265,7 @@
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
+		D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectExample.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
 				C9836421271091FC007BE5B0 /* Sheets */,
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
+				D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */,
 				D025A34C273AC436005AD490 /* TabViews */,
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
 				C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */,
@@ -888,6 +891,7 @@
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
+				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
 				D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */,
