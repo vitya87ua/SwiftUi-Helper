@@ -91,7 +91,7 @@ struct TakeScreenShot: View {
 
 extension View {
     
-    // Full screan
+    // Full screen
     func saveAsImage(completion: @escaping (UIImage) -> Void) {
         let screen = UIScreen.main.bounds
         

@@ -102,6 +102,7 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
+		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */; };
 		D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */; };
@@ -126,6 +127,7 @@
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
 		D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */; };
 		D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54E22805B03C00914059 /* PHImagePicker.swift */; };
+		D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F506952817E5E70061FE25 /* Extension+Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +251,7 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETDropDownMenuView.swift; sourceTree = "<group>"; };
 		D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightText.swift; sourceTree = "<group>"; };
@@ -273,6 +276,7 @@
 		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
 		D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDisabledModifier.swift; sourceTree = "<group>"; };
 		D0EE54E22805B03C00914059 /* PHImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePicker.swift; sourceTree = "<group>"; };
+		D0F506952817E5E70061FE25 /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +313,7 @@
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
+				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
+				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
 			);
 			path = Extensions;
@@ -900,6 +906,7 @@
 				D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */,
 				D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */,
 				C9620F7026E0C92B002ECB75 /* SegmentedPicker.swift in Sources */,
+				D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */,
 				C9190EA727049EC700D71907 /* Extension+String.swift in Sources */,
 				D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
@@ -921,6 +928,7 @@
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
 				D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
+				D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
 				D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */,
