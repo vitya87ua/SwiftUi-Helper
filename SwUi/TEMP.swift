@@ -84,6 +84,9 @@ final class Model: ObservableObject {
     @Published var textField: String = "textField"
     var cancelable: AnyCancellable?
     var cancelable2: Set<AnyCancellable> = []
+    
+    var numCom: Int = 0
+    
     func deb() {
         $textField
             .debounce(for: .milliseconds(1000), scheduler: RunLoop.main)

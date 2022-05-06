@@ -30,16 +30,20 @@ struct GridTabView<T, Content: View>: View {
     }
 }
 
-//#if DEBUG
-//struct GridTabView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        GridTabView(models:
-//                        [["A", "B", "C"], ["D", "E", "J"], ["Z", "T", "R"],
-//                         ["F", "B", "C"], ["D", "F", "J"], ["Z", "L", "R"]],
-//                    columns: Array(repeating:  GridItem(.fixed(104), spacing: 16), count: 3)) { item in
-//            Circle()
-//                .frame(width: 100, height: 100, alignment: .center)
-//        }
-//    }
-//}
-//#endif
+#if DEBUG
+struct GridTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        GridTabView(
+            models: [["A", "B", "C"], ["D", "E", "J"], ["Z", "T", "R"],
+                     ["F", "B", "C"], ["D", "F", "J"], ["Z", "L", "R"]],
+            columns: Array(repeating:  GridItem(.fixed(104), spacing: 16), count: 3)) { item in
+                Circle()
+                    .equalFrame(100)
+                    .overlay {
+                        Text(item)
+                            .foregroundColor(.white)
+                    }
+            }
+    }
+}
+#endif
