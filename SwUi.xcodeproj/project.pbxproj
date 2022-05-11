@@ -114,6 +114,7 @@
 		D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAF27708A9D0078DF2E /* RotationAnimation.swift */; };
 		D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */; };
 		D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */; };
+		D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3468B282BE9DE00625538 /* SwipeGesture.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
 		D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */; };
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
@@ -124,6 +125,8 @@
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */; };
+		D0E78383282A98940059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
+		D0E78384282A98960059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
 		D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */; };
 		D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54E22805B03C00914059 /* PHImagePicker.swift */; };
@@ -263,6 +266,7 @@
 		D0AACCAF27708A9D0078DF2E /* RotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationAnimation.swift; sourceTree = "<group>"; };
 		D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsWithTransitions.swift; sourceTree = "<group>"; };
 		D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
+		D0B3468B282BE9DE00625538 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
 		D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusModifierView.swift; sourceTree = "<group>"; };
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
@@ -430,6 +434,7 @@
 				C9CC76C3267D38C500EB5436 /* ContentView.swift */,
 				C9E6599026EF4AB10024246D /* DateTimePicker.swift */,
 				D0E536EB27FB2AC500F45D08 /* DragAndDrop */,
+				D0B3468A282BE9C500625538 /* Gestures */,
 				C92CD41026FE61CB00E3C552 /* Lists */,
 				D0E7EFED27E4CF5A00C76065 /* MapKit */,
 				C9A5F18E27B3F65D001B2222 /* Menus */,
@@ -690,6 +695,14 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		D0B3468A282BE9C500625538 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				D0B3468B282BE9DE00625538 /* SwipeGesture.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
 		D0E536E627FADAC700F45D08 /* AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
@@ -864,6 +877,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E78383282A98940059B513 /* EqualFrameModifierView.swift in Sources */,
 				C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -944,6 +958,7 @@
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,
+				D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
@@ -980,6 +995,7 @@
 				C9D563BC2716BB290094C04D /* WidgetExtraLarge.swift in Sources */,
 				D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */,
 				C9D563BD2716BB2A0094C04D /* WidgetMedium.swift in Sources */,
+				D0E78384282A98960059B513 /* EqualFrameModifierView.swift in Sources */,
 				C9D563BE2716BB2A0094C04D /* WidgetSmall.swift in Sources */,
 				C9D5639F2716B1E20094C04D /* StaticWidgets.swift in Sources */,
 			);
