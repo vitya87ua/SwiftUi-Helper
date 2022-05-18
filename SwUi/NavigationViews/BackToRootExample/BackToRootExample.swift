@@ -22,7 +22,6 @@ struct BackToRootExample: View {
                 NavigationLink(isActive: $showView1) {
                     View1()
                 } label: { EmptyView() }
-                
             }
             .navigationTitle("Root")
             .onReceive(navigationUtil.$showRoot) { showRoot in

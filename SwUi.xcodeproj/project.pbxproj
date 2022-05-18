@@ -89,6 +89,7 @@
 		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
 		D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */; };
 		D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */; };
+		D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E14128337C42009CB23A /* ifOSModifier.swift */; };
 		D04379402746457C00B5F30A /* CustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043793F2746457C00B5F30A /* CustomModifier.swift */; };
 		D043794227464EDC00B5F30A /* RainbowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043794127464EDC00B5F30A /* RainbowText.swift */; };
 		D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */; };
@@ -242,6 +243,7 @@
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle3DButtonStyle.swift; sourceTree = "<group>"; };
+		D041E14128337C42009CB23A /* ifOSModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ifOSModifier.swift; sourceTree = "<group>"; };
 		D043793F2746457C00B5F30A /* CustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifier.swift; sourceTree = "<group>"; };
 		D043794127464EDC00B5F30A /* RainbowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowText.swift; sourceTree = "<group>"; };
 		D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
@@ -621,6 +623,7 @@
 				D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */,
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
 				D04D846D2808453000D3D71A /* IfConditionModifier.swift */,
+				D041E14128337C42009CB23A /* ifOSModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -974,6 +977,7 @@
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
+				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
 				D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */,
 				C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */,

@@ -31,7 +31,7 @@ struct TEMP: View {
                 }
                 
                 Label("Remove old files", systemImage: "trash")
-                                                    .foregroundColor(.red)
+                    .foregroundColor(.red)
                 
                 Menu {
                     Button(role: .destructive) {
@@ -50,7 +50,7 @@ struct TEMP: View {
                         
                     } label: {
                         Label("del2", systemImage: "trash")
-                            
+                        
                     }.foregroundColor(.red)
                     
                     Button(role: .destructive) {
@@ -58,17 +58,12 @@ struct TEMP: View {
                     } label: {
                         Label("del2", systemImage: "trash")
                     }
-
-
+                    
+                    
                 } label: {
                     Image(systemName: "star")
                 }
-                
             }
-            
-//            VStack {
-//
-//            }
         }
         .onSwipe { direct in
             print(#fileID, #line, "direct", direct)
@@ -83,21 +78,3 @@ struct TEMP: View {
         }
     }
 #endif
-
-enum Direction {
-case top
-    case left
-    case right
-    case bottom
-    
-}
-
-//struct MyDrug: Gesture {
-//    typealias Value = Direction
-//
-//    typealias Body = Gesture
-//
-//    var body: some Gesture {
-//DragGesture()
-//    }
-//}
