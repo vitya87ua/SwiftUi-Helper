@@ -21,49 +21,36 @@ struct TEMP: View {
     
     @GestureState var gestState: CGSize = .zero
     
+    @Namespace var namespace
+    
     var body: some View {
         ZStack {
             Color.scooter
             
             VStack {
+                
+                if viewModel.confIsPres {
+                    HStack {
+                        Text("Hello **\(sel)**")
+                            .matchedGeometryEffect(id: "text", in: namespace)
+                        Spacer()
+                    }
+                } else {
+                    HStack {
+                        Spacer()
+                        Text("Hello **\(sel)**")
+                            .matchedGeometryEffect(id: "text", in: namespace)
+                    }
+                }
+                
                 Button("Conf") {
-                    viewModel.confIsPres.toggle()
+                    withAnimation(.spring().speed(0.7)) {
+                        viewModel.confIsPres.toggle()
+                    }
                 }
-                
-                Label("Remove old files", systemImage: "trash")
-                    .foregroundColor(.red)
-                
-                Menu {
-                    Button(role: .destructive) {
-                        
-                    } label: {
-                        Label("del4", systemImage: "trash")
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        Label("del1", systemImage: "trash")
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        Label("del2", systemImage: "trash")
-                        
-                    }.foregroundColor(.red)
-                    
-                    Button(role: .destructive) {
-                        
-                    } label: {
-                        Label("del2", systemImage: "trash")
-                    }
-                    
-                    
-                } label: {
-                    Image(systemName: "star")
-                }
+                .padding(.top, 50)
             }
+            .padding(.horizontal)
         }
         .onSwipe { direct in
             print(#fileID, #line, "direct", direct)

@@ -54,5 +54,4 @@ final class EmailUtils: NSObject, MFMailComposeViewControllerDelegate {
          .background(Color.pastelYellow)
          .cornerRadius(12)
  }
- 
  */

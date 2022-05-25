@@ -85,6 +85,7 @@
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
+		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
 		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
 		D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */; };
@@ -120,6 +121,7 @@
 		D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */; };
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
+		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
@@ -240,6 +242,7 @@
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
+		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle3DButtonStyle.swift; sourceTree = "<group>"; };
@@ -273,6 +276,7 @@
 		D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusModifierView.swift; sourceTree = "<group>"; };
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
+		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectExample.swift; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
@@ -451,6 +455,7 @@
 				D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */,
 				D025A34C273AC436005AD490 /* TabViews */,
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
+				D031D702283CB49C00B190C4 /* TimelineView */,
 				C9C5130627A6F7EC007131B4 /* TimerWithDelegate.swift */,
 				C92887E026DF9E5A000EDD1C /* TEMP.swift */,
 				D0A6D234272BF460001F23DD /* TextFields */,
@@ -614,6 +619,14 @@
 			path = TabViews;
 			sourceTree = "<group>";
 		};
+		D031D702283CB49C00B190C4 /* TimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				D031D700283CB49700B190C4 /* StopWatchView.swift */,
+			);
+			path = TimelineView;
+			sourceTree = "<group>";
+		};
 		D043793E2746455D00B5F30A /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -661,6 +674,7 @@
 				C9C73BAD26B05D3C000EB45F /* TextStyle.swift */,
 				D0A41BA12784781E006C3669 /* StrokeText.swift */,
 				D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */,
+				D0D0814D283E5725004E9AE2 /* MarkdownText.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -901,6 +915,7 @@
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
+				D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
@@ -975,6 +990,7 @@
 				C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */,
 				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
+				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
 				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,

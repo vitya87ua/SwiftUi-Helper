@@ -151,759 +151,443 @@ extension View {
 #if DEBUG
 struct WidgetLarge_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetLarge()
+//        WidgetLarge()
+//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+//            .environment(\.colorScheme, .light)
+//            .previewDisplayName("SYSTEM")
+//
+//        WidgetLarge()
+//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+//            .environment(\.colorScheme, .dark)
+//            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
+//            .previewDisplayName("iPhone 13 Pro Max")
+        
+        LargeSweetSpotWidgetViewEntry()
             .previewContext(WidgetPreviewContext(family: .systemLarge))
             .environment(\.colorScheme, .light)
-            .previewDisplayName("SYSTEM")
-            
-        WidgetLarge()
+            .previewDisplayName("iPhone 12 Pro Max")
+        
+        LargeSweetSpotWidgetViewEntry()
             .previewContext(WidgetPreviewContext(family: .systemLarge))
-            .environment(\.colorScheme, .dark)
-            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-            .previewDisplayName("iPhone 13 Pro Max")
+            .environment(\.colorScheme, .light)
+            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+            .previewDisplayName("iPhone 12")
     }
 }
 #endif
 
-
-/*
- import SwiftUI
- import WidgetKit
-
- struct WidgetLarge: View {
-     
-     @Environment(\.colorScheme) var colorScheme
-     
-     var body: some View {
-         ZStack {
-             backgroundColor
-             
-             VStack(spacing: 8) {
-
-                 userInfoView
-
-                 HStack(alignment: .top, spacing: 8) {
-                     
-                     sleepView
-                         .padding(.trailing, 8)
-
-                     Divider().background(colorScheme == .light ? Color.lightGray : Color.white)
-
-                     nursingView
-                 }
-                 .padding(.top, 18)
-                 
-                 buttonsView
-                 .padding()
-             }
-         }
-         //.redacted(reason: model.username.isEmpty ? .placeholder : [])
-         //        .widgetURL(model.deepLinkURL)
-     }
- }
-
- private extension WidgetLarge {
-     
-     private var backgroundColor: some View {
-         colorScheme == .light ? Color.white : Color.eggPlant
-     }
-     
-     @ViewBuilder
-     var userInfoView: some View {
-         HStack(spacing: 8) {
-
-             VStack(alignment: .leading) {
-                 Text("SweetSpot® In")
-                     .font(.system(size: 15))
-                     .fontWeight(.medium)
-
-                 Text("2h 50m")
-                     .font(.system(size: 28))
-                     .fontWeight(.light)
-
-                 Text("Naptime near 3:00pm")
-                     .font(.system(size: 13))
-             }
-             .padding(.leading, 18)
-             .foregroundColor(.white)
-
-             Spacer()
-
-             VStack {
-                 Circle()
-                     .frame(width: 64, height: 64)
-                     .foregroundColor(.orange)
-                     .overlay(alignment: .bottomTrailing) {
-                         Image("logo_white")
-                             .resizable()
-                             .frame(width: 18, height: 18)
-                     }
-                 Text("model.username")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(.white)
- //                    .padding(.bottom, 4)
-             }
-         }
-         .padding(.top, 16)
-         .padding(.trailing, 16)
-         .padding(.bottom, 20)
-         .ignoresSafeArea(.all)
-         .background(Color.scooter)
- //        .redacted(reason: 1 == 1 ? .placeholder : [])
-     }
-
-     @ViewBuilder
-     var sleepView: some View {
-         VStack(spacing: 5) {
-             HStack {
-                 Text("Sleep")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             }
-
-             Link(destination: URL(string: "widget://activity=sleep")!) {
-                 VStack(spacing: 10) {
-
-                     Image(systemName: true ? "pause.fill" : "play.fill")
-
-                     if true {
-                         HStack(alignment: .center) {
-                             Spacer()
-                             Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                 .multilineTextAlignment(.center)
-                             Spacer()
-                         }
-                     } else {
-                         Text("00:00")
-                     }
-                 }
-                 .font(.system(size: 16))
-                 .foregroundColor(Color.white)
-                 .frame(width: 80, height: 80)
-                 .background(Color.scooter)
-                 .clipShape(Circle())
-             }
-
-             if 1 == 1 {
-                 VStack {
-                     Text("duration・")
-                         .fontWeight(.semibold)
-                     
-                     Text("lastSleepDate")
-                 }
-                 .font(.system(size: 12))
-                 .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             } else {
-                 Spacer()
-             }
-         }
-     }
-
-     @ViewBuilder
-     var nursingView: some View {
-         VStack(spacing: 5) {
-             HStack {
-                 Text("Nursing")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             }
-
-             HStack(spacing: 20) {
-                 Link(destination: URL(string: "widget://activity=nursing")!) {
-                     ZStack(alignment: .top) {
-                         VStack(spacing: 10) {
-
-                             Image(systemName: true ? "pause.fill" : "play.fill")
-
-                             if true {
-                                 HStack(alignment: .center) {
-                                     Spacer()
-                                     Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                         .multilineTextAlignment(.center)
-                                     Spacer()
-                                 }
-                             } else {
-                                 Text("Left")
-                             }
-                         }
-                         .font(.system(size: 16))
-                         .foregroundColor(Color.white)
-                         .frame(width: 80, height: 80)
-                         .background(Color.burntSienna)
-                         .clipShape(Circle())
-                     }
-                 }
-
-                 Link(destination: URL(string: "widget://activity=nursing")!) {
-                     ZStack(alignment: .top) {
-                         VStack(spacing: 10) {
-                             Image(systemName: true ? "pause.fill" : "play.fill")
-
-                             if true {
-                                 HStack(alignment: .center) {
-                                     Spacer()
-                                     Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                         .multilineTextAlignment(.center)
-                                     Spacer()
-                                 }
-                             } else {
-                                 Text("Right")
-                             }
-                         }
-                         .font(.system(size: 16))
-                         .foregroundColor(Color.white)
-                         .frame(width: 80, height: 80)
-                         .background(Color.burntSienna)
-                         .clipShape(Circle())
-                     }
-                     .overlay(
-                         Circle()
-                             .fill(Color.lynch)
-                             .frame(width: 20, height: 20)
-                             .overlay(
-                                 Text("LS")
-                                     .font(.system(size: 10, weight: .bold))
-                                     .foregroundColor(.white)
-                             ), alignment: .topTrailing)
-                 }
-             }
-
-             nursingStatView
-         }
-         .padding(.leading, 15)
-     }
-
-     @ViewBuilder
-     var nursingStatView: some View {
-         HStack(spacing: 2) {
-             Text("1d ago・")
-             
-             ZStack(alignment: .center) {
-                 Circle()
-                     .fill(Color.burntSienna)
-                     .frame(width: 13, height: 13)
-                 
-                 Text("L")
-                     .font(.system(size: 10))
-                     .fontWeight(.semibold)
-                     .foregroundColor(Color.white)
-             }
-             
-             Text("7m")
-                 .fontWeight(.semibold)
-             
-             ZStack(alignment: .center) {
-                 Circle()
-                     .fill(Color.burntSienna)
-                     .frame(width: 13, height: 13)
-                 
-                 Text("R")
-                     .font(.system(size: 10))
-                     .fontWeight(.semibold)
-                     .foregroundColor(Color.white)
-             }
-             .padding(.leading, 5)
-             
-             Text("7m")
-                 .fontWeight(.semibold)
-         }
-         .font(.system(size: 12))
-         .foregroundColor(colorScheme == .light ? .eastBay : .white)
-     }
-     
-     var buttonsView: some View {
-         HStack(spacing: 30) {
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.magentaLight
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.magentaLight, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.burntSienna : Color.white)
-             }
-             .frame(width: 54, height: 54)
-             .clipShape(Circle())
-             
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.jazzberryJam
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.jazzberryJam, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.jazzberryJam : Color.white)
-             }
-             .frame(width: 54, height: 54)
-             .clipShape(Circle())
-
-             Link(destination:
-                     DeepLinkBuilder()
-                     .cid("model.userID")
-                     .activity("sleep")
-                     .build()
-             ) {
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.corn
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.corn, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.corn : Color.white)
-             }
-             .frame(width: 54, height: 54)
-             .clipShape(Circle())
-         }
-
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.violaFlover
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.violaFlover, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.violaFlover : Color.white)
-             }
-             .frame(width: 54, height: 54)
-             .clipShape(Circle())
-         }
-     }
-     
- }
-
- struct RoundedCorner: Shape {
-
-     var radius: CGFloat = .infinity
-     var corners: UIRectCorner = .allCorners
-
-     func path(in rect: CGRect) -> Path {
-         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-         return Path(path.cgPath)
-     }
- }
-
- extension View {
-     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-         clipShape(RoundedCorner(radius: radius, corners: corners))
-     }
- }
-
- #if DEBUG
- struct WidgetLarge_Previews: PreviewProvider {
-     static var previews: some View {
-         WidgetLarge()
-             .previewContext(WidgetPreviewContext(family: .systemLarge))
-             .environment(\.colorScheme, .light)
-             
-         WidgetLarge()
-             .previewContext(WidgetPreviewContext(family: .systemLarge))
-             .environment(\.colorScheme, .dark)
-             .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
-
-     }
- }
- #endif
-
- */
-
-
-
-// With autoLayout for all iphones
-
-/*
- import SwiftUI
- import WidgetKit
-
- struct WidgetLarge: View {
-     
-     @Environment(\.colorScheme) var colorScheme
-     
-     var body: some View {
-         ZStack {
-             backgroundColor
-             VStack {
-                 header
-                 Spacer()
-                 center
-                 Spacer()
-                 buttonsView
-                     .padding(.horizontal, 25)
-                     .padding(.bottom)
-             }
-         }
-     }
-     
-     var header: some View {
-         VStack {
-             HStack(spacing: 8) {
-                 VStack(alignment: .leading) {
-                     Text("SweetSpot® In")
-                         .font(.system(size: 15))
-                         .fontWeight(.medium)
-                     
-                     Text("2h 50m")
-                         .font(.system(size: 28))
-                         .fontWeight(.light)
-                     
-                     Text("Naptime near 3:00pm")
-                         .font(.system(size: 13))
-                 }
-                 .foregroundColor(.white)
-                 
-                 Spacer()
-                 
-                 VStack {
-                     Circle()
-                         .frame(width: 72, height: 72)
-                         .foregroundColor(.orange)
-                         .overlay(alignment: .bottomTrailing) {
-                             Image("logo_white")
-                                 .resizable()
-                                 .frame(width: 18, height: 18)
-                         }
-                     Text("model.username")
-                         .font(.system(size: 14))
-                         .fontWeight(.semibold)
-                         .foregroundColor(.white)
-                 }
-             }
-             .padding(.horizontal)
-         }
-         .background(Color.scooter)
-     }
-     
-     var center: some View {
-         HStack(alignment: .top, spacing: 10) {
-             
-             sleepView
-             
-             Divider()
-                 .background(colorScheme == .light ? Color.lightGray : Color.white)
-                 .frame(height: 130)
-             nursingView
-         }
-     }
- }
-
- private extension WidgetLarge {
-     
-     private var backgroundColor: some View {
-         colorScheme == .light ? Color.white : Color.eggPlant
-     }
-     
-     @ViewBuilder
-     var userInfoView: some View {
-         HStack(spacing: 8) {
-
-             VStack(alignment: .leading) {
-                 Text("SweetSpot® In")
-                     .font(.system(size: 15))
-                     .fontWeight(.medium)
-
-                 Text("2h 50m")
-                     .font(.system(size: 28))
-                     .fontWeight(.light)
-
-                 Text("Naptime near 3:00pm")
-                     .font(.system(size: 13))
-             }
-             .padding(.leading, 18)
-             .foregroundColor(.white)
-
-             Spacer()
-
-             VStack {
-                 Circle()
-                     .frame(width: 64, height: 64)
-                     .foregroundColor(.orange)
-                     .overlay(alignment: .bottomTrailing) {
-                         Image("logo_white")
-                             .resizable()
-                             .frame(width: 18, height: 18)
-                     }
-                 Text("model.username")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(.white)
-             }
-         }
-         .padding(.top, 16)
-         .padding(.trailing, 16)
-         .padding(.bottom, 20)
-         .ignoresSafeArea(.all)
-         .background(Color.scooter)
-     }
-
-     @ViewBuilder
-     var sleepView: some View {
-         VStack(spacing: 5) {
-             HStack {
-                 Text("Sleep")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             }
-
-             Link(destination: URL(string: "widget://activity=sleep")!) {
-                 VStack(spacing: 10) {
-
-                     Image(systemName: true ? "pause.fill" : "play.fill")
-
-                     if true {
-                         HStack(alignment: .center) {
-                             Spacer()
-                             Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                 .multilineTextAlignment(.center)
-                             Spacer()
-                         }
-                     } else {
-                         Text("00:00")
-                     }
-                 }
-                 .font(.system(size: 16))
-                 .foregroundColor(Color.white)
-                 .frame(width: 80, height: 80)
-                 .background(Color.scooter)
-                 .clipShape(Circle())
-             }
-
-             if 1 == 1 {
-                 VStack {
-                     Text("duration・")
-                         .fontWeight(.semibold)
-                     
-                     Text("lastSleepDate")
-                 }
-                 .font(.system(size: 12))
-                 .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             } else {
-                 Spacer()
-             }
-         }
-     }
-
-     @ViewBuilder
-     var nursingView: some View {
-         VStack(spacing: 5) {
-             HStack {
-                 Text("Nursing")
-                     .font(.system(size: 14))
-                     .fontWeight(.semibold)
-                     .foregroundColor(colorScheme == .light ? .eastBay : .white)
-             }
-
-             HStack(spacing: 20) {
-                 Link(destination: URL(string: "widget://activity=nursing")!) {
-                     ZStack(alignment: .top) {
-                         VStack(spacing: 10) {
-
-                             Image(systemName: true ? "pause.fill" : "play.fill")
-
-                             if true {
-                                 HStack(alignment: .center) {
-                                     Spacer()
-                                     Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                         .multilineTextAlignment(.center)
-                                     Spacer()
-                                 }
-                             } else {
-                                 Text("Left")
-                             }
-                         }
-                         .font(.system(size: 16))
-                         .foregroundColor(Color.white)
-                         .frame(width: 80, height: 80)
-                         .background(Color.burntSienna)
-                         .clipShape(Circle())
-                     }
-                 }
-
-                 Link(destination: URL(string: "widget://activity=nursing")!) {
-                     ZStack(alignment: .top) {
-                         VStack(spacing: 10) {
-                             Image(systemName: true ? "pause.fill" : "play.fill")
-
-                             if true {
-                                 HStack(alignment: .center) {
-                                     Spacer()
-                                     Text(Date(timeIntervalSince1970: 0), style: .timer)
-                                         .multilineTextAlignment(.center)
-                                     Spacer()
-                                 }
-                             } else {
-                                 Text("Right")
-                             }
-                         }
-                         .font(.system(size: 16))
-                         .foregroundColor(Color.white)
-                         .frame(width: 80, height: 80)
-                         .background(Color.burntSienna)
-                         .clipShape(Circle())
-                     }
-                     .overlay(
-                         Circle()
-                             .fill(Color.lynch)
-                             .frame(width: 20, height: 20)
-                             .overlay(
-                                 Text("LS")
-                                     .font(.system(size: 10, weight: .bold))
-                                     .foregroundColor(.white)
-                             ), alignment: .topTrailing)
-                 }
-             }
-
-             nursingStatView
-         }
-     }
-
-     @ViewBuilder
-     var nursingStatView: some View {
-         HStack(spacing: 2) {
-             Text("1d ago・")
-             
-             ZStack(alignment: .center) {
-                 Circle()
-                     .fill(Color.burntSienna)
-                     .frame(width: 13, height: 13)
-                 
-                 Text("L")
-                     .font(.system(size: 10))
-                     .fontWeight(.semibold)
-                     .foregroundColor(Color.white)
-             }
-             
-             Text("7m")
-                 .fontWeight(.semibold)
-             
-             ZStack(alignment: .center) {
-                 Circle()
-                     .fill(Color.burntSienna)
-                     .frame(width: 13, height: 13)
-                 
-                 Text("R")
-                     .font(.system(size: 10))
-                     .fontWeight(.semibold)
-                     .foregroundColor(Color.white)
-             }
-             .padding(.leading, 5)
-             
-             Text("7m")
-                 .fontWeight(.semibold)
-         }
-         .font(.system(size: 12))
-         .foregroundColor(colorScheme == .light ? .eastBay : .white)
-     }
-     
-     var buttonsView: some View {
-         HStack {
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.magentaLight
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.magentaLight, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.burntSienna : Color.white)
-             }
-             .frame(width: 52, height: 52)
-             .clipShape(Circle())
-             
-             Spacer()
-             
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.jazzberryJam
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.jazzberryJam, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.jazzberryJam : Color.white)
-             }
-             .frame(width: 52, height: 52)
-             .clipShape(Circle())
-
-             Spacer()
-             
-             Link(destination:
-                     DeepLinkBuilder()
-                     .cid("model.userID")
-                     .activity("sleep")
-                     .build()
-             ) {
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.corn
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.corn, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.corn : Color.white)
-             }
-             .frame(width: 52, height: 52)
-             .clipShape(Circle())
-         }
-
-             Spacer()
-             
-             ZStack {
-                 colorScheme == .light ? Color.white : Color.violaFlover
-                 
-                 Circle()
-                     .strokeBorder(colorScheme == .light ? Color.lightGray : Color.violaFlover, lineWidth: 1)
-                 
-                 Image(systemName: "moon")
-                     .font(.system(size: 28))
-                     .foregroundColor(colorScheme == .light ? Color.violaFlover : Color.white)
-             }
-             .frame(width: 52, height: 52)
-             .clipShape(Circle())
-         }
-     }
-     
- }
-
- struct RoundedCorner: Shape {
-
-     var radius: CGFloat = .infinity
-     var corners: UIRectCorner = .allCorners
-
-     func path(in rect: CGRect) -> Path {
-         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-         return Path(path.cgPath)
-     }
- }
-
- extension View {
-     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
-         clipShape(RoundedCorner(radius: radius, corners: corners))
-     }
- }
-
- #if DEBUG
- struct WidgetLarge_Previews: PreviewProvider {
-     static var previews: some View {
-         WidgetLarge()
-             .previewContext(WidgetPreviewContext(family: .systemLarge))
-             .environment(\.colorScheme, .light)
-             .previewDisplayName("SYSTEM")
-             
-         WidgetLarge()
-             .previewContext(WidgetPreviewContext(family: .systemLarge))
-             .environment(\.colorScheme, .dark)
-             .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-             .previewDisplayName("iPhone 13 Pro Max")
-     }
- }
- #endif
- */
+struct LargeSweetSpotWidgetViewEntry: View {
+    
+//    @ObservedObject var model: SweetSpotWidgetViewModel
+    @Environment(\.colorScheme) var colorScheme
+    
+    var body: some View {
+        ZStack {
+            backgroundColor
+            
+            VStack(spacing: 0) {
+                
+                userInfoView
+                
+                Spacer(minLength: 0)
+                
+                HStack(alignment: .top, spacing: 17) {
+                    
+                    sleepView
+                        .padding(.leading, 16)
+                    
+                    Divider()
+                        .background(colorScheme == .light ? Color.lightGray : Color.white)
+                        .frame(height: 127)
+                    
+                    nursingView
+                        .padding(.leading, 2)
+                        .padding(.trailing, 17)
+                }
+                .padding(.top, 14)
+                
+                Spacer()
+                
+                buttonsView
+                    .padding(.bottom, 13)
+            }
+        }
+    }
+}
+
+
+private extension LargeSweetSpotWidgetViewEntry {
+    
+    var backgroundColor: some View {
+        colorScheme == .light ? Color.white : Color.eggPlant
+    }
+    
+    @ViewBuilder
+    var userInfoView: some View {
+        HStack(spacing: 8) {
+            VStack(alignment: .leading) {
+                if 1 == 1 {
+                    if 1 == 1,
+                       1 != 1,
+                       1 != 1 {
+                        Text("text1")
+                            .font(.system(size: 14, weight: .semibold))
+                    } else {
+                        Text("sweetSpotText.text1")
+                            .font(.system(size: 15))
+                            .fontWeight(.medium)
+                        
+                        Text("sweetSpotText.text2")
+                            .font(.system(size: 36))
+                            .fontWeight(.light)
+//                            .lineLimit(1)
+                        
+                        Text("sweetSpotText.text3")
+                            .font(.system(size: 14, weight: .semibold))
+                    }
+                } else {
+                    Text("SweetSpot® near")
+                        .font(.system(size: 15))
+                        .fontWeight(.medium)
+                    
+                    Text("model.lastUseDay")
+                        .font(.system(size: 36))
+                        .fontWeight(.light)
+                    
+                    if 1 == 1 {
+                        if Date(timeIntervalSinceNow: 1000) > Date() {
+                            Text("in ")
+                                .font(.system(size: 14))
+                            +
+                            Text(Date(timeIntervalSinceNow: 1000), style: .relative)
+                                .font(.system(size: 14, weight: .semibold))
+                        } else {
+                            Text(Date(timeIntervalSinceNow: 1000), style: .relative)
+                                .font(.system(size: 14, weight: .semibold))
+                            +
+                            Text(" ago")
+                                .font(.system(size: 14))
+                        }
+                    }
+                }
+            }
+//            .redacted(reason: model.userID == nil ? .placeholder : [])
+            .padding(.leading, 18)
+            .foregroundColor(.white)
+            
+            Spacer()
+            
+            VStack {
+                userImage
+                
+                Text("userName".uppercased())
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(.white)
+                    .padding(.bottom, 4)
+//                    .redacted(reason: model.userID == nil ? .placeholder : [])
+            }
+        }
+        .padding(.top, 16)
+        .padding(.trailing, 16)
+        .padding(.bottom, 14)
+        .ignoresSafeArea(.all)
+        .background(Color.scooter)
+//        .redacted(reason: model.userID == nil ? .placeholder : [])
+    }
+    
+    @ViewBuilder
+    var sleepView: some View {
+        VStack(alignment: .center, spacing: 5) {
+            Text("Sleep")
+                .font(.system(size: 14, weight: .semibold))
+//                .foregroundColor(colorScheme == .light ? .eastBay : .white)
+            
+//            Link(destination: model.deepLinkURL(activity: .sleep, source: "SweetSpotWidgetViewModel", timer: "true")) {
+                VStack(spacing: 1 == 1 ? 5 : 8) {
+                    Image(1 == 1 ? "pause" : "play")
+                        .foregroundColor(.white)
+                        .frame(width: 18, height: 18)
+
+                    if 1 == 1 {
+                        if 1 != 1 {
+                            HStack(alignment: .center) {
+                                Spacer()
+                                Text(Date(timeIntervalSinceNow: -2000), style: .timer)
+                                    .font(.system(size: 16, design: .rounded))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }
+                        } else if 1 == 1 {
+                            HStack(alignment: .center) {
+                                Spacer()
+                                Text("TimerPausedTime")
+                                    .font(.system(size: 16, design: .rounded))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }
+                        }
+                    } else {
+                        Text("START")
+                            .font(.system(size: 10, weight: .bold))
+                    }
+                }
+                .font(.system(size: 16))
+                .foregroundColor(Color.white)
+                .frame(width: 80, height: 80)
+                .background(Color.scooter)
+                .clipShape(Circle())
+//            }
+            
+//            if let duration = model.lastSleepDuration, let lastSleepDate = model.lastSleepDate {
+//                VStack(alignment: .center) {
+//                    Text(lastSleepDate, style: .relative) +  Text("・")
+//                    Text(duration)
+//                }
+//                .redacted(reason: model.userID == nil ? .placeholder : [])
+//                .font(.system(size: 12))
+//                .foregroundColor(colorScheme == .light ? .eastBay : .white)
+//                .minimumScaleFactor(0.7)
+//                .multilineTextAlignment(.center)
+//            } else {
+//                Spacer()
+//            }
+        }
+    }
+    
+    @ViewBuilder
+    var nursingView: some View {
+        VStack(alignment: .center, spacing: 6) {
+            Text("Nursing")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundColor(colorScheme == .light ? .eastBay : .white)
+            
+            HStack(spacing: 18) {
+                nursingLeftView
+                nursingRightView
+            }
+            
+            nursingStatView
+        }
+    }
+    
+    var nursingLeftView: some View {
+//        Link(destination: model.deepLinkURL(activity: .nursing, source: "SweetSpotWidgetViewModel", timer: "true", breastSide: "left")) {
+            ZStack(alignment: .top) {
+                VStack(spacing: 1 == 1 ? 5 : 8) {
+                    if 1 == 1 {
+                        if !(1 == 1) {
+                            Image("pause")
+                                .foregroundColor(.white)
+                                .frame(width: 18, height: 18)
+                            Text(Date(timeIntervalSinceNow: 2000), style: .timer)
+                                .font(.system(size: 16, design: .rounded))
+                                .multilineTextAlignment(.center)
+                        } else {
+                            Image("play")
+                                .foregroundColor(.white)
+                                .frame(width: 18, height: 18)
+                            Text("LEFT")
+                                .font(.system(size: 10, weight: .bold))
+                        }
+                    } else {
+                        Image("play")
+                            .foregroundColor(.white)
+                            .frame(width: 18, height: 18)
+                        Text("LEFT")
+                            .font(.system(size: 10, weight: .bold))
+                    }
+                }
+                .font(.system(size: 16))
+                .foregroundColor(Color.white)
+                .frame(width: 80, height: 80)
+                .background(Color.burntSienna)
+                .clipShape(Circle())
+            }
+            .overlay(
+                Circle()
+                    .fill(Color.lynch)
+                    .frame(width: 20, height: 20)
+                    .overlay(
+                        Text("LS")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundColor(.white)
+                    )
+                    .opacity(1 == 1 ? 1 : 0), alignment: .topLeading)
+//        }
+    }
+    
+    var nursingRightView: some View {
+//        Link(destination: model.deepLinkURL(activity: .nursing, source: "SweetSpotWidgetViewModel", timer: "true", breastSide: "right")) {
+            ZStack(alignment: .top) {
+                VStack(spacing: 1 == 1 ? 5 : 8) {
+                    if 1 == 1 {
+                        if 1 != 1 {
+                            Image("pause")
+                                .foregroundColor(.white)
+                                .frame(width: 18, height: 18)
+                            Text(Date(timeIntervalSinceNow: 500), style: .timer)
+                                .font(.system(size: 16, design: .rounded))
+                                .multilineTextAlignment(.center)
+                        } else {
+                            Image("play")
+                                .foregroundColor(.white)
+                                .frame(width: 18, height: 18)
+                            Text("RIGHT")
+                                .font(.system(size: 10, weight: .bold))
+                        }
+                    } else {
+                        Image("play")
+                            .foregroundColor(.white)
+                            .frame(width: 18, height: 18)
+                        Text("RIGHT")
+                            .font(.system(size: 10, weight: .bold))
+                    }
+                }
+                .font(.system(size: 16))
+                .foregroundColor(Color.white)
+                .frame(width: 80, height: 80)
+                .background(Color.burntSienna)
+                .clipShape(Circle())
+            }
+            .overlay(
+                Circle()
+                    .fill(Color.lynch)
+                    .frame(width: 24, height: 24)
+                    .overlay(
+                        Text("LS")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundColor(.white)
+                    )
+                    .opacity(1 == 1 ? 1 : 0), alignment: .topTrailing)
+//        }
+    }
+    
+    var nursingStatView: some View {
+        HStack(spacing: 2) {
+            
+//            if let lastFeedDate = model.lastFeedDate {
+                Group {
+                    Text(Date(timeIntervalSinceNow: 200), style: .relative)
+                    +
+                    Text("・")
+                }
+                .lineLimit(1)
+//                .redacted(reason: model.userID == nil ? .placeholder : [])
+                .minimumScaleFactor(0.8)
+                .multilineTextAlignment(.trailing)
+//            }
+                        
+            ZStack(alignment: .center) {
+                Circle()
+                    .fill(Color.burntSienna)
+                    .frame(width: 13, height: 13)
+                
+                Text("L")
+                    .font(.system(size: 10))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+            }
+            
+            Text("2")
+//                .redacted(reason: model.userID == nil ? .placeholder : [])
+            
+            ZStack(alignment: .center) {
+                Circle()
+                    .fill(Color.burntSienna)
+                    .frame(width: 13, height: 13)
+                
+                Text("R")
+                    .font(.system(size: 10))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+            }
+            .padding(.leading, 5)
+            
+            Text("8")
+//                .redacted(reason: model.userID == nil ? .placeholder : [])
+        }
+        .font(.system(size: 12))
+        .foregroundColor(colorScheme == .light ? .eastBay : .white)
+        .frame(width: 170, alignment: .trailing)
+    }
+    
+    var buttonsView: some View {
+        HStack(spacing: 24) {
+//            Link(destination: model.deepLinkURL(activity: .nursing, source: "SweetSpotWidgetViewModel", timer: "false")) {
+                ZStack {
+                    colorScheme == .light ? Color.white : Color.magentaLight
+
+                    Circle()
+                        .strokeBorder(colorScheme == .light ? Color.lightGray : Color.magentaLight, lineWidth: 1)
+
+                    Image("feed")
+                        .foregroundColor(colorScheme == .light ? .burntSienna : .white)
+                        .frame(width: 32, height: 32)
+                }
+                .frame(width: 52, height: 52)
+                .clipShape(Circle())
+//            }
+
+//            Link(destination: model.deepLinkURL(activity: .solids, source: "SweetSpotWidgetViewModel", timer: "false")) {
+//                ZStack {
+//                    colorScheme == .light ? Color.white : Color.jazzberryJam
+//
+//                    Circle()
+//                        .strokeBorder(colorScheme == .light ? Color.lightGray : Color.jazzberryJam, lineWidth: 1)
+//
+//                    Image("solids")
+//                        .foregroundColor(colorScheme == .light ? .jazzberryJam : .white)
+//                        .frame(width: 32, height: 32)
+//                }
+//                .frame(width: 52, height: 52)
+//                .clipShape(Circle())
+//            }
+//
+//            Link(destination: model.deepLinkURL(activity: .diaper, source: "SweetSpotWidgetViewModel", timer: "false")) {
+//                ZStack {
+//                    colorScheme == .light ? Color.white : Color.corn
+//
+//                    Circle()
+//                        .strokeBorder(colorScheme == .light ? Color.lightGray : Color.corn, lineWidth: 1)
+//
+//                    Image("diaper")
+//                        .foregroundColor(colorScheme == .light ? .corn : .white)
+//                        .frame(width: 32, height: 32)
+//                }
+//                .frame(width: 52, height: 52)
+//                .clipShape(Circle())
+//            }
+//
+//            Link(destination: model.deepLinkURL(activity: .pumping, source: "SweetSpotWidgetViewModel", timer: "false")) {
+//                ZStack {
+//                    colorScheme == .light ? Color.white : Color.violaFlover
+//
+//                    Circle()
+//                        .strokeBorder(colorScheme == .light ? Color.lightGray : Color.violaFlover, lineWidth: 1)
+//
+//                    Image("pumping")
+//                        .foregroundColor(colorScheme == .light ? .violaFlover : .white)
+//                        .frame(width: 32, height: 32)
+//                }
+//                .frame(width: 52, height: 52)
+//                .clipShape(Circle())
+//            }
+        }
+    }
+
+    @ViewBuilder
+    var userImage: some View {
+        Circle()
+            .frame(width: 72, height: 72)
+            .foregroundColor(.green)
+            .overlay(
+                Image("logo")
+                    .foregroundColor(.white)
+                    .frame(width: 24, height: 24)
+                    .unredacted(),
+                alignment: .bottomTrailing
+            )
+    }
+}
