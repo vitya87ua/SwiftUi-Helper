@@ -40,7 +40,7 @@ struct SwUiApp: App {
         WindowGroup {
 //            ContentView()
 //                .environmentObject(state)
-            MarkdownText()
+            BackToRootExample()
 //            TimerWithDelegate()
 //            AppleHierarchicalListView()
 //            HierarchicalListView()

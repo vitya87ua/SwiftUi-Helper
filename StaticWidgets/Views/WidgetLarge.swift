@@ -162,12 +162,23 @@ struct WidgetLarge_Previews: PreviewProvider {
 //            .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
 //            .previewDisplayName("iPhone 13 Pro Max")
         
-        LargeSweetSpotWidgetViewEntry()
+//        LargeSweetSpotWidgetViewEntry()
+//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+//            .environment(\.colorScheme, .light)
+//            .previewDisplayName("iPhone 12 Pro Max")
+//
+//        LargeSweetSpotWidgetViewEntry()
+//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+//            .environment(\.colorScheme, .light)
+//            .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+//            .previewDisplayName("iPhone 12")
+        
+        LargeLinksWidget()
             .previewContext(WidgetPreviewContext(family: .systemLarge))
             .environment(\.colorScheme, .light)
             .previewDisplayName("iPhone 12 Pro Max")
         
-        LargeSweetSpotWidgetViewEntry()
+        LargeLinksWidget()
             .previewContext(WidgetPreviewContext(family: .systemLarge))
             .environment(\.colorScheme, .light)
             .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
@@ -589,5 +600,121 @@ private extension LargeSweetSpotWidgetViewEntry {
                     .unredacted(),
                 alignment: .bottomTrailing
             )
+    }
+}
+
+
+struct LargeLinksWidget: View {
+    
+//    @ObservedObject var model: LinksWidgetViewModel
+    @Environment(\.colorScheme) private var colorScheme
+    
+    var body: some View {
+            VStack(spacing: 8) {
+                HStack {
+                    Text("Clint's recent activity")
+                        .font(.system(size: 16, weight: .semibold))
+                        .foregroundColor(colorScheme == .light ? Color.stateGray : .white)
+                    
+                    Spacer()
+                    Image("logo").resizable()
+                        .frame(width: 24, height: 24)
+                        .padding(.trailing, 2)
+                }
+                .padding(.horizontal, 8)
+                .padding(.vertical, 3)
+                .padding(.top, 6)
+                
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(LinearGradient(
+                                gradient: Gradient(colors: [Color.jazzberryJam, Color.roseBudCherry]),
+                                startPoint: .top,
+                                endPoint: .bottom))
+                        
+                        HStack(spacing: 14) {
+                            Image("solids")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.white)
+                                .frame(width: 24, height: 24)
+                            
+                            if 1 == 1 {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Group {
+                                        Text(Date(), style: .relative)
+                                        +
+                                        Text(" ago")
+                                    }
+                                    .font(.system(size: 20))
+                                    
+                                    Text("Avocado")
+                                        .font(.system(size: 13, weight: .medium, design: .rounded))
+                                        .lineLimit(1)
+                                        .truncationMode(.tail)
+                                }
+                            }
+                            
+                            Spacer()
+                            
+                            Image("plus")
+                                .foregroundColor(.white)
+                                .frame(width: 24, height: 24)
+                        }
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 16)
+                    }
+                    .frame(maxHeight: 100)
+                            Spacer()
+//                ZStack {
+//                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+//                        .fill(LinearGradient(
+//                            gradient: Gradient(colors: [Color.jazzberryJam, Color.roseBudCherry]),
+//                            startPoint: .top,
+//                            endPoint: .bottom))
+//
+//                    HStack(spacing: 14) {
+//                        Image("solids")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .foregroundColor(.white)
+//                            .frame(width: 24, height: 24)
+//
+//                        if 1 == 1 {
+//                            VStack(alignment: .leading, spacing: 2) {
+//                                Group {
+//                                    Text(Date(), style: .relative)
+//                                    +
+//                                    Text(" ago")
+//                                }
+//                                .font(.system(size: 20))
+//
+//                                Text("Avocado")
+//                                    .font(.system(size: 13, weight: .medium, design: .rounded))
+//                                    .lineLimit(1)
+//                                    .truncationMode(.tail)
+//                            }
+//                        }
+//
+//                        Spacer()
+//
+//                        Image("plus")
+//                            .foregroundColor(.white)
+//                            .frame(width: 24, height: 24)
+//                    }
+//                    .foregroundColor(.white)
+//                    .padding(.horizontal, 16)
+//                }
+                
+//                Spacer(minLength: 0)
+            }
+            .padding(8)
+//        .redacted(reason: model.userID == nil ? .placeholder : [])
+        
+        
+    }
+    
+    private var backgroundColor: some View {
+        colorScheme == .light ? Color.white : Color.eggPlant
     }
 }

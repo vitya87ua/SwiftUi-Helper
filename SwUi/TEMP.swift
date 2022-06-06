@@ -26,6 +26,7 @@ struct TEMP: View {
     var body: some View {
         ZStack {
             Color.scooter
+                .matchedGeometryEffect(id: "color", in: namespace)
             
             VStack {
                 
@@ -40,6 +41,7 @@ struct TEMP: View {
                         Spacer()
                         Text("Hello **\(sel)**")
                             .matchedGeometryEffect(id: "text", in: namespace)
+                        
                     }
                 }
                 
