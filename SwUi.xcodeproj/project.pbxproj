@@ -118,6 +118,8 @@
 		D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */; };
 		D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */; };
 		D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3468B282BE9DE00625538 /* SwipeGesture.swift */; };
+		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
+		D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9E28619BF90090FC1E /* TempWidget.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
 		D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */; };
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
@@ -125,6 +127,9 @@
 		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */; };
+		D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
+		D0DDC6972864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
+		D0DDC6982864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
@@ -274,6 +279,8 @@
 		D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsWithTransitions.swift; sourceTree = "<group>"; };
 		D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		D0B3468B282BE9DE00625538 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
+		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
+		D0C6AE9E28619BF90090FC1E /* TempWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempWidget.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
 		D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusModifierView.swift; sourceTree = "<group>"; };
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
@@ -281,6 +288,7 @@
 		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectExample.swift; sourceTree = "<group>"; };
+		D0DDC6952864409200BC5631 /* Extension+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Sequence.swift"; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
@@ -336,6 +344,7 @@
 				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
@@ -515,6 +524,8 @@
 				C9D563AB2716B2730094C04D /* WidgetMedium.swift */,
 				C9D563B52716BAA40094C04D /* WidgetLarge.swift */,
 				C9D563B72716BAF80094C04D /* WidgetExtraLarge.swift */,
+				D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */,
+				D0C6AE9E28619BF90090FC1E /* TempWidget.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -897,6 +908,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DDC6972864409200BC5631 /* Extension+Sequence.swift in Sources */,
 				D0E78383282A98940059B513 /* EqualFrameModifierView.swift in Sources */,
 				C983642B2711D3CE007BE5B0 /* SwUiUITests.swift in Sources */,
 			);
@@ -929,6 +941,7 @@
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,
 				C90EB03D273593CC002F54F6 /* CombineJSON.swift in Sources */,
+				D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */,
 				D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
@@ -1011,8 +1024,11 @@
 			files = (
 				C9D563AF2716B46E0094C04D /* Provider.swift in Sources */,
 				C9D563C42716C2550094C04D /* Colors.swift in Sources */,
+				D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */,
 				D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */,
+				D0DDC6982864409200BC5631 /* Extension+Sequence.swift in Sources */,
 				D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */,
+				D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */,
 				C9D563BF2716BB2A0094C04D /* WidgetLarge.swift in Sources */,
 				C9D563C22716BD870094C04D /* Extension+Color.swift in Sources */,
 				D01DCE56274FA6A20022C93C /* Extension+Font.swift in Sources */,

@@ -7,8 +7,22 @@
 
 import SwiftUI
 
+struct NewUser: Identifiable {
+    var id: String = UUID().uuidString
+    var name: String
+    var age: Int
+}
+
 final class ViewModel: ObservableObject {
     @Published var confIsPres: Bool = false
+    
+    @Published var users: [NewUser] = [
+        NewUser(name: "Ol", age: 12),
+        NewUser(name: "Lor", age: 22),
+        NewUser(name: "Asr", age: 32),
+        NewUser(name: "Oin", age: 42),
+        NewUser(name: "Plm", age: 6)
+    ]
 }
 
 struct TEMP: View {
@@ -24,38 +38,18 @@ struct TEMP: View {
     @Namespace var namespace
     
     var body: some View {
-        ZStack {
-            Color.scooter
-                .matchedGeometryEffect(id: "color", in: namespace)
-            
-            VStack {
-                
-                if viewModel.confIsPres {
-                    HStack {
-                        Text("Hello **\(sel)**")
-                            .matchedGeometryEffect(id: "text", in: namespace)
-                        Spacer()
-                    }
-                } else {
-                    HStack {
-                        Spacer()
-                        Text("Hello **\(sel)**")
-                            .matchedGeometryEffect(id: "text", in: namespace)
-                        
-                    }
+        VStack {
+            List {
+                ForEach($viewModel.users) { $user in
+                    TextField("\(user.age)", value: $user.age, format: .number)
                 }
-                
-                Button("Conf") {
-                    withAnimation(.spring().speed(0.7)) {
-                        viewModel.confIsPres.toggle()
-                    }
-                }
-                .padding(.top, 50)
             }
-            .padding(.horizontal)
-        }
-        .onSwipe { direct in
-            print(#fileID, #line, "direct", direct)
+            
+            List {
+                ForEach(viewModel.users) { user in
+                    Text(user.name + " \(user.age)")
+                }
+            }
         }
     }
 }
