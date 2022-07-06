@@ -43,6 +43,8 @@ struct TEMP: View {
                 ForEach($viewModel.users) { $user in
                     TextField("\(user.age)", value: $user.age, format: .number)
                 }
+                
+                Text("Color: " + (Color.blue.hex ?? "f"))
             }
             
             List {

@@ -105,6 +105,7 @@
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
+		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */; };
@@ -266,6 +267,7 @@
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETDropDownMenuView.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
+				D080C275287590B700665E6F /* Log.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -996,6 +999,7 @@
 				D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
+				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
 				D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */,
