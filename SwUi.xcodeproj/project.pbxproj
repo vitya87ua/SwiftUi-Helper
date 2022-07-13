@@ -105,6 +105,7 @@
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
+		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
@@ -126,6 +127,7 @@
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
+		D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */; };
 		D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
@@ -267,6 +269,7 @@
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
@@ -288,6 +291,7 @@
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
 		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
+		D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectArrowView.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectExample.swift; sourceTree = "<group>"; };
 		D0DDC6952864409200BC5631 /* Extension+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Sequence.swift"; sourceTree = "<group>"; };
@@ -332,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
+				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
@@ -459,6 +464,7 @@
 				D0E7EFED27E4CF5A00C76065 /* MapKit */,
 				C9A5F18E27B3F65D001B2222 /* Menus */,
 				D00AFA9927BD0A51004CE8AF /* NavigationViews */,
+				D0D13C6D287DA3D200DF79FE /* Path */,
 				D06ADBF2278C6CE800CD7E2E /* ProgressViews */,
 				D0EE54E12805B00A00914059 /* Pickers */,
 				D097F87F277C48A900770BD8 /* Representable */,
@@ -737,6 +743,14 @@
 			path = Gestures;
 			sourceTree = "<group>";
 		};
+		D0D13C6D287DA3D200DF79FE /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
 		D0E536E627FADAC700F45D08 /* AsyncAwait */ = {
 			isa = PBXGroup;
 			children = (
@@ -1010,6 +1024,8 @@
 				D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */,
 				C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */,
 				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
+				D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */,
+				D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
