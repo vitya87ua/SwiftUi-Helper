@@ -29,8 +29,20 @@ struct DirectArrowView: View {
     }
     
     var body: some View {
-        DirectArrowShape(start: start, end: end, tailWidth: 20, headWidth: 35, headLength: 35)
-            .transform(transform)
+        ZStack {
+            HStack {
+                DirectArrowShape(start: start, end: end, tailWidth: 20, headWidth: 35, headLength: 35)
+                    .transform(transform)
+                
+                //                DirectArrowEditShape(start: start, end: end, tailWidth: 20, headWidth: 35, headLength: 35)
+                //                    .transform(transform)
+                //                    .padding(.leading, -100)
+            }
+            
+            DirectArrowEditShape(start: start, end: end, tailWidth: 20, headWidth: 35, headLength: 35)
+                .transform(transform)
+                .foregroundColor(.red)
+        }
     }
 }
 
@@ -38,7 +50,7 @@ struct DirectArrowView: View {
 struct DirectArrowView_Previews: PreviewProvider {
     static var previews: some View {
         DirectArrowView(
-            start: CGPoint(x: 20, y: 20),
+            start: CGPoint(x: 200, y: 20),
             end: CGPoint(x: 200, y: 200)
         )
     }
@@ -47,7 +59,11 @@ struct DirectArrowView_Previews: PreviewProvider {
 
 struct DirectArrowShape: Shape {
     
-    let start: CGPoint, end: CGPoint, tailWidth: CGFloat, headWidth: CGFloat, headLength: CGFloat
+    let start: CGPoint,
+        end: CGPoint,
+        tailWidth: CGFloat,
+        headWidth: CGFloat,
+        headLength: CGFloat
     
     var length: CGFloat {
         hypot(end.x - start.x, end.y - start.y)
@@ -56,6 +72,8 @@ struct DirectArrowShape: Shape {
     var tailLength: CGFloat {
         length - headLength
     }
+    
+    let elDiametr: CGFloat = 13
     
     func path(in rect: CGRect) -> Path {
         Path { path in
@@ -69,6 +87,43 @@ struct DirectArrowShape: Shape {
                 .init(x: tailLength, y: -tailWidth / 2),
                 .init(x: 0, y: -tailWidth / 2)
             ])
+            
+            path.closeSubpath()
+        }
+    }
+}
+
+struct DirectArrowEditShape: Shape {
+    
+    let start: CGPoint,
+        end: CGPoint,
+        tailWidth: CGFloat,
+        headWidth: CGFloat,
+        headLength: CGFloat
+    
+    var length: CGFloat {
+        hypot(end.x - start.x, end.y - start.y)
+    }
+
+    var tailLength: CGFloat {
+        length - headLength
+    }
+    
+    let elDiametr: CGFloat = 13
+    
+    func path(in rect: CGRect) -> Path {
+        Path { path in
+            
+                path.addEllipse(in: CGRect(
+                    origin: CGPoint(x: -(elDiametr * 1.5), y: -(elDiametr / 2)),
+                    size: CGSize(width: elDiametr, height: elDiametr))
+                )
+                
+                path.addEllipse(in: CGRect(
+                    origin: CGPoint(x: tailLength + headLength + (elDiametr / 2), y: -(elDiametr / 2)),
+                    size: CGSize(width: elDiametr, height: elDiametr))
+                )
+            
             path.closeSubpath()
         }
     }

@@ -39,19 +39,20 @@ struct TEMP: View {
     
     var body: some View {
         VStack {
-            List {
-                ForEach($viewModel.users) { $user in
-                    TextField("\(user.age)", value: $user.age, format: .number)
-                }
-                
-                Text("Color: " + (Color.blue.hex ?? "f"))
-            }
-            
-            List {
-                ForEach(viewModel.users) { user in
-                    Text(user.name + " \(user.age)")
-                }
-            }
+//            List {
+//                ForEach($viewModel.users) { $user in
+//                    TextField("\(user.age)", value: $user.age, format: .number)
+//                }
+//
+//                Text("Color: " + (Color.blue.hex ?? "f"))
+//            }
+//
+//            List {
+//                ForEach(viewModel.users) { user in
+//                    Text(user.name + " \(user.age)")
+//                }
+//            }
+            Image("line111.diagonal")
         }
     }
 }
