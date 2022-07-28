@@ -105,6 +105,12 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D065579B28910BAC00C06C21 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065579A28910BAC00C06C21 /* Switch.swift */; };
+		D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443B2892A208004ED10A /* HotkeyCombination.swift */; };
+		D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */; };
+		D06744422892A208004ED10A /* Extension+View(HotKeys).swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443D2892A208004ED10A /* Extension+View(HotKeys).swift */; };
+		D06744432892A208004ED10A /* HotKeysModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443E2892A208004ED10A /* HotKeysModifier.swift */; };
+		D06744442892A208004ED10A /* DisableSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443F2892A208004ED10A /* DisableSoundsView.swift */; };
+		D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06744472892D308004ED10A /* UndoRedoManager.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
@@ -271,6 +277,12 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D065579A28910BAC00C06C21 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		D067443B2892A208004ED10A /* HotkeyCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotkeyCombination.swift; sourceTree = "<group>"; };
+		D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+CGKeyCode.swift"; sourceTree = "<group>"; };
+		D067443D2892A208004ED10A /* Extension+View(HotKeys).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+View(HotKeys).swift"; sourceTree = "<group>"; };
+		D067443E2892A208004ED10A /* HotKeysModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeysModifier.swift; sourceTree = "<group>"; };
+		D067443F2892A208004ED10A /* DisableSoundsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisableSoundsView.swift; sourceTree = "<group>"; };
+		D06744472892D308004ED10A /* UndoRedoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoManager.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
@@ -339,12 +351,14 @@
 		C9058F3F2719FF7500D1CE08 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D067443A2892A208004ED10A /* HotKeys(mac os) */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
 				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
 				D080C275287590B700665E6F /* Log.swift */,
+				D06744472892D308004ED10A /* UndoRedoManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -677,6 +691,18 @@
 			path = Tips;
 			sourceTree = "<group>";
 		};
+		D067443A2892A208004ED10A /* HotKeys(mac os) */ = {
+			isa = PBXGroup;
+			children = (
+				D067443B2892A208004ED10A /* HotkeyCombination.swift */,
+				D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */,
+				D067443D2892A208004ED10A /* Extension+View(HotKeys).swift */,
+				D067443E2892A208004ED10A /* HotKeysModifier.swift */,
+				D067443F2892A208004ED10A /* DisableSoundsView.swift */,
+			);
+			path = "HotKeys(mac os)";
+			sourceTree = "<group>";
+		};
 		D06ADBF2278C6CE800CD7E2E /* ProgressViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -967,6 +993,7 @@
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
 				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
+				D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */,
 				D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */,
 				C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */,
 				D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */,
@@ -980,6 +1007,7 @@
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
+				D06744422892A208004ED10A /* Extension+View(HotKeys).swift in Sources */,
 				D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */,
 				D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */,
 				C92887E126DF9E5A000EDD1C /* TEMP.swift in Sources */,
@@ -997,6 +1025,7 @@
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
+				D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
@@ -1017,11 +1046,13 @@
 				D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */,
 				C972052D26FB68C2005FCE7B /* NavigationControllers.swift in Sources */,
 				D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */,
+				D06744442892A208004ED10A /* DisableSoundsView.swift in Sources */,
 				D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */,
 				D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */,
 				D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
+				D06744432892A208004ED10A /* HotKeysModifier.swift in Sources */,
 				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,
 				D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */,
@@ -1031,6 +1062,7 @@
 				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
+				D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */,
 				D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */,
 				C9E6599326EF55240024246D /* TextFields.swift in Sources */,
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
