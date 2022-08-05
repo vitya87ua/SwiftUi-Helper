@@ -84,6 +84,9 @@
 		D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */; };
 		D025A34E273AC487005AD490 /* CustomTabViewWithIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */; };
 		D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D025A34F273ACA7A005AD490 /* RoundedButton.swift */; };
+		D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270567289D5C8900B0EE9D /* SmoothLineView.swift */; };
+		D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */; };
+		D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
@@ -258,6 +261,9 @@
 		D025A34A273A9CAF005AD490 /* ButtonWithSelections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithSelections.swift; sourceTree = "<group>"; };
 		D025A34D273AC487005AD490 /* CustomTabViewWithIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabViewWithIndex.swift; sourceTree = "<group>"; };
 		D025A34F273ACA7A005AD490 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D0270567289D5C8900B0EE9D /* SmoothLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineView.swift; sourceTree = "<group>"; };
+		D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineShape.swift; sourceTree = "<group>"; };
+		D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineConfiguration.swift; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
@@ -660,6 +666,16 @@
 			path = TabViews;
 			sourceTree = "<group>";
 		};
+		D027056D289D5E2B00B0EE9D /* SmoothLineShape */ = {
+			isa = PBXGroup;
+			children = (
+				D0270567289D5C8900B0EE9D /* SmoothLineView.swift */,
+				D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */,
+				D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */,
+			);
+			path = SmoothLineShape;
+			sourceTree = "<group>";
+		};
 		D031D702283CB49C00B190C4 /* TimelineView */ = {
 			isa = PBXGroup;
 			children = (
@@ -787,6 +803,7 @@
 			children = (
 				D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */,
 				D037C426287EC7D0005765B2 /* PathTest.swift */,
+				D027056D289D5E2B00B0EE9D /* SmoothLineShape */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -1003,10 +1020,13 @@
 				D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
+				D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */,
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
+				D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
+				D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */,
 				D06744422892A208004ED10A /* Extension+View(HotKeys).swift in Sources */,
 				D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */,
 				D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */,
