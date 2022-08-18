@@ -116,6 +116,7 @@
 		D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06744472892D308004ED10A /* UndoRedoManager.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
+		D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* InitWithApply.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
@@ -291,6 +292,7 @@
 		D06744472892D308004ED10A /* UndoRedoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoManager.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		D0790BDF28AE61520070AF99 /* InitWithApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitWithApply.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
 				D080C275287590B700665E6F /* Log.swift */,
 				D06744472892D308004ED10A /* UndoRedoManager.swift */,
+				D0790BDF28AE61520070AF99 /* InitWithApply.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -996,6 +999,7 @@
 				D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */,
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */,
+				D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */,
 				D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
 				D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */,

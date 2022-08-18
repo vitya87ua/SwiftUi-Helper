@@ -69,7 +69,11 @@ struct WebView: UIViewRepresentable {
             print("webviewDidCommit")
         }
         
-        func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        func webView(
+            _ webView: WKWebView,
+            didReceive challenge: URLAuthenticationChallenge,
+            completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void
+        ) {
             print("didReceiveAuthenticationChallenge")
             completionHandler(.performDefaultHandling, nil)
         }
