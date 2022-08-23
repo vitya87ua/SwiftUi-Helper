@@ -49,8 +49,32 @@ extension String {
         }
     }
     
+    var isURL: Bool {
+        let detector = try! NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
+        if let match = detector.firstMatch(in: self, options: [], range: NSRange(location: 0, length: self.utf16.count)) {
+            // it is a link, if the match covers the whole string
+            return match.range.length == self.utf16.count
+        } else {
+            return false
+        }
+    }
+    
     // MARK: - US Zip Code
     var isZipCode: Bool {
         self.count == 5 && Int(self) != nil
+    }
+    
+    func parseNumbers(andJoin: Bool = false) -> [Int] {
+        var result: [Int] = []
+        
+        let strings: [String] = self.components(separatedBy: CharacterSet.decimalDigits.inverted)
+        
+        if andJoin, let int = Int(strings.joined()) {
+            result = [int]
+        } else {
+            result = strings.compactMap { Int($0) }
+        }
+        
+        return result
     }
 }

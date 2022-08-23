@@ -61,12 +61,18 @@ func statement1() {
 }
 
 func statement2() {
+    if case .success = result {
+        print("Check only if success, without binding data!")
+    }
+}
+
+func statement3() {
     if case .success(let data) = result {
         print(data)
     }
 }
 
-func statement3() {
+func statement4() {
     if case let .success(data) = result, data == "Hello" {
         print(data)
     }
@@ -74,7 +80,7 @@ func statement3() {
 
 // MARK: - Guard statement
 
-func statement4() {
+func statement5() {
     guard
         case let .success(data) = result
     else { return }

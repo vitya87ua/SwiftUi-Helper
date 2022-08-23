@@ -119,6 +119,8 @@
 		D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* InitWithApply.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
+		D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07928B5032E000FEEA3 /* Extension+URL.swift */; };
+		D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07B28B503CD000FEEA3 /* Debounce.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */; };
@@ -295,6 +297,8 @@
 		D0790BDF28AE61520070AF99 /* InitWithApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitWithApply.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		D089B07928B5032E000FEEA3 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
+		D089B07B28B503CD000FEEA3 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETDropDownMenuView.swift; sourceTree = "<group>"; };
@@ -368,6 +372,7 @@
 				D080C275287590B700665E6F /* Log.swift */,
 				D06744472892D308004ED10A /* UndoRedoManager.swift */,
 				D0790BDF28AE61520070AF99 /* InitWithApply.swift */,
+				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
+				D089B07928B5032E000FEEA3 /* Extension+URL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1047,6 +1053,7 @@
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
+				D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */,
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */,
@@ -1104,6 +1111,7 @@
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
 				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
+				D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */,
 				D01DCE55274FA6A20022C93C /* Extension+Font.swift in Sources */,
 				C9BDC99627AEBA4600713F69 /* HierarchicalListViewModel.swift in Sources */,
 				C9CC76C2267D38C500EB5436 /* SwUiApp.swift in Sources */,
