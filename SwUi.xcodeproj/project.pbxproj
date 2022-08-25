@@ -121,6 +121,7 @@
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07928B5032E000FEEA3 /* Extension+URL.swift */; };
 		D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07B28B503CD000FEEA3 /* Debounce.swift */; };
+		D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09254B028B7B35500080E1D /* PropertyWrappers.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */; };
@@ -299,6 +300,7 @@
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D089B07928B5032E000FEEA3 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		D089B07B28B503CD000FEEA3 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
+		D09254B028B7B35500080E1D /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETDropDownMenuView.swift; sourceTree = "<group>"; };
@@ -710,6 +712,7 @@
 		D065579928910B7800C06C21 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				D09254B028B7B35500080E1D /* PropertyWrappers.swift */,
 				C986FAD72742EA4800FAA759 /* VersionAttributes.swift */,
 				D065579A28910BAC00C06C21 /* Switch.swift */,
 			);
@@ -1089,6 +1092,7 @@
 				D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
+				D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */,
 				D037C427287EC7D0005765B2 /* PathTest.swift in Sources */,
 				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
