@@ -159,6 +159,9 @@
 		D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */; };
 		D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54E22805B03C00914059 /* PHImagePicker.swift */; };
 		D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F506952817E5E70061FE25 /* Extension+Data.swift */; };
+		D0FC5F9428C221670067C23A /* CameraRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC5F9328C221670067C23A /* CameraRecorderView.swift */; };
+		D0FC5F9628C2219C0067C23A /* CameraRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC5F9528C2219C0067C23A /* CameraRecorderViewModel.swift */; };
+		D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC5F9728C221F60067C23A /* CameraRecorderPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +338,9 @@
 		D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDisabledModifier.swift; sourceTree = "<group>"; };
 		D0EE54E22805B03C00914059 /* PHImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePicker.swift; sourceTree = "<group>"; };
 		D0F506952817E5E70061FE25 /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
+		D0FC5F9328C221670067C23A /* CameraRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecorderView.swift; sourceTree = "<group>"; };
+		D0FC5F9528C2219C0067C23A /* CameraRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecorderViewModel.swift; sourceTree = "<group>"; };
+		D0FC5F9728C221F60067C23A /* CameraRecorderPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRecorderPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +496,7 @@
 				D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */,
 				D05F6A94271EC86100D97434 /* BounceView.swift */,
 				D025A349273A9C73005AD490 /* Buttons */,
+				D0FC5F9228C221480067C23A /* CameraRecorderView */,
 				D022CA87276794160002A5BB /* CalPixelsAndPointsView.swift */,
 				C931482E27074B0700A75297 /* ClockInUI.swift */,
 				C9A69FAC2715CB3000042099 /* Colors.swift */,
@@ -856,6 +863,16 @@
 			path = Pickers;
 			sourceTree = "<group>";
 		};
+		D0FC5F9228C221480067C23A /* CameraRecorderView */ = {
+			isa = PBXGroup;
+			children = (
+				D0FC5F9328C221670067C23A /* CameraRecorderView.swift */,
+				D0FC5F9528C2219C0067C23A /* CameraRecorderViewModel.swift */,
+				D0FC5F9728C221F60067C23A /* CameraRecorderPreview.swift */,
+			);
+			path = CameraRecorderView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1039,6 +1056,7 @@
 				D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */,
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
+				D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */,
 				D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
@@ -1102,6 +1120,7 @@
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
 				D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */,
 				D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */,
+				D0FC5F9428C221670067C23A /* CameraRecorderView.swift in Sources */,
 				C9E6599326EF55240024246D /* TextFields.swift in Sources */,
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
@@ -1115,6 +1134,7 @@
 				D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */,
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
+				D0FC5F9628C2219C0067C23A /* CameraRecorderViewModel.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
 				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,
