@@ -39,8 +39,8 @@ final class SomeName {
     func macOSList() {
         // 'macOSList()' is unavailable in macOS: Unavailable on macOS
     }
-
-
+    
+    
     // MARK: - Automatic operating system API availability checking
     func doSome3() {
         if #available(iOS 15, *) {
@@ -49,10 +49,18 @@ final class SomeName {
             // do else
         }
     }
+    
+    func doSome4() {
+        if #available(iOS 15.0, macOS 12.0, *) {
+            // do
+        } else {
+            // do else
+        }
+    }
 
 
     // MARK: - Manual version checking
-    func doSome4() {
+    func doSome5() {
         if ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 14, minorVersion: 13, patchVersion: 0)) {
             // do
         }

@@ -22,9 +22,23 @@ public func Log(
 ) {
 #if DEBUG
     if #available(iOS 15.0, macOS 12.0, *) {
-        print(state.rawValue, fileID.components(separatedBy: "/").last ?? fileID, "⏰", Date().formatted(date: .omitted, time: .standard), "#️⃣", line, funcName, "⏩", items.map { String(describing: $0) }.joined(separator: " "))
+        print(
+            ((items.first as? Error) != nil) ? LogState.error.rawValue : state.rawValue,
+            fileID.components(separatedBy: "/").last ?? fileID,
+            "⏰", Date().formatted(date: .omitted, time: .standard),
+            "#️⃣", line,
+            funcName,
+            "⏩", items.map { String(describing: $0) }.joined(separator: " ")
+        )
     } else {
-        print(state.rawValue, fileID.components(separatedBy: "/").last ?? fileID, "⏰", Date(), "#️⃣", line, funcName, "⏩", items.map { String(describing: $0) }.joined(separator: " "))
+        print(
+            ((items.first as? Error) != nil) ? LogState.error.rawValue : state.rawValue,
+            fileID.components(separatedBy: "/").last ?? fileID,
+            "⏰", Date(),
+            "#️⃣", line,
+            funcName,
+            "⏩", items.map { String(describing: $0) }.joined(separator: " ")
+        )
     }
 #endif
 }
