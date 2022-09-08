@@ -121,6 +121,7 @@
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* InitWithApply.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
+		D07BEAAF28C9E83E003AC656 /* AppNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEAAE28C9E83E003AC656 /* AppNotification.swift */; };
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07928B5032E000FEEA3 /* Extension+URL.swift */; };
 		D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07B28B503CD000FEEA3 /* Debounce.swift */; };
@@ -307,6 +308,7 @@
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D0790BDF28AE61520070AF99 /* InitWithApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitWithApply.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
+		D07BEAAE28C9E83E003AC656 /* AppNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D089B07928B5032E000FEEA3 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		D089B07B28B503CD000FEEA3 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 		C9058F3F2719FF7500D1CE08 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D07BEAAE28C9E83E003AC656 /* AppNotification.swift */,
 				D067443A2892A208004ED10A /* HotKeys(mac os) */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
 				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
@@ -1059,6 +1062,7 @@
 				D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */,
 				C90EB03D273593CC002F54F6 /* CombineJSON.swift in Sources */,
 				D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */,
+				D07BEAAF28C9E83E003AC656 /* AppNotification.swift in Sources */,
 				D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
