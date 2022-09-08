@@ -39,6 +39,25 @@ struct TEMP: View {
     
     var body: some View {
         VStack {
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 50)
+                    .equalFrame(300)
+                
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(.red)
+                    .equalFrame(250)
+                    .overlay(Circle()
+                                .stroke(Color.green, lineWidth: 1)
+                                .equalFrame(50)
+                        , alignment: .topLeading)
+                    .overlay(Circle()
+                        .stroke(Color.blue, lineWidth: 1)
+                        .equalFrame(75)
+                             , alignment: .topLeading)
+                
+            }
+            
 //            List {
 //                ForEach($viewModel.users) { $user in
 //                    TextField("\(user.age)", value: $user.age, format: .number)

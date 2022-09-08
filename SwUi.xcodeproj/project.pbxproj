@@ -59,6 +59,9 @@
 		C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6599026EF4AB10024246D /* DateTimePicker.swift */; };
 		C9E6599326EF55240024246D /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E6599226EF55240024246D /* TextFields.swift */; };
 		D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0004DF327FDCE7B00091AAC /* Injected.swift */; };
+		D003400728C87CCA0043814C /* Extension+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003400628C87CCA0043814C /* Extension+CGImage.swift */; };
+		D003400B28C881AF0043814C /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003400A28C881AF0043814C /* Extension+CGSize.swift */; };
+		D003400D28C882280043814C /* Extension+CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D003400C28C882280043814C /* Extension+CGPoint.swift */; };
 		D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0079D85279ABD7B0019CF74 /* MultiplayerKey.swift */; };
 		D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080BA227B1690900C42096 /* DropDownMenuView.swift */; };
 		D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */; };
@@ -251,6 +254,9 @@
 		C9E6599026EF4AB10024246D /* DateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
 		C9E6599226EF55240024246D /* TextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		D0004DF327FDCE7B00091AAC /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		D003400628C87CCA0043814C /* Extension+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGImage.swift"; sourceTree = "<group>"; };
+		D003400A28C881AF0043814C /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
+		D003400C28C882280043814C /* Extension+CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGPoint.swift"; sourceTree = "<group>"; };
 		D0079D85279ABD7B0019CF74 /* MultiplayerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerKey.swift; sourceTree = "<group>"; };
 		D0080BA227B1690900C42096 /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
 		D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootExample.swift; sourceTree = "<group>"; };
@@ -393,6 +399,9 @@
 			children = (
 				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
+				D003400628C87CCA0043814C /* Extension+CGImage.swift */,
+				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
+				D003400C28C882280043814C /* Extension+CGPoint.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
 				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
@@ -1054,6 +1063,7 @@
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
 				D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */,
+				D003400D28C882280043814C /* Extension+CGPoint.swift in Sources */,
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */,
@@ -1087,6 +1097,7 @@
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
+				D003400728C87CCA0043814C /* Extension+CGImage.swift in Sources */,
 				C9BDC99A27AEC08A00713F69 /* AppleHierarchicalListView.swift in Sources */,
 				D025A34B273A9CAF005AD490 /* ButtonWithSelections.swift in Sources */,
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
@@ -1115,6 +1126,7 @@
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
 				D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */,
 				D037C427287EC7D0005765B2 /* PathTest.swift in Sources */,
+				D003400B28C881AF0043814C /* Extension+CGSize.swift in Sources */,
 				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
