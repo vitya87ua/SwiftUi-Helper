@@ -37,12 +37,14 @@ struct WebView: UIViewRepresentable {
         return webView
     }
     
+    // From SwiftUI to UIKit
     func updateUIView(_ webView: WKWebView, context: Context) {
         DispatchQueue.main.async {
             webView.loadHTMLString(image, baseURL: nil)
         }
     }
     
+    // From UIKit to SwiftUI
     func makeCoordinator() -> WebViewHelper {
         WebViewHelper(self)
     }

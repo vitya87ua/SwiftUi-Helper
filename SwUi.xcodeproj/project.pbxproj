@@ -140,6 +140,7 @@
 		D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */; };
 		D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */; };
 		D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3468B282BE9DE00625538 /* SwipeGesture.swift */; };
+		D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C01F28CF195200863EDD /* DeviceRotation.swift */; };
 		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
 		D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9E28619BF90090FC1E /* TempWidget.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
@@ -327,6 +328,7 @@
 		D0AACCB22770C6680078DF2E /* AnimationsWithTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsWithTransitions.swift; sourceTree = "<group>"; };
 		D0ADA76E27B561C6005EA496 /* CircleLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLoadingView.swift; sourceTree = "<group>"; };
 		D0B3468B282BE9DE00625538 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
+		D0B7C01F28CF195200863EDD /* DeviceRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotation.swift; sourceTree = "<group>"; };
 		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
 		D0C6AE9E28619BF90090FC1E /* TempWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempWidget.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
@@ -727,6 +729,7 @@
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
 				D04D846D2808453000D3D71A /* IfConditionModifier.swift */,
 				D041E14128337C42009CB23A /* ifOSModifier.swift */,
+				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1151,6 +1154,7 @@
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
 				D0FC5F9628C2219C0067C23A /* CameraRecorderViewModel.swift in Sources */,
+				D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
 				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,

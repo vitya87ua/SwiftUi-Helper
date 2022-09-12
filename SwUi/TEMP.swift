@@ -37,6 +37,8 @@ struct TEMP: View {
     
     @Namespace var namespace
     
+    @State var color: UIColor? = .red
+    
     var body: some View {
         VStack {
             
@@ -53,8 +55,21 @@ struct TEMP: View {
 //                    Text(user.name + " \(user.age)")
 //                }
 //            }
+            MyViewRep(backgroundColor: $color)
+                .equalFrame(150)
             
-            Image("line111.diagonal")
+            Button("Color") {
+                color = .blue
+            }
+            
+            Image(systemName: "multiply.square.fill")
+                .font(.system(size: 40))
+            
+            Image("123")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 150)
+                .border(Color.red, width: 1)
         }
     }
 }
@@ -66,3 +81,18 @@ struct TEMP: View {
         }
     }
 #endif
+
+struct MyViewRep: UIViewRepresentable {
+    
+    @Binding var backgroundColor: UIColor?
+    
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView()
+//        view.backgroundColor = .red
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {
+        uiView.backgroundColor = backgroundColor
+    }
+}

@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Requires @Injected
 protocol AppNotificationObservable: AnyObject {
     func profileUpdated(_ notifier: AppNotification)
     func projectCreated(_ notifier: AppNotification)
