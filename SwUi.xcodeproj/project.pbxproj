@@ -142,6 +142,7 @@
 		D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3468B282BE9DE00625538 /* SwipeGesture.swift */; };
 		D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C01F28CF195200863EDD /* DeviceRotation.swift */; };
 		D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */; };
+		D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */; };
 		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
 		D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9E28619BF90090FC1E /* TempWidget.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
@@ -331,6 +332,7 @@
 		D0B3468B282BE9DE00625538 /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D0B7C01F28CF195200863EDD /* DeviceRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotation.swift; sourceTree = "<group>"; };
 		D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentableView.swift; sourceTree = "<group>"; };
+		D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentable2.swift; sourceTree = "<group>"; };
 		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
 		D0C6AE9E28619BF90090FC1E /* TempWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempWidget.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
@@ -774,6 +776,7 @@
 			children = (
 				D097F880277C48C300770BD8 /* RepresentableView.swift */,
 				D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */,
+				D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */,
 			);
 			path = Representable;
 			sourceTree = "<group>";
@@ -1150,6 +1153,7 @@
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
 				D065579B28910BAC00C06C21 /* Switch.swift in Sources */,
 				D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */,
+				D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */,
 				C9BDC99427AEBA3600713F69 /* HierarchicalListView.swift in Sources */,
 				C986FAD82742EA4800FAA759 /* VersionAttributes.swift in Sources */,
 				D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */,
