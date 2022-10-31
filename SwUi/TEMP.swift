@@ -27,50 +27,53 @@ final class ViewModel: ObservableObject {
 
 struct TEMP: View {
     
-    @ObservedObject var viewModel = ViewModel()
+    let text = "Text 2: This is the expandable/collapsable text. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     
-    @State var sel: String = "Hello"
-    @State var num: Int = 0
-    @State var isPresented: Bool = false
+    let text2 = "Text 2: This is the expandable/collapsable text. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     
-    @GestureState var gestState: CGSize = .zero
-    
-    @Namespace var namespace
-    
-    @State var color: UIColor? = .red
+    @State private var lineLimit: Int = 2
+    @State private var expanded: Bool = true
+    @State private var height: CGFloat = 200
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading){
+            Text("Text1: This Textline is supposed to stay where it is.")
+
+            Text(text)
+                .multilineTextAlignment(.leading)
+//                .lineLimit(expanded ? 10 : 2)
+                .foregroundColor(.black)
+
+//                .frame(alignment: .top)
+                .frame(height: height, alignment: .top)
+
+                .onTapGesture {
+                    withAnimation(.spring(response: 1, dampingFraction: 1, blendDuration: 1)) {
+                        self.expanded.toggle()
+
+                        if expanded {
+                            height = 200
+                        } else {
+                            height = 50
+                        }
+
+//                        if lineLimit == 2 {
+//                            lineLimit = 10
+//                        } else {
+//                            lineLimit = 2
+//                        }
+                    }
+                }
+            //            .frame(height: 200, alignment: .top)
+            // .animation(.easeOut) please don't use <- this as it was deprecated in iOS 15.0
             
-//            List {
-//                ForEach($viewModel.users) { $user in
-//                    TextField("\(user.age)", value: $user.age, format: .number)
-//                }
-//
-//                Text("Color: " + (Color.blue.hex ?? "f"))
-//            }
-//
-//            List {
-//                ForEach(viewModel.users) { user in
-//                    Text(user.name + " \(user.age)")
-//                }
-//            }
-            MyViewRep(backgroundColor: $color)
-                .equalFrame(150)
+            Text("Text3: This Textline is supposed to  get pushed down when the text above is being expanded and pulled up when the text above is being collapsed.")
             
-            Button("Color") {
-                color = .blue
-            }
-            
-            Image(systemName: "multiply.square.fill")
-                .font(.system(size: 40))
-            
-            Image("123")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 150)
-                .border(Color.red, width: 1)
+            Spacer()
         }
+        .padding()
+        .padding(.top, 100)
+        .border(Color.red, width: 1)
     }
 }
 
