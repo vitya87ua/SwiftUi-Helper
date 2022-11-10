@@ -27,53 +27,51 @@ final class ViewModel: ObservableObject {
 
 struct TEMP: View {
     
-    let text = "Text 2: This is the expandable/collapsable text. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    
-    let text2 = "Text 2: This is the expandable/collapsable text. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    
-    @State private var lineLimit: Int = 2
-    @State private var expanded: Bool = true
-    @State private var height: CGFloat = 200
+    @State private var show: Bool = false
+    @State private var scaleEffect: CGFloat = 0.1
+    @State private var opacity: CGFloat = 1 {
+        didSet {
+//            if opacity == 0 {
+//                show = false
+//                scaleEffect = 0.1
+//                opacity = 1
+//            }
+        }
+    }
     
     var body: some View {
-        VStack(alignment: .leading){
-            Text("Text1: This Textline is supposed to stay where it is.")
-
-            Text(text)
-                .multilineTextAlignment(.leading)
-//                .lineLimit(expanded ? 10 : 2)
-                .foregroundColor(.black)
-
-//                .frame(alignment: .top)
-                .frame(height: height, alignment: .top)
-
-                .onTapGesture {
-                    withAnimation(.spring(response: 1, dampingFraction: 1, blendDuration: 1)) {
-                        self.expanded.toggle()
-
-                        if expanded {
-                            height = 200
-                        } else {
-                            height = 50
-                        }
-
-//                        if lineLimit == 2 {
-//                            lineLimit = 10
-//                        } else {
-//                            lineLimit = 2
-//                        }
-                    }
+        ZStack {
+            Color.yellow
+            
+            if show {
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(.red)
+                    .scaleEffect(scaleEffect)
+                    .opacity(opacity)
+            }
+            
+        }.overlay(alignment: .bottom, content: {
+            Button("Anim") {
+                show.toggle()
+                withAnimation(.easeInOut) {
+                    scaleEffect = 0.5
                 }
-            //            .frame(height: 200, alignment: .top)
-            // .animation(.easeOut) please don't use <- this as it was deprecated in iOS 15.0
-            
-            Text("Text3: This Textline is supposed to  get pushed down when the text above is being expanded and pulled up when the text above is being collapsed.")
-            
-            Spacer()
-        }
-        .padding()
-        .padding(.top, 100)
-        .border(Color.red, width: 1)
+                
+                withAnimation(.easeInOut.delay(0.3)) {
+                    opacity = 0
+//                    show = false
+                }
+                
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+//                    show = false
+//                    scaleEffect = 0.1
+//                    opacity = 1
+//                }
+            }
+            .padding(.bottom)
+        })
     }
 }
 
