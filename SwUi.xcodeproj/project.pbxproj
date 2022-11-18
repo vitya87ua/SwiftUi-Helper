@@ -126,6 +126,10 @@
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07928B5032E000FEEA3 /* Extension+URL.swift */; };
 		D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07B28B503CD000FEEA3 /* Debounce.swift */; };
+		D08A80F92927E1DB0038D3EF /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */; };
+		D0921641291E4ADB008348DA /* DefaultCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921640291E4ADB008348DA /* DefaultCodable.swift */; };
+		D0921643291E4C66008348DA /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921642291E4C66008348DA /* UserDefault.swift */; };
+		D0921645291E8A8C008348DA /* Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921644291E8A8C008348DA /* Modify.swift */; };
 		D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09254B028B7B35500080E1D /* PropertyWrappers.swift */; };
 		D09254D728B8F34300080E1D /* TimeLapseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
@@ -318,6 +322,10 @@
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D089B07928B5032E000FEEA3 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		D089B07B28B503CD000FEEA3 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
+		D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		D0921640291E4ADB008348DA /* DefaultCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCodable.swift; sourceTree = "<group>"; };
+		D0921642291E4C66008348DA /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		D0921644291E8A8C008348DA /* Modify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modify.swift; sourceTree = "<group>"; };
 		D09254B028B7B35500080E1D /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLapseBuilder.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
@@ -397,6 +405,8 @@
 				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
 				D068F29F290FEFDD00F74BB8 /* DataConverter.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
+				D0921640291E4ADB008348DA /* DefaultCodable.swift */,
+				D0921642291E4C66008348DA /* UserDefault.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
 				D080C275287590B700665E6F /* Log.swift */,
@@ -414,6 +424,7 @@
 				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D003400628C87CCA0043814C /* Extension+CGImage.swift */,
+				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D003400C28C882280043814C /* Extension+CGPoint.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
@@ -739,6 +750,7 @@
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
 				D04D846D2808453000D3D71A /* IfConditionModifier.swift */,
 				D041E14128337C42009CB23A /* ifOSModifier.swift */,
+				D0921644291E8A8C008348DA /* Modify.swift */,
 				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
 			);
 			path = Modifiers;
@@ -1053,6 +1065,7 @@
 			files = (
 				D00AFA9D27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift in Sources */,
 				D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */,
+				D0921643291E4C66008348DA /* UserDefault.swift in Sources */,
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */,
 				D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */,
@@ -1113,6 +1126,7 @@
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */,
+				D0921645291E8A8C008348DA /* Modify.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
@@ -1129,6 +1143,7 @@
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
 				D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */,
+				D0921641291E4ADB008348DA /* DefaultCodable.swift in Sources */,
 				C92CD41226FE629600E3C552 /* CellRowModel.swift in Sources */,
 				C9E6599126EF4AB10024246D /* DateTimePicker.swift in Sources */,
 				D022CA88276794160002A5BB /* CalPixelsAndPointsView.swift in Sources */,
@@ -1159,6 +1174,7 @@
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
+				D08A80F92927E1DB0038D3EF /* Extension+UIImage.swift in Sources */,
 				D065579B28910BAC00C06C21 /* Switch.swift in Sources */,
 				D025A350273ACA7A005AD490 /* RoundedButton.swift in Sources */,
 				D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */,

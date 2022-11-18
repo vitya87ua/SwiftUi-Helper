@@ -36,14 +36,14 @@ struct IfConditionModifier: View {
 
 // Apply some modifiers if condition == true, else return self view.
 extension View {
-
+    
     @ViewBuilder
     func ifCondition<T>(_ condition: Bool, view: (Self) -> T) -> some View where T: View {
-            if condition {
-                view(self)
-            } else {
-                self
-            }
+        if condition {
+            view(self)
+        } else {
+            self
+        }
     }
 }
 
