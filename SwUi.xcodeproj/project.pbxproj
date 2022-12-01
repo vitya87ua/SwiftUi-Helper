@@ -91,6 +91,7 @@
 		D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */; };
 		D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
+		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
 		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
@@ -132,6 +133,7 @@
 		D0921645291E8A8C008348DA /* Modify.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0921644291E8A8C008348DA /* Modify.swift */; };
 		D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09254B028B7B35500080E1D /* PropertyWrappers.swift */; };
 		D09254D728B8F34300080E1D /* TimeLapseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */; };
+		D0968C732938AEA300476250 /* NormalizedDimensionConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */; };
 		D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096D2B9284E348B00F01D35 /* TabViewExample.swift */; };
 		D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097F880277C48C300770BD8 /* RepresentableView.swift */; };
 		D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */; };
@@ -289,6 +291,7 @@
 		D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineShape.swift; sourceTree = "<group>"; };
 		D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineConfiguration.swift; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
+		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
@@ -328,6 +331,7 @@
 		D0921644291E8A8C008348DA /* Modify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modify.swift; sourceTree = "<group>"; };
 		D09254B028B7B35500080E1D /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 		D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLapseBuilder.swift; sourceTree = "<group>"; };
+		D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalizedDimensionConverter.swift; sourceTree = "<group>"; };
 		D096D2B9284E348B00F01D35 /* TabViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewExample.swift; sourceTree = "<group>"; };
 		D097F880277C48C300770BD8 /* RepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentableView.swift; sourceTree = "<group>"; };
 		D098013C27F07A5E0088662A /* ETDropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETDropDownMenuView.swift; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 				D0790BDF28AE61520070AF99 /* InitWithApply.swift */,
 				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
 				D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */,
+				D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D003400628C87CCA0043814C /* Extension+CGImage.swift */,
+				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
 				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D003400C28C882280043814C /* Extension+CGPoint.swift */,
@@ -1079,6 +1085,7 @@
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
 				D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */,
 				D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */,
+				D0968C732938AEA300476250 /* NormalizedDimensionConverter.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
@@ -1097,6 +1104,7 @@
 				D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */,
 				D003400D28C882280043814C /* Extension+CGPoint.swift in Sources */,
 				D068F2A0290FEFDD00F74BB8 /* DataConverter.swift in Sources */,
+				D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */,
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */,

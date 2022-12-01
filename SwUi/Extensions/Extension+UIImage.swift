@@ -15,7 +15,7 @@ extension UIImage {
     }
     
     func overlay(imageEntity entity: OverlayEntity) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        UIGraphicsBeginImageContext(self.size)
         draw(in: CGRect(origin: .zero, size: size))
         entity.image.draw(in: entity.frame)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -25,7 +25,7 @@ extension UIImage {
     }
     
     func overlay(imageEntities entities: [OverlayEntity]) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.size, false, 0.0)
+        UIGraphicsBeginImageContext(self.size)
         draw(in: CGRect(origin: .zero, size: size))
         entities.forEach {
             $0.image.draw(in: $0.frame)
@@ -34,6 +34,22 @@ extension UIImage {
         UIGraphicsEndImageContext()
         
         return newImage
+    }
+    
+    @discardableResult
+    func write(
+        to url: URL,
+        options: Data.WritingOptions = .atomic
+    ) -> Bool {
+        let data = self.jpegData(compressionQuality: 0.7)
+        
+        do {
+            try data?.write(to: url, options: options)
+            return true
+        } catch {
+            Log("‼️Error: \(error) (\(error.localizedDescription)")
+            return false
+        }
     }
 }
 
