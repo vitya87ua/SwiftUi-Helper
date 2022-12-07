@@ -120,6 +120,20 @@
 		D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06744472892D308004ED10A /* UndoRedoManager.swift */; };
 		D068F2A0290FEFDD00F74BB8 /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068F29F290FEFDD00F74BB8 /* DataConverter.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
+		D06E07B3293F96BF00B00CD6 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B2293F96BF00B00CD6 /* NetworkLayer.swift */; };
+		D06E07B6293F96FF00B00CD6 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B5293F96FF00B00CD6 /* AuthenticationManager.swift */; };
+		D06E07B9293F975200B00CD6 /* PostSignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B8293F975200B00CD6 /* PostSignInRequest.swift */; };
+		D06E07BC293F97B600B00CD6 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07BB293F97B600B00CD6 /* ResponseModel.swift */; };
+		D06E07BE293F97D100B00CD6 /* UserDataResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07BD293F97D100B00CD6 /* UserDataResponseModel.swift */; };
+		D06E07C1293F984000B00CD6 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07C0293F984000B00CD6 /* RequestManager.swift */; };
+		D06E07C4293F98D000B00CD6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07C3293F98D000B00CD6 /* HTTPMethod.swift */; };
+		D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07C5293F98DF00B00CD6 /* HTTPHeaders.swift */; };
+		D06E07C8293F98EE00B00CD6 /* HTTPBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07C7293F98EE00B00CD6 /* HTTPBoundary.swift */; };
+		D06E07CA293F990200B00CD6 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07C9293F990200B00CD6 /* NetworkManagerError.swift */; };
+		D06E07CC293F991600B00CD6 /* Extension+Data(NetworkLayer).swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07CB293F991600B00CD6 /* Extension+Data(NetworkLayer).swift */; };
+		D06E07CE293F99F400B00CD6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07CD293F99F400B00CD6 /* MediaManager.swift */; };
+		D06E07D2293F9A5100B00CD6 /* PutUploadImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */; };
+		D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D3293F9AE500B00CD6 /* MediaData.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* InitWithApply.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
@@ -318,6 +332,21 @@
 		D06744472892D308004ED10A /* UndoRedoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoManager.swift; sourceTree = "<group>"; };
 		D068F29F290FEFDD00F74BB8 /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		D06E07B2293F96BF00B00CD6 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		D06E07B5293F96FF00B00CD6 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		D06E07B8293F975200B00CD6 /* PostSignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSignInRequest.swift; sourceTree = "<group>"; };
+		D06E07BB293F97B600B00CD6 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		D06E07BD293F97D100B00CD6 /* UserDataResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataResponseModel.swift; sourceTree = "<group>"; };
+		D06E07C0293F984000B00CD6 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		D06E07C3293F98D000B00CD6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D06E07C5293F98DF00B00CD6 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		D06E07C7293F98EE00B00CD6 /* HTTPBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBoundary.swift; sourceTree = "<group>"; };
+		D06E07C9293F990200B00CD6 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
+		D06E07CB293F991600B00CD6 /* Extension+Data(NetworkLayer).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data(NetworkLayer).swift"; sourceTree = "<group>"; };
+		D06E07CD293F99F400B00CD6 /* MediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaManager.swift; sourceTree = "<group>"; };
+		D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutUploadImageRequest.swift; sourceTree = "<group>"; };
+		D06E07D3293F9AE500B00CD6 /* MediaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaData.swift; sourceTree = "<group>"; };
+		D06E07D5293F9B6800B00CD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D0790BDF28AE61520070AF99 /* InitWithApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitWithApply.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
@@ -404,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				D07BEAAE28C9E83E003AC656 /* AppNotification.swift */,
+				D06E07B1293F96B200B00CD6 /* NetworkLayer */,
 				D067443A2892A208004ED10A /* HotKeys(mac os) */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
 				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
@@ -795,6 +825,84 @@
 			path = ProgressViews;
 			sourceTree = "<group>";
 		};
+		D06E07B1293F96B200B00CD6 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07D5293F9B6800B00CD6 /* README.md */,
+				D06E07B2293F96BF00B00CD6 /* NetworkLayer.swift */,
+				D06E07B4293F96EC00B00CD6 /* AuthenticationManager */,
+				D06E07CF293F99FA00B00CD6 /* MediaManager */,
+				D06E07BA293F979900B00CD6 /* Responses */,
+				D06E07BF293F983800B00CD6 /* RequestManager */,
+				D06E07C2293F98C000B00CD6 /* Base */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		D06E07B4293F96EC00B00CD6 /* AuthenticationManager */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07B5293F96FF00B00CD6 /* AuthenticationManager.swift */,
+				D06E07B7293F974800B00CD6 /* Requests */,
+			);
+			path = AuthenticationManager;
+			sourceTree = "<group>";
+		};
+		D06E07B7293F974800B00CD6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07B8293F975200B00CD6 /* PostSignInRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D06E07BA293F979900B00CD6 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07BB293F97B600B00CD6 /* ResponseModel.swift */,
+				D06E07BD293F97D100B00CD6 /* UserDataResponseModel.swift */,
+				D06E07D3293F9AE500B00CD6 /* MediaData.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		D06E07BF293F983800B00CD6 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07C0293F984000B00CD6 /* RequestManager.swift */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		D06E07C2293F98C000B00CD6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07C3293F98D000B00CD6 /* HTTPMethod.swift */,
+				D06E07C5293F98DF00B00CD6 /* HTTPHeaders.swift */,
+				D06E07C7293F98EE00B00CD6 /* HTTPBoundary.swift */,
+				D06E07C9293F990200B00CD6 /* NetworkManagerError.swift */,
+				D06E07CB293F991600B00CD6 /* Extension+Data(NetworkLayer).swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D06E07CF293F99FA00B00CD6 /* MediaManager */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07CD293F99F400B00CD6 /* MediaManager.swift */,
+				D06E07D0293F9A4300B00CD6 /* Requests */,
+			);
+			path = MediaManager;
+			sourceTree = "<group>";
+		};
+		D06E07D0293F9A4300B00CD6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		D097F87F277C48A900770BD8 /* Representable */ = {
 			isa = PBXGroup;
 			children = (
@@ -1074,6 +1182,7 @@
 				D0921643291E4C66008348DA /* UserDefault.swift in Sources */,
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */,
+				D06E07C4293F98D000B00CD6 /* HTTPMethod.swift in Sources */,
 				D0790BE028AE61520070AF99 /* InitWithApply.swift in Sources */,
 				D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
@@ -1087,6 +1196,7 @@
 				D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */,
 				D0968C732938AEA300476250 /* NormalizedDimensionConverter.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
+				D06E07CA293F990200B00CD6 /* NetworkManagerError.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
 				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
@@ -1109,9 +1219,11 @@
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */,
 				D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */,
+				D06E07C8293F98EE00B00CD6 /* HTTPBoundary.swift in Sources */,
 				D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
+				D06E07CE293F99F400B00CD6 /* MediaManager.swift in Sources */,
 				D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */,
 				D06744422892A208004ED10A /* Extension+View(HotKeys).swift in Sources */,
 				D0079D86279ABD7B0019CF74 /* MultiplayerKey.swift in Sources */,
@@ -1126,14 +1238,18 @@
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
 				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
 				D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */,
+				D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
 				D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */,
 				D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */,
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
+				D06E07B3293F96BF00B00CD6 /* NetworkLayer.swift in Sources */,
+				D06E07D2293F9A5100B00CD6 /* PutUploadImageRequest.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */,
+				D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */,
 				D0921645291E8A8C008348DA /* Modify.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
@@ -1149,6 +1265,7 @@
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
 				D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
+				D06E07CC293F991600B00CD6 /* Extension+Data(NetworkLayer).swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
 				D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */,
 				D0921641291E4ADB008348DA /* DefaultCodable.swift in Sources */,
@@ -1159,9 +1276,11 @@
 				D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */,
 				D06744442892A208004ED10A /* DisableSoundsView.swift in Sources */,
 				D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */,
+				D06E07BE293F97D100B00CD6 /* UserDataResponseModel.swift in Sources */,
 				D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */,
 				D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
+				D06E07C1293F984000B00CD6 /* RequestManager.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				D06744432892A208004ED10A /* HotKeysModifier.swift in Sources */,
 				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
@@ -1174,11 +1293,13 @@
 				D003400B28C881AF0043814C /* Extension+CGSize.swift in Sources */,
 				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
+				D06E07BC293F97B600B00CD6 /* ResponseModel.swift in Sources */,
 				D04379402746457C00B5F30A /* CustomModifier.swift in Sources */,
 				D06744482892D308004ED10A /* UndoRedoManager.swift in Sources */,
 				D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */,
 				D0FC5F9428C221670067C23A /* CameraRecorderView.swift in Sources */,
 				C9E6599326EF55240024246D /* TextFields.swift in Sources */,
+				D06E07B9293F975200B00CD6 /* PostSignInRequest.swift in Sources */,
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
@@ -1197,6 +1318,7 @@
 				D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
+				D06E07B6293F96FF00B00CD6 /* AuthenticationManager.swift in Sources */,
 				D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */,
 				C9D563C12716BD870094C04D /* Extension+Color.swift in Sources */,
 				D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */,

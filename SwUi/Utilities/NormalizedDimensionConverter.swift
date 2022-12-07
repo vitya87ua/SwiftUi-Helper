@@ -20,12 +20,12 @@ func getPointFromNormalizedPoint(_ point: CGPoint, in size: CGSize) -> CGPoint {
     CGPoint(x: size.width * point.x, y: size.height * point.y)
 }
 
-/// The same as getNormalizedPointForPoint only for Size
+/// The same as getNormalizedPointForPoint(VNNormalizedPointForImagePoint) only for Size
 func getNormalizedSizeForSize(_ size: CGSize, in frame: CGSize) -> CGSize {
     CGSize(width: size.width / frame.width, height: size.height / frame.height)
 }
 
-/// The same as getPointFromNormalizedPoint only for Size
+/// The same as getPointFromNormalizedPoint(VNImagePointForNormalizedPoint) only for Size
 func getSizeFromNormalizedSize(_ size: CGSize, in frame: CGSize) -> CGSize {
     CGSize(width: size.width * frame.width, height: size.height * frame.height)
 }
