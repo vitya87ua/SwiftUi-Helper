@@ -15,7 +15,7 @@ struct Credential {
 struct PostSignInRequest: RequestModel {
     var baseUrl: URL
     var apiVersion: String?
-    var path: String
+    var path: URLPath
     var method: HTTPMethod
     var headers: HTTPHeaders
     var body: Data?
@@ -24,7 +24,7 @@ struct PostSignInRequest: RequestModel {
     init(credential: Credential) {
         baseUrl = URL(string: "www.google.com.ua")!
         apiVersion = "v1" // API version if need
-        path = "users/sign_in"
+        path = .usersSignIn
         method = .post
         headers = .applicationJson
         body = Data.createApplicationJsonData(withParameters: [

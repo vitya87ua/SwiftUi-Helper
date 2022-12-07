@@ -15,7 +15,7 @@ struct ServerResponse: Codable {
 protocol RequestModel {
     var baseUrl: URL { get }
     var apiVersion: String? { get }
-    var path: String { get }
+    var path: URLPath { get }
     var method: HTTPMethod { get }
     var headers: HTTPHeaders { get set }
     var body: Data? { get set }

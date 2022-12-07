@@ -10,7 +10,7 @@ import Foundation
 struct PutUploadImageRequest: RequestModel {
     var baseUrl: URL
     var apiVersion: String?
-    var path: String
+    var path: URLPath
     var method: HTTPMethod
     var headers: HTTPHeaders
     var body: Data?
@@ -21,7 +21,7 @@ struct PutUploadImageRequest: RequestModel {
         
         baseUrl = URL(string: "www.google.com.ua")!
         apiVersion = "v1" // API version if need
-        path = "files/upload"
+        path = .filesUpload
         method = .put
         headers = .multipartFormDataWith(boundary: boundary)
         body = imageData.wrapToMultipartFormData(
