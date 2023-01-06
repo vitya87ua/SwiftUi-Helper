@@ -93,6 +93,7 @@
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
+		D03260A029506CE90070714C /* CircleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032609F29506CE90070714C /* CircleSlider.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
 		D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */; };
 		D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */; };
@@ -112,6 +113,7 @@
 		D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
+		D0609F1529681CCB00308629 /* Extension+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0609F1429681CCB00308629 /* Extension+CGRect.swift */; };
 		D065579B28910BAC00C06C21 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065579A28910BAC00C06C21 /* Switch.swift */; };
 		D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443B2892A208004ED10A /* HotkeyCombination.swift */; };
 		D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */; };
@@ -308,6 +310,7 @@
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		D032609F29506CE90070714C /* CircleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSlider.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle3DButtonStyle.swift; sourceTree = "<group>"; };
@@ -325,6 +328,7 @@
 		D05E910727871AA4004EA46F /* Extension+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Array.swift"; sourceTree = "<group>"; };
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
+		D0609F1429681CCB00308629 /* Extension+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGRect.swift"; sourceTree = "<group>"; };
 		D065579A28910BAC00C06C21 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		D067443B2892A208004ED10A /* HotkeyCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotkeyCombination.swift; sourceTree = "<group>"; };
 		D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+CGKeyCode.swift"; sourceTree = "<group>"; };
@@ -463,6 +467,7 @@
 				D003400628C87CCA0043814C /* Extension+CGImage.swift */,
 				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
 				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
+				D0609F1429681CCB00308629 /* Extension+CGRect.swift */,
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D003400C28C882280043814C /* Extension+CGPoint.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
@@ -588,6 +593,7 @@
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
 				C9836421271091FC007BE5B0 /* Sheets */,
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
+				D032609F29506CE90070714C /* CircleSlider.swift */,
 				D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */,
 				D025A34C273AC436005AD490 /* TabViews */,
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
@@ -1212,6 +1218,7 @@
 				D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */,
 				D07BEAAF28C9E83E003AC656 /* AppNotification.swift in Sources */,
 				D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */,
+				D03260A029506CE90070714C /* CircleSlider.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
 				D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */,
@@ -1282,6 +1289,7 @@
 				D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */,
 				D06E07BE293F97D100B00CD6 /* UserDataResponseModel.swift in Sources */,
 				D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */,
+				D0609F1529681CCB00308629 /* Extension+CGRect.swift in Sources */,
 				D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D06E07C1293F984000B00CD6 /* RequestManager.swift in Sources */,
