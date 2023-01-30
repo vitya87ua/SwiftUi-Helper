@@ -78,3 +78,52 @@ extension String {
         return result
     }
 }
+
+extension String {
+    
+    enum CapitalizeOption {
+        case none        // Text as is(without any changes)
+        case never       // All text lowercased
+        case characters  // All text uppercased
+        case sentences   // Capitalize first word in each sentence
+        case words       // Capitalize all words
+    }
+    
+    func capitalize(option: CapitalizeOption) -> String {
+        var result: String = ""
+        
+        switch option {
+        case .none:
+            result = self
+        case .never:
+            result = self.lowercased()
+        case .characters:
+            result = self.uppercased()
+        case .sentences:
+            
+            var sentences: [String] = []
+            
+            for sentence in self.components(separatedBy: ". ") {
+                if let firstChar = sentence.first, firstChar == " " {
+                    let newSentence: String = String(sentence.dropFirst()).capitalizedSentence
+                    sentences.append(newSentence)
+                } else {
+                    sentences.append(sentence.capitalizedSentence)
+                }
+            }
+            
+            result = sentences.joined(separator: ". ")
+            
+        case .words:
+            result = self.capitalized
+        }
+        
+        return result
+    }
+    
+    var capitalizedSentence: String {
+        let firstLetter = self.prefix(1).capitalized
+        let remainingLetters = self.dropFirst().lowercased()
+        return firstLetter + remainingLetters
+    }
+}

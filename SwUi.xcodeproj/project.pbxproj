@@ -167,6 +167,7 @@
 		D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C01F28CF195200863EDD /* DeviceRotation.swift */; };
 		D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */; };
 		D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */; };
+		D0BB37EB2987D46A00E93E48 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */; };
 		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
 		D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9E28619BF90090FC1E /* TempWidget.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
@@ -383,6 +384,7 @@
 		D0B7C01F28CF195200863EDD /* DeviceRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotation.swift; sourceTree = "<group>"; };
 		D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentableView.swift; sourceTree = "<group>"; };
 		D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentable2.swift; sourceTree = "<group>"; };
+		D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
 		D0C6AE9E28619BF90090FC1E /* TempWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempWidget.swift; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
@@ -593,7 +595,7 @@
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
 				C9836421271091FC007BE5B0 /* Sheets */,
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
-				D032609F29506CE90070714C /* CircleSlider.swift */,
+				D0BB37E92987D42B00E93E48 /* Sliders */,
 				D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */,
 				D025A34C273AC436005AD490 /* TabViews */,
 				D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */,
@@ -982,6 +984,15 @@
 			path = Gestures;
 			sourceTree = "<group>";
 		};
+		D0BB37E92987D42B00E93E48 /* Sliders */ = {
+			isa = PBXGroup;
+			children = (
+				D032609F29506CE90070714C /* CircleSlider.swift */,
+				D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */,
+			);
+			path = Sliders;
+			sourceTree = "<group>";
+		};
 		D0D13C6D287DA3D200DF79FE /* Path */ = {
 			isa = PBXGroup;
 			children = (
@@ -1228,6 +1239,7 @@
 				D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */,
 				D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */,
 				D0FC5F9828C221F60067C23A /* CameraRecorderPreview.swift in Sources */,
+				D0BB37EB2987D46A00E93E48 /* CustomSliderView.swift in Sources */,
 				D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */,
 				D06E07C8293F98EE00B00CD6 /* HTTPBoundary.swift in Sources */,
 				D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */,
