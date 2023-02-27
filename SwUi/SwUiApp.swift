@@ -43,7 +43,7 @@ struct SwUiApp: App {
 //            BackToRootExample()
 //            TimerWithDelegate()
 //            AppleHierarchicalListView()
-            TEMP()
+            CombineTestView()
         }
     }
 }

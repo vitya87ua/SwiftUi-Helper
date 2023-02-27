@@ -114,6 +114,8 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D0609F1529681CCB00308629 /* Extension+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0609F1429681CCB00308629 /* Extension+CGRect.swift */; };
+		D0649493299CD6BA00DDD201 /* CombineTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0649492299CD6BA00DDD201 /* CombineTestView.swift */; };
+		D0649495299CD6C500DDD201 /* CombineTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0649494299CD6C500DDD201 /* CombineTestViewModel.swift */; };
 		D065579B28910BAC00C06C21 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065579A28910BAC00C06C21 /* Switch.swift */; };
 		D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443B2892A208004ED10A /* HotkeyCombination.swift */; };
 		D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */; };
@@ -330,6 +332,8 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0609F1429681CCB00308629 /* Extension+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGRect.swift"; sourceTree = "<group>"; };
+		D0649492299CD6BA00DDD201 /* CombineTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestView.swift; sourceTree = "<group>"; };
+		D0649494299CD6C500DDD201 /* CombineTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestViewModel.swift; sourceTree = "<group>"; };
 		D065579A28910BAC00C06C21 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		D067443B2892A208004ED10A /* HotkeyCombination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotkeyCombination.swift; sourceTree = "<group>"; };
 		D067443C2892A208004ED10A /* Extension+CGKeyCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+CGKeyCode.swift"; sourceTree = "<group>"; };
@@ -802,6 +806,15 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		D0649496299CD6F600DDD201 /* CombineTest */ = {
+			isa = PBXGroup;
+			children = (
+				D0649492299CD6BA00DDD201 /* CombineTestView.swift */,
+				D0649494299CD6C500DDD201 /* CombineTestViewModel.swift */,
+			);
+			path = CombineTest;
+			sourceTree = "<group>";
+		};
 		D065579928910B7800C06C21 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,6 +985,7 @@
 			children = (
 				C90EB03E273595FA002F54F6 /* CombineUI.swift */,
 				C90EB03C273593CC002F54F6 /* CombineJSON.swift */,
+				D0649496299CD6F600DDD201 /* CombineTest */,
 			);
 			path = Combine;
 			sourceTree = "<group>";
@@ -1219,6 +1233,7 @@
 				D06E07CA293F990200B00CD6 /* NetworkManagerError.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
+				D0649495299CD6C500DDD201 /* CombineTestViewModel.swift in Sources */,
 				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
 				D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */,
 				D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */,
@@ -1286,6 +1301,7 @@
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
 				D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
+				D0649493299CD6BA00DDD201 /* CombineTestView.swift in Sources */,
 				D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				D06E07CC293F991600B00CD6 /* Extension+Data(NetworkLayer).swift in Sources */,
