@@ -63,6 +63,14 @@ extension CGRect {
         CGPoint(x: origin.x + size.center.width, y: origin.y + size.center.height)
     }
     
+    var quarterX: CGFloat {
+        (self.midX - self.minX) / 2
+    }
+    
+    var quarterY: CGFloat {
+        (self.midY - self.minY) / 2
+    }
+    
     func padding(_ padding: CGFloat = 75) -> CGRect {
         let half: CGFloat = padding / 2
         

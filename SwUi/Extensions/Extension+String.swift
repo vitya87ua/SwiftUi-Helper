@@ -151,3 +151,41 @@ extension String {
         return String(self[start ..< end])
     }
 }
+
+// MARK: - Padding
+extension String {
+    
+    enum Edge {
+        case leading
+        case trailing
+    }
+    
+    func padding(_ whiteSpaces: Int) -> String {
+        var result: String = ""
+        
+        let padding: String = Array(repeating: " ", count: whiteSpaces).joined()
+        
+        result.append(padding)
+        result.append(self)
+        result.append(padding)
+        
+        return result
+    }
+    
+    func padding(_ edge: String.Edge, _ whiteSpaces: Int) -> String {
+        var result: String = ""
+        
+        let padding: String = Array(repeating: " ", count: whiteSpaces).joined()
+        
+        switch edge {
+        case .leading:
+            result.append(padding)
+            result.append(self)
+        case .trailing:
+            result.append(self)
+            result.append(padding)
+        }
+        
+        return result
+    }
+}

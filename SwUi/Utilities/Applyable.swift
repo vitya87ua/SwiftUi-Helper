@@ -1,5 +1,5 @@
 //
-//  InitWithApply.swift
+//  Applyable.swift
 //  SwUi
 //
 //  Created by Viktor Berezhnytskyi on 18.08.2022.

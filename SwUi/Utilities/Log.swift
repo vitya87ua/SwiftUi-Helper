@@ -42,3 +42,18 @@ public func Log(
     }
 #endif
 }
+
+/*
+ 
+ func some() {
+     Log("Hello")
+     Log("Hello", state: .warning)
+     Log("Hello", state: .error)
+ }
+ 
+ Terminal:
+ ✅ Log.swift ⏰ 4:22:33 PM #️⃣ 43 some() ⏩ Hello
+ ⚠️ Log.swift ⏰ 4:22:33 PM #️⃣ 44 some() ⏩ Hello
+ ‼️ Log.swift ⏰ 4:22:33 PM #️⃣ 45 some() ⏩ Hello
+ 
+ */
