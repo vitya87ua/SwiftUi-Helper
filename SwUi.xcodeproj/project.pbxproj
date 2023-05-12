@@ -184,11 +184,13 @@
 		D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */; };
 		D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1C3A5290C199D00C0BCFD /* Fields.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
+		D0DA6D6B2A0E370F00C8EAC3 /* Modifier(available).swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */; };
 		D0DD7E5A28098EAE00860A72 /* StateObservedObjectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */; };
 		D0DDC6962864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
 		D0DDC6972864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
 		D0DDC6982864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
+		D0E0034329FAA3C90040295B /* Future-Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0034229FAA3C90040295B /* Future-Promise.swift */; };
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */; };
@@ -407,9 +409,11 @@
 		D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectArrowView.swift; sourceTree = "<group>"; };
 		D0D1C3A5290C199D00C0BCFD /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
+		D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier(available).swift"; sourceTree = "<group>"; };
 		D0DD7E5928098EAE00860A72 /* StateObservedObjectExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectExample.swift; sourceTree = "<group>"; };
 		D0DDC6952864409200BC5631 /* Extension+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Sequence.swift"; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
+		D0E0034229FAA3C90040295B /* Future-Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future-Promise.swift"; sourceTree = "<group>"; };
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
 		D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUrlView.swift; sourceTree = "<group>"; };
@@ -457,6 +461,7 @@
 				D06E07B1293F96B200B00CD6 /* NetworkLayer */,
 				D067443A2892A208004ED10A /* HotKeys(mac os) */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
+				D0E0034229FAA3C90040295B /* Future-Promise.swift */,
 				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
 				D068F29F290FEFDD00F74BB8 /* DataConverter.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
@@ -820,6 +825,7 @@
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
 				D04D846D2808453000D3D71A /* IfConditionModifier.swift */,
 				D041E14128337C42009CB23A /* ifOSModifier.swift */,
+				D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */,
 				D0921644291E8A8C008348DA /* Modify.swift */,
 				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
 			);
@@ -1316,6 +1322,7 @@
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
+				D0DA6D6B2A0E370F00C8EAC3 /* Modifier(available).swift in Sources */,
 				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
 				D003400728C87CCA0043814C /* Extension+CGImage.swift in Sources */,
@@ -1328,6 +1335,7 @@
 				D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
 				D06E07CC293F991600B00CD6 /* Extension+Data(NetworkLayer).swift in Sources */,
+				D0E0034329FAA3C90040295B /* Future-Promise.swift in Sources */,
 				C924AE9026DCE6C600CCD4B2 /* MenuWithImageButton.swift in Sources */,
 				D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */,
 				D0921641291E4ADB008348DA /* DefaultCodable.swift in Sources */,

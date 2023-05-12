@@ -40,6 +40,20 @@ extension CGSize {
         return result
     }
     
+    func scaleToFit(height heightSize: CGFloat) -> CGSize {
+        var result: CGSize = .zero
+                
+        if heightSize < self.height {
+            var aspectRatio: CGFloat = self.height / heightSize
+            result = .init(width: self.width / aspectRatio, height: self.height / aspectRatio)
+        } else if heightSize > self.height {
+            var aspectRatio: CGFloat = heightSize / self.height
+            result = .init(width: self.width * aspectRatio, height: self.height * aspectRatio)
+        }
+        
+        return result
+    }
+    
     func scaleToFill(to targetSize: CGSize) -> CGSize {
         var result: CGSize = .zero
         
