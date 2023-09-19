@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ETDropDownMenuModel: ETDropDownMenuProtocol {
+struct ETDropDownMenuModel: LabelProtocol {
     let id: Int
     let name: String
     
-    var dropDownMenuItem: String {
+    var label: String {
         name
     }
     
@@ -26,14 +26,14 @@ struct ETDropDownMenuModel: ETDropDownMenuProtocol {
     ]}
 }
 
-protocol ETDropDownMenuProtocol: Hashable {
+protocol LabelProtocol: Hashable {
     associatedtype ItemID: Hashable
     
     var id: ItemID { get }
-    var dropDownMenuItem: String { get }
+    var label: String { get }
 }
 
-struct ETDropDownMenuView<T: ETDropDownMenuProtocol>: View {
+struct ETDropDownMenuView<T: LabelProtocol>: View {
     
     let label: String?
     @Binding var selected: T?
@@ -55,13 +55,13 @@ struct ETDropDownMenuView<T: ETDropDownMenuProtocol>: View {
             
             Menu {
                 ForEach(menuItems, id: \.id) { item in
-                    Button(item.dropDownMenuItem) {
+                    Button(item.label) {
                         selected = item
                     }
                 }
             } label: {
                 HStack {
-                    Text(selected?.dropDownMenuItem ?? "")
+                    Text(selected?.label ?? "")
                         .font(.poppinsRegular(size: 14))
                         .foregroundColor(.black)
                     
@@ -87,11 +87,12 @@ struct ETDropDownMenuView<T: ETDropDownMenuProtocol>: View {
 #if DEBUG
 struct ETDropDownMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        ETDropDownMenuView("Service*",
-                           selected: .constant(ETDropDownMenuModel.mock),
-                           menuItems: ETDropDownMenuModel.mockArray
+        ETDropDownMenuView(
+            "Service*",
+            selected: .constant(ETDropDownMenuModel.mock),
+            menuItems: ETDropDownMenuModel.mockArray
         )
-            .frame(width: 200, height: 200)
+        .frame(width: 200, height: 200)
     }
 }
 #endif

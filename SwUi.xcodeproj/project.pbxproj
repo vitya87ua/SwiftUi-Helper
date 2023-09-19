@@ -90,6 +90,7 @@
 		D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270567289D5C8900B0EE9D /* SmoothLineView.swift */; };
 		D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */; };
 		D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */; };
+		D029AEFA2AB970F9008CE35C /* MultipartFormDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
@@ -142,6 +143,7 @@
 		D06E07CE293F99F400B00CD6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07CD293F99F400B00CD6 /* MediaManager.swift */; };
 		D06E07D2293F9A5100B00CD6 /* PutUploadImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */; };
 		D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D3293F9AE500B00CD6 /* MediaData.swift */; };
+		D06F9A5E2AA7460400098E04 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F9A5D2AA7460400098E04 /* KeychainManager.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D0790BE028AE61520070AF99 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* Applyable.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
@@ -316,6 +318,7 @@
 		D0270567289D5C8900B0EE9D /* SmoothLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineView.swift; sourceTree = "<group>"; };
 		D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineShape.swift; sourceTree = "<group>"; };
 		D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineConfiguration.swift; sourceTree = "<group>"; };
+		D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBuilder.swift; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
@@ -367,6 +370,7 @@
 		D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutUploadImageRequest.swift; sourceTree = "<group>"; };
 		D06E07D3293F9AE500B00CD6 /* MediaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaData.swift; sourceTree = "<group>"; };
 		D06E07D5293F9B6800B00CD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D06F9A5D2AA7460400098E04 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D0790BDF28AE61520070AF99 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
@@ -469,11 +473,13 @@
 				D0921642291E4C66008348DA /* UserDefault.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
+				D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */,
 				D080C275287590B700665E6F /* Log.swift */,
 				D06744472892D308004ED10A /* UndoRedoManager.swift */,
 				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
 				D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */,
 				D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */,
+				D06F9A5D2AA7460400098E04 /* KeychainManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -1323,6 +1329,7 @@
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				D0DA6D6B2A0E370F00C8EAC3 /* Modifier(available).swift in Sources */,
+				D06F9A5E2AA7460400098E04 /* KeychainManager.swift in Sources */,
 				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
 				D003400728C87CCA0043814C /* Extension+CGImage.swift in Sources */,
@@ -1352,6 +1359,7 @@
 				D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D06E07C1293F984000B00CD6 /* RequestManager.swift in Sources */,
+				D029AEFA2AB970F9008CE35C /* MultipartFormDataBuilder.swift in Sources */,
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				D06744432892A208004ED10A /* HotKeysModifier.swift in Sources */,
 				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
