@@ -129,6 +129,32 @@ extension NSImage {
         return NSImage(cgImage: thumbnailImageRef, size: size ?? originalSize)
     }
     
+    static func imageFromVideo(url: URL, at time: TimeInterval, scaleToFit: CGSize = .zero) -> NSImage? {
+        let asset: AVURLAsset = AVURLAsset(url: url)
+        
+        let assetIG: AVAssetImageGenerator = AVAssetImageGenerator(asset: asset)
+        assetIG.appliesPreferredTrackTransform = true
+        assetIG.apertureMode = AVAssetImageGenerator.ApertureMode.encodedPixels
+        
+        let cmTime: CMTime = CMTime(seconds: time, preferredTimescale: 60)
+        let thumbnailImageRef: CGImage
+        do {
+            thumbnailImageRef = try assetIG.copyCGImage(at: cmTime, actualTime: nil)
+        } catch let error {
+            Log("Error: \(error)", state: .error)
+            return nil
+        }
+        
+        let originalSize: CGSize = CGSize(width: thumbnailImageRef.width, height: thumbnailImageRef.height)
+        var size: CGSize = originalSize
+        
+        if scaleToFit != .zero {
+            size = originalSize.scaleToFit(to: scaleToFit)
+        }
+        
+        return NSImage(cgImage: thumbnailImageRef, size: size)
+    }
+    
     func resize(width: Int, height: Int) -> NSImage {
         let destSize = NSSize(width: width, height: height)
         let newImage = NSImage(size: destSize)
@@ -171,6 +197,11 @@ extension NSImage {
         newImage.size = newSize
         
         return NSImage(data: newImage.tiffRepresentation!)!
+    }
+    
+    static func emptyImage(size: CGSize, withColor: CGColor? = nil) -> NSImage? {
+        let cgImage: CGImage = CGImage.emptyImage(size: size, withColor: withColor)!
+        return NSImage(cgImage: cgImage, size: size)
     }
 }
 

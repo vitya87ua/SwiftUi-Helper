@@ -7,6 +7,32 @@
 
 import Foundation
 
+// MARK: - Usage
+/*
+ let boundary: String = UUID().uuidString
+ 
+ var request: URLRequest = URLRequest(url: url)
+ request.httpMethod = "POST"
+ 
+ let multipartHeader = MultipartFormDataBuilder.multipartFormDataHeader(boundary: boundary)
+ request.setValue(multipartHeader.value, forHTTPHeaderField: multipartHeader.HTTPHeaderField)
+ 
+ var bodyData: Data = MultipartFormDataBuilder(boundary: boundary)
+     .addField(name: "id", value: scheme.id)
+     .addField(name: "sceneType", value: scheme.sceneType)
+     .addData(scheme.photoData, withName: "photo", fileName: scheme.photoFileName, mimeType: "image/jpeg")
+     .buildHttpBody()
+ 
+ request.httpBody = bodyData
+ 
+ URLSession.shared.dataTask(with: request) { data, res, err in
+    // Code
+ }
+ .resume()
+ */
+
+
+// MARK: - Code
 final class MultipartFormDataBuilder {
     private let boundary: String
     
@@ -16,6 +42,11 @@ final class MultipartFormDataBuilder {
     
     private var bodyData: Data = Data()
     private var divider: Data = "\r\n".data(using: .utf8)!
+    
+    /// Add file data
+    func addData(_ data: Data, withName: String, fileName: String, mimeType: MimeTypeEnum) -> Self {
+        addData(data, withName: withName, fileName: fileName, mimeType: mimeType.rawValue)
+    }
     
     /// Add file data
     func addData(_ data: Data, withName: String, fileName: String, mimeType: String) -> Self {
@@ -50,32 +81,14 @@ extension MultipartFormDataBuilder {
     static func multipartFormDataHeader(boundary: String) -> (value: String, HTTPHeaderField: String) {
         return ("multipart/form-data; boundary=\(boundary)", "Content-Type")
     }
-    
-    func def() {
-        MultipartFormDataBuilder.multipartFormDataHeader(boundary: "").HTTPHeaderField
-    }
 }
 
-// MARK: - Usage
-/*
- let boundary: String = UUID().uuidString
- 
- var request: URLRequest = URLRequest(url: url)
- request.httpMethod = "POST"
- 
- let multipartHeader = MultipartFormDataBuilder.multipartFormDataHeader(boundary: boundary)
- request.setValue(multipartHeader.value, forHTTPHeaderField: multipartHeader.HTTPHeaderField)
- 
- var bodyData: Data = MultipartFormDataBuilder(boundary: boundary)
-     .addField(name: "id", value: scheme.id)
-     .addField(name: "sceneType", value: scheme.sceneType)
-     .addData(scheme.photoData, withName: "photo", fileName: scheme.photoFileName, mimeType: "image/jpeg")
-     .buildHttpBody()
- 
- request.httpBody = bodyData
- 
- URLSession.shared.dataTask(with: request) { data, res, err in
-    // Code
- }
- .resume()
- */
+enum MimeTypeEnum: String {
+    case imageJpeg = "image/jpeg"
+    case imagePng = "image/png"
+    case imageGif = "image/gif"
+    case imageTiff = "image/tiff"
+    case textPlain = "text/plain"
+    case videoQuicktime = "video/quicktime"
+    case videoMpeg = "video/mpeg"
+}

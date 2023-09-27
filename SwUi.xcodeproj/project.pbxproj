@@ -109,6 +109,9 @@
 		D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */; };
 		D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D846828083D2900D3D71A /* IsHiddenModifier.swift */; };
 		D04D846E2808453000D3D71A /* IfConditionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D846D2808453000D3D71A /* IfConditionModifier.swift */; };
+		D056BE862AC402C0000C9505 /* Extension+CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056BE852AC402C0000C9505 /* Extension+CIImage.swift */; };
+		D056BE882AC40363000C9505 /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056BE872AC40363000C9505 /* Extension+Bundle.swift */; };
+		D056BE8A2AC40464000C9505 /* Extension+NSScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056BE892AC40464000C9505 /* Extension+NSScreen.swift */; };
 		D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDB275108A000DA8752 /* ButtonStylies.swift */; };
 		D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */; };
 		D05E9106278718BF004EA46F /* GridTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E9105278718BF004EA46F /* GridTabView.swift */; };
@@ -336,6 +339,9 @@
 		D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUtils.swift; sourceTree = "<group>"; };
 		D04D846828083D2900D3D71A /* IsHiddenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsHiddenModifier.swift; sourceTree = "<group>"; };
 		D04D846D2808453000D3D71A /* IfConditionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfConditionModifier.swift; sourceTree = "<group>"; };
+		D056BE852AC402C0000C9505 /* Extension+CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CIImage.swift"; sourceTree = "<group>"; };
+		D056BE872AC40363000C9505 /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
+		D056BE892AC40464000C9505 /* Extension+NSScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSScreen.swift"; sourceTree = "<group>"; };
 		D056FDDB275108A000DA8752 /* ButtonStylies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStylies.swift; sourceTree = "<group>"; };
 		D056FDDD2751131900DA8752 /* BackgroundMaterials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterials.swift; sourceTree = "<group>"; };
 		D05E9105278718BF004EA46F /* GridTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTabView.swift; sourceTree = "<group>"; };
@@ -489,22 +495,25 @@
 			children = (
 				D05E910727871AA4004EA46F /* Extension+Array.swift */,
 				D06A138029C896730079F16A /* Extension+Binding.swift */,
-				C9D563C02716BD870094C04D /* Extension+Color.swift */,
+				D056BE872AC40363000C9505 /* Extension+Bundle.swift */,
 				D003400628C87CCA0043814C /* Extension+CGImage.swift */,
-				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
-				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
+				D003400C28C882280043814C /* Extension+CGPoint.swift */,
 				D0609F1429681CCB00308629 /* Extension+CGRect.swift */,
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
-				D003400C28C882280043814C /* Extension+CGPoint.swift */,
-				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
-				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
-				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
-				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
-				C9190EA627049EC700D71907 /* Extension+String.swift */,
-				D05F6A91271EC75100D97434 /* Extension+View.swift */,
+				D056BE852AC402C0000C9505 /* Extension+CIImage.swift */,
+				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
+				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
+				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
+				D056BE892AC40464000C9505 /* Extension+NSScreen.swift */,
+				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
+				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
+				C9190EA627049EC700D71907 /* Extension+String.swift */,
+				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
 				D089B07928B5032E000FEEA3 /* Extension+URL.swift */,
+				D05F6A91271EC75100D97434 /* Extension+View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1316,12 +1325,14 @@
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
 				D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */,
+				D056BE8A2AC40464000C9505 /* Extension+NSScreen.swift in Sources */,
 				D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */,
 				D05E9106278718BF004EA46F /* GridTabView.swift in Sources */,
 				D06E07B3293F96BF00B00CD6 /* NetworkLayer.swift in Sources */,
 				D06E07D2293F9A5100B00CD6 /* PutUploadImageRequest.swift in Sources */,
 				C92CD40F26FE5F2D00E3C552 /* ListWithSelection.swift in Sources */,
 				D06744402892A208004ED10A /* HotkeyCombination.swift in Sources */,
+				D056BE862AC402C0000C9505 /* Extension+CIImage.swift in Sources */,
 				D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */,
 				D0921645291E8A8C008348DA /* Modify.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
@@ -1369,6 +1380,7 @@
 				D022CAAD2768A1D60002A5BB /* WheelPicker.swift in Sources */,
 				D09254B128B7B35500080E1D /* PropertyWrappers.swift in Sources */,
 				D037C427287EC7D0005765B2 /* PathTest.swift in Sources */,
+				D056BE882AC40363000C9505 /* Extension+Bundle.swift in Sources */,
 				D003400B28C881AF0043814C /* Extension+CGSize.swift in Sources */,
 				D080C276287590B700665E6F /* Log.swift in Sources */,
 				C9CC76C4267D38C500EB5436 /* ContentView.swift in Sources */,
