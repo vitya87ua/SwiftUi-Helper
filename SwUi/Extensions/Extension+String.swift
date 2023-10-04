@@ -77,6 +77,15 @@ extension String {
         
         return result
     }
+    
+    // MARK: - Replace characters by Regex
+    func removeSymbols() -> String {
+        self.replacingOccurrences(
+            of: #"[^a-zA-Z0-9-()&_.,\s]"#, // <- Regex which allow only a-zA-Z0-9-()&_.,\s symbols
+            with: "",                      // <- string which replace doesn't allowed characters
+            options: [.regularExpression]
+        )
+    }
 }
 
 extension String {
