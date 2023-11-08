@@ -9,6 +9,12 @@ import SwiftUI
 import Foundation
 
 extension String {
+    func size(withAttributes attributes: [NSAttributedString.Key : Any]? = nil) -> CGSize {
+        NSString(string: self).size(withAttributes: attributes)
+    }
+}
+
+extension String {
     
     var firstUppercased: String { prefix(1).uppercased() + dropFirst() }
     

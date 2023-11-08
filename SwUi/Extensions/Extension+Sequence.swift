@@ -83,3 +83,25 @@ extension Sequence {
         }
     }
 }
+
+// https://forums.swift.org/t/uniquing-elements-in-a-sequence/16603
+extension Sequence where Element: Hashable {
+    func unique() -> [Element] {
+        return unique(by: { $0 })
+    }
+}
+extension Sequence {
+    /// Remove duplicate items by particular element
+    func unique<T: Hashable>(by propertyAccessor: (Element) -> T) -> [Element] {
+        var seen: Set<T> = []
+        var result: [Element] = []
+        for element in self {
+            let property = propertyAccessor(element)
+            if !seen.contains(property) {
+                result.append(element)
+                seen.insert(property)
+            }
+        }
+        return result
+    }
+}
