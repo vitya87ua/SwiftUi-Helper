@@ -100,6 +100,7 @@
 		D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */; };
 		D0378812271DB16E005EDDC1 /* DeepLinkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */; };
 		D037C427287EC7D0005765B2 /* PathTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C426287EC7D0005765B2 /* PathTest.swift */; };
+		D038D29F2B16450500941153 /* Extension+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D29E2B16450500941153 /* Extension+Collection.swift */; };
 		D03A106C29B72F7C0009521E /* Extension+NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A106B29B72F7C0009521E /* Extension+NSImage.swift */; };
 		D0415ED729B8BE7400B03EA2 /* WaveShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0415ED629B8BE7400B03EA2 /* WaveShapeView.swift */; };
 		D041E14228337C42009CB23A /* ifOSModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D041E14128337C42009CB23A /* ifOSModifier.swift */; };
@@ -146,6 +147,7 @@
 		D06E07CE293F99F400B00CD6 /* MediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07CD293F99F400B00CD6 /* MediaManager.swift */; };
 		D06E07D2293F9A5100B00CD6 /* PutUploadImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */; };
 		D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07D3293F9AE500B00CD6 /* MediaData.swift */; };
+		D06F5F972B021FF10056F60F /* Extension+NSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F5F962B021FF10056F60F /* Extension+NSFont.swift */; };
 		D06F9A5E2AA7460400098E04 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06F9A5D2AA7460400098E04 /* KeychainManager.swift */; };
 		D076BBBE281BD587000507EE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076BBBD281BD587000507EE /* NetworkStatus.swift */; };
 		D0790BE028AE61520070AF99 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* Applyable.swift */; };
@@ -330,6 +332,7 @@
 		D0336D66273D05FB00E6C69D /* TakeScreenShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeScreenShot.swift; sourceTree = "<group>"; };
 		D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle3DButtonStyle.swift; sourceTree = "<group>"; };
 		D037C426287EC7D0005765B2 /* PathTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTest.swift; sourceTree = "<group>"; };
+		D038D29E2B16450500941153 /* Extension+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Collection.swift"; sourceTree = "<group>"; };
 		D03A106B29B72F7C0009521E /* Extension+NSImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSImage.swift"; sourceTree = "<group>"; };
 		D0415ED629B8BE7400B03EA2 /* WaveShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveShapeView.swift; sourceTree = "<group>"; };
 		D041E14128337C42009CB23A /* ifOSModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ifOSModifier.swift; sourceTree = "<group>"; };
@@ -376,6 +379,7 @@
 		D06E07D1293F9A5100B00CD6 /* PutUploadImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutUploadImageRequest.swift; sourceTree = "<group>"; };
 		D06E07D3293F9AE500B00CD6 /* MediaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaData.swift; sourceTree = "<group>"; };
 		D06E07D5293F9B6800B00CD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D06F5F962B021FF10056F60F /* Extension+NSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSFont.swift"; sourceTree = "<group>"; };
 		D06F9A5D2AA7460400098E04 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		D076BBBD281BD587000507EE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		D0790BDF28AE61520070AF99 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
@@ -502,10 +506,12 @@
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D056BE852AC402C0000C9505 /* Extension+CIImage.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
+				D038D29E2B16450500941153 /* Extension+Collection.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
 				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				D06F5F962B021FF10056F60F /* Extension+NSFont.swift */,
 				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
 				D056BE892AC40464000C9505 /* Extension+NSScreen.swift */,
 				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
@@ -1319,6 +1325,7 @@
 				D097F881277C48C300770BD8 /* RepresentableView.swift in Sources */,
 				C931482D2706EADC00A75297 /* Alerts.swift in Sources */,
 				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
+				D038D29F2B16450500941153 /* Extension+Collection.swift in Sources */,
 				D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */,
 				D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
@@ -1407,6 +1414,7 @@
 				C901EB1226A80CA6002AF155 /* CircularProgressView.swift in Sources */,
 				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
 				D0FC5F9628C2219C0067C23A /* CameraRecorderViewModel.swift in Sources */,
+				D06F5F972B021FF10056F60F /* Extension+NSFont.swift in Sources */,
 				D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
