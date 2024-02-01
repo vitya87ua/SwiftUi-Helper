@@ -93,6 +93,8 @@
 		D029AEFA2AB970F9008CE35C /* MultipartFormDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
+		D02EF0942B6B9B36005D367D /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EF0932B6B9B36005D367D /* Extension+NSView.swift */; };
+		D02EF0962B6B9B68005D367D /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EF0952B6B9B68005D367D /* Extension+UIView.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
 		D03260A029506CE90070714C /* CircleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032609F29506CE90070714C /* CircleSlider.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
@@ -153,6 +155,7 @@
 		D0790BE028AE61520070AF99 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0790BDF28AE61520070AF99 /* Applyable.swift */; };
 		D07A6FC22878138D0075F0A6 /* SettingsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */; };
 		D07BEAAF28C9E83E003AC656 /* AppNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEAAE28C9E83E003AC656 /* AppNotification.swift */; };
+		D07C151A2B5A812D0024E41C /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C15192B5A812D0024E41C /* Extension+UIColor.swift */; };
 		D080C276287590B700665E6F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D080C275287590B700665E6F /* Log.swift */; };
 		D089B07A28B5032E000FEEA3 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07928B5032E000FEEA3 /* Extension+URL.swift */; };
 		D089B07C28B503CD000FEEA3 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089B07B28B503CD000FEEA3 /* Debounce.swift */; };
@@ -169,6 +172,7 @@
 		D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */; };
 		D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A41BA12784781E006C3669 /* StrokeText.swift */; };
 		D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */; };
+		D0A445932B35DD9600292875 /* FilledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A445922B35DD9600292875 /* FilledButtonStyle.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 		D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */; };
 		D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */; };
@@ -326,6 +330,8 @@
 		D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBuilder.swift; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
+		D02EF0932B6B9B36005D367D /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
+		D02EF0952B6B9B68005D367D /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		D032609F29506CE90070714C /* CircleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSlider.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
@@ -385,6 +391,7 @@
 		D0790BDF28AE61520070AF99 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
 		D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsUtil.swift; sourceTree = "<group>"; };
 		D07BEAAE28C9E83E003AC656 /* AppNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotification.swift; sourceTree = "<group>"; };
+		D07C15192B5A812D0024E41C /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		D080C275287590B700665E6F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		D089B07928B5032E000FEEA3 /* Extension+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
 		D089B07B28B503CD000FEEA3 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
@@ -401,6 +408,7 @@
 		D0A2FB4C27E0E05400DB0B52 /* HighlightText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightText.swift; sourceTree = "<group>"; };
 		D0A41BA12784781E006C3669 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Staatliches-Regular.ttf"; sourceTree = "<group>"; };
+		D0A445922B35DD9600292875 /* FilledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonStyle.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 		D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimations.swift; sourceTree = "<group>"; };
 		D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -506,6 +514,7 @@
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D056BE852AC402C0000C9505 /* Extension+CIImage.swift */,
 				C9D563C02716BD870094C04D /* Extension+Color.swift */,
+				D07C15192B5A812D0024E41C /* Extension+UIColor.swift */,
 				D038D29E2B16450500941153 /* Extension+Collection.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
@@ -513,6 +522,8 @@
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
 				D06F5F962B021FF10056F60F /* Extension+NSFont.swift */,
 				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
+				D02EF0932B6B9B36005D367D /* Extension+NSView.swift */,
+				D02EF0952B6B9B68005D367D /* Extension+UIView.swift */,
 				D056BE892AC40464000C9505 /* Extension+NSScreen.swift */,
 				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
 				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
@@ -796,6 +807,7 @@
 				D025A34F273ACA7A005AD490 /* RoundedButton.swift */,
 				D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */,
 				D037284A27B25DF700509CC9 /* Rectangle3DButtonStyle.swift */,
+				D0A445922B35DD9600292875 /* FilledButtonStyle.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -1282,6 +1294,7 @@
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
 				D0649495299CD6C500DDD201 /* CombineTestViewModel.swift in Sources */,
 				C9A5F19027B3F686001B2222 /* ExpandableMenuView.swift in Sources */,
+				D07C151A2B5A812D0024E41C /* Extension+UIColor.swift in Sources */,
 				D06744412892A208004ED10A /* Extension+CGKeyCode.swift in Sources */,
 				D0A2FB4D27E0E05400DB0B52 /* HighlightText.swift in Sources */,
 				C9BDC99C27AEC09500713F69 /* AppleHierarchicalListViewModel.swift in Sources */,
@@ -1292,6 +1305,7 @@
 				D07BEAAF28C9E83E003AC656 /* AppNotification.swift in Sources */,
 				D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */,
 				D03260A029506CE90070714C /* CircleSlider.swift in Sources */,
+				D02EF0942B6B9B36005D367D /* Extension+NSView.swift in Sources */,
 				D03A106C29B72F7C0009521E /* Extension+NSImage.swift in Sources */,
 				C9058F41271A001000D1CE08 /* DeepLinkBuilder.swift in Sources */,
 				D0004DF427FDCE7B00091AAC /* Injected.swift in Sources */,
@@ -1327,8 +1341,10 @@
 				D022CA8B27687B5A0002A5BB /* InstagramSharingFeedAndStories.swift in Sources */,
 				D038D29F2B16450500941153 /* Extension+Collection.swift in Sources */,
 				D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */,
+				D02EF0962B6B9B68005D367D /* Extension+UIView.swift in Sources */,
 				D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
+				D0A445932B35DD9600292875 /* FilledButtonStyle.swift in Sources */,
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
 				D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */,
 				D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */,
