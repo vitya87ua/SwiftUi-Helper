@@ -91,6 +91,8 @@
 		D027056A289D5CB900B0EE9D /* SmoothLineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */; };
 		D027056C289D5CCE00B0EE9D /* SmoothLineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */; };
 		D029AEFA2AB970F9008CE35C /* MultipartFormDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */; };
+		D02B377A2B8638F100F700A2 /* UIActivityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B37792B8638F100F700A2 /* UIActivityHelper.swift */; };
+		D02B377C2B86393800F700A2 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B377B2B86393800F700A2 /* Extension+UIApplication.swift */; };
 		D02B44362775D24E00998DE2 /* IncrementingNumberAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */; };
 		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
 		D02EF0942B6B9B36005D367D /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EF0932B6B9B36005D367D /* Extension+NSView.swift */; };
@@ -328,6 +330,8 @@
 		D0270569289D5CB900B0EE9D /* SmoothLineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineShape.swift; sourceTree = "<group>"; };
 		D027056B289D5CCE00B0EE9D /* SmoothLineConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothLineConfiguration.swift; sourceTree = "<group>"; };
 		D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBuilder.swift; sourceTree = "<group>"; };
+		D02B37792B8638F100F700A2 /* UIActivityHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityHelper.swift; sourceTree = "<group>"; };
+		D02B377B2B86393800F700A2 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		D02B44352775D24E00998DE2 /* IncrementingNumberAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementingNumberAnimation.swift; sourceTree = "<group>"; };
 		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
 		D02EF0932B6B9B36005D367D /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
@@ -498,6 +502,7 @@
 				D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */,
 				D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */,
 				D06F9A5D2AA7460400098E04 /* KeychainManager.swift */,
+				D02B37792B8638F100F700A2 /* UIActivityHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
 				D089B07928B5032E000FEEA3 /* Extension+URL.swift */,
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
+				D02B377B2B86393800F700A2 /* Extension+UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1282,6 +1288,7 @@
 				D04B036D2760AD6A00BC54E7 /* EmailUtils.swift in Sources */,
 				C931482F27074B0700A75297 /* ClockInUI.swift in Sources */,
 				D0ADA76F27B561C6005EA496 /* CircleLoadingView.swift in Sources */,
+				D02B377C2B86393800F700A2 /* Extension+UIApplication.swift in Sources */,
 				C9C73BAE26B05D3C000EB45F /* TextStyle.swift in Sources */,
 				C90EB03F273595FA002F54F6 /* CombineUI.swift in Sources */,
 				D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */,
@@ -1330,6 +1337,7 @@
 				D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */,
 				C92887E126DF9E5A000EDD1C /* TEMP.swift in Sources */,
 				D056FDDC275108A000DA8752 /* ButtonStylies.swift in Sources */,
+				D02B377A2B8638F100F700A2 /* UIActivityHelper.swift in Sources */,
 				D04447CA2940870D00E9B7DD /* URLPath.swift in Sources */,
 				D06A138129C896730079F16A /* Extension+Binding.swift in Sources */,
 				D056FDDE2751131900DA8752 /* BackgroundMaterials.swift in Sources */,
