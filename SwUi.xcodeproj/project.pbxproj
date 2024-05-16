@@ -208,6 +208,7 @@
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */; };
+		D0E6D5A82BF5E4D000CDBA86 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */; };
 		D0E78383282A98940059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0E78384282A98960059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
@@ -445,6 +446,7 @@
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
 		D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUrlView.swift; sourceTree = "<group>"; };
+		D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
 		D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDisabledModifier.swift; sourceTree = "<group>"; };
 		D0EE54E22805B03C00914059 /* PHImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePicker.swift; sourceTree = "<group>"; };
@@ -870,6 +872,7 @@
 				D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */,
 				D0921644291E8A8C008348DA /* Modify.swift */,
 				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
+				D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1337,6 +1340,7 @@
 				D0BB37EB2987D46A00E93E48 /* CustomSliderView.swift in Sources */,
 				D0270568289D5C8900B0EE9D /* SmoothLineView.swift in Sources */,
 				D06E07C8293F98EE00B00CD6 /* HTTPBoundary.swift in Sources */,
+				D0E6D5A82BF5E4D000CDBA86 /* LoadingScreen.swift in Sources */,
 				D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */,
 				C9C73BA826AFF66B000EB45F /* AutoScrollingStringView.swift in Sources */,
 				D098013D27F07A5E0088662A /* ETDropDownMenuView.swift in Sources */,
