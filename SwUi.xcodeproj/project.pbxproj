@@ -192,6 +192,7 @@
 		D0C9058B29ADEAD80054ECDC /* Extension+Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */; };
 		D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */; };
 		D0CBECC527ECC2D10068B3B9 /* CornerRadiusModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */; };
+		D0CDDC862BFC901300720C11 /* Extension+NSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */; };
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
@@ -432,6 +433,7 @@
 		D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Pasteboard.swift"; sourceTree = "<group>"; };
 		D0CB5401273D4CD1003F476E /* InstagramSharingDirectToStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharingDirectToStories.swift; sourceTree = "<group>"; };
 		D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusModifierView.swift; sourceTree = "<group>"; };
+		D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSApplication.swift"; sourceTree = "<group>"; };
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
 		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
@@ -529,6 +531,7 @@
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
 				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */,
 				D06F5F962B021FF10056F60F /* Extension+NSFont.swift */,
 				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
 				D02EF0932B6B9B36005D367D /* Extension+NSView.swift */,
@@ -1455,6 +1458,7 @@
 				D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */,
 				D0FC5F9628C2219C0067C23A /* CameraRecorderViewModel.swift in Sources */,
 				D06F5F972B021FF10056F60F /* Extension+NSFont.swift in Sources */,
+				D0CDDC862BFC901300720C11 /* Extension+NSApplication.swift in Sources */,
 				D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */,
 				C924AE9226DD055100CCD4B2 /* PopUpMenu.swift in Sources */,
 				D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */,
