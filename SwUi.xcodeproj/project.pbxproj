@@ -126,6 +126,7 @@
 		D05F6A93271EC75100D97434 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A91271EC75100D97434 /* Extension+View.swift */; };
 		D05F6A95271EC86100D97434 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D0609F1529681CCB00308629 /* Extension+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0609F1429681CCB00308629 /* Extension+CGRect.swift */; };
+		D06248982C04B08F004C9B5F /* ScrollDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06248972C04B08F004C9B5F /* ScrollDetector.swift */; };
 		D0649493299CD6BA00DDD201 /* CombineTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0649492299CD6BA00DDD201 /* CombineTestView.swift */; };
 		D0649495299CD6C500DDD201 /* CombineTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0649494299CD6C500DDD201 /* CombineTestViewModel.swift */; };
 		D065579B28910BAC00C06C21 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065579A28910BAC00C06C21 /* Switch.swift */; };
@@ -366,6 +367,7 @@
 		D05F6A91271EC75100D97434 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		D05F6A94271EC86100D97434 /* BounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		D0609F1429681CCB00308629 /* Extension+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGRect.swift"; sourceTree = "<group>"; };
+		D06248972C04B08F004C9B5F /* ScrollDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDetector.swift; sourceTree = "<group>"; };
 		D0649492299CD6BA00DDD201 /* CombineTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestView.swift; sourceTree = "<group>"; };
 		D0649494299CD6C500DDD201 /* CombineTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestViewModel.swift; sourceTree = "<group>"; };
 		D065579A28910BAC00C06C21 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
@@ -876,6 +878,7 @@
 				D0921644291E8A8C008348DA /* Modify.swift */,
 				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
 				D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */,
+				D06248972C04B08F004C9B5F /* ScrollDetector.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1313,6 +1316,7 @@
 				D096D2BA284E348B00F01D35 /* TabViewExample.swift in Sources */,
 				D0968C732938AEA300476250 /* NormalizedDimensionConverter.swift in Sources */,
 				D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */,
+				D06248982C04B08F004C9B5F /* ScrollDetector.swift in Sources */,
 				D06E07CA293F990200B00CD6 /* NetworkManagerError.swift in Sources */,
 				D037284B27B25DF700509CC9 /* Rectangle3DButtonStyle.swift in Sources */,
 				D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */,
