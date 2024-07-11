@@ -37,7 +37,7 @@ extension Array {
     
     func cutArray(forCount: Int) -> [Element] {
         var resultArray: [Element] = []
-
+        
         if forCount <= count {
             for item in 0..<forCount {
                 resultArray.append(self[item])
@@ -45,7 +45,13 @@ extension Array {
         } else {
             print(#fileID, #line, "Error: forCount bigger than Array count")
         }
-
+        
         return resultArray
     }
+    
+    func item(_ index: Int) -> Element? {
+        guard self.indices.contains(index) else { return nil }
+        return self[index]
+    }
+    
 }

@@ -188,6 +188,7 @@
 		D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */; };
 		D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */; };
 		D0BB37EB2987D46A00E93E48 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */; };
+		D0BF2C6A2C3FED8B00C28FA0 /* SensoryFeedbacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF2C692C3FED8B00C28FA0 /* SensoryFeedbacksView.swift */; };
 		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
 		D0C6AE9F28619BF90090FC1E /* TempWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9E28619BF90090FC1E /* TempWidget.swift */; };
 		D0C9058B29ADEAD80054ECDC /* Extension+Pasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */; };
@@ -430,6 +431,7 @@
 		D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentableView.swift; sourceTree = "<group>"; };
 		D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentable2.swift; sourceTree = "<group>"; };
 		D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
+		D0BF2C692C3FED8B00C28FA0 /* SensoryFeedbacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryFeedbacksView.swift; sourceTree = "<group>"; };
 		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
 		D0C6AE9E28619BF90090FC1E /* TempWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempWidget.swift; sourceTree = "<group>"; };
 		D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Pasteboard.swift"; sourceTree = "<group>"; };
@@ -661,6 +663,7 @@
 				D043794127464EDC00B5F30A /* RainbowText.swift */,
 				D05DECDC2BDF9A2000FE8ECC /* Regex */,
 				C9620F6F26E0C92B002ECB75 /* SegmentedPicker.swift */,
+				D0BF2C692C3FED8B00C28FA0 /* SensoryFeedbacksView.swift */,
 				C9836421271091FC007BE5B0 /* Sheets */,
 				C92887D826DF5E06000EDD1C /* SignaturePencilKit.swift */,
 				D0BB37E92987D42B00E93E48 /* Sliders */,
@@ -1447,6 +1450,7 @@
 				D06E07B9293F975200B00CD6 /* PostSignInRequest.swift in Sources */,
 				D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */,
 				D0C9058B29ADEAD80054ECDC /* Extension+Pasteboard.swift in Sources */,
+				D0BF2C6A2C3FED8B00C28FA0 /* SensoryFeedbacksView.swift in Sources */,
 				C9A69FAD2715CB3100042099 /* Colors.swift in Sources */,
 				C93148312707500C00A75297 /* AlertWithTextField.swift in Sources */,
 				D08A80F92927E1DB0038D3EF /* Extension+UIImage.swift in Sources */,
