@@ -66,6 +66,7 @@
 		D0080BA327B1690900C42096 /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0080BA227B1690900C42096 /* DropDownMenuView.swift */; };
 		D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */; };
 		D00AFA9D27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */; };
+		D00AFE692C62666300C6C163 /* DismissingKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00AFE682C62666300C6C163 /* DismissingKeyboard.swift */; };
 		D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D012503427F3320500D315E7 /* ETBorderedTextFieldStyle.swift */; };
 		D0132CA5271F08B0005F2D13 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F6A94271EC86100D97434 /* BounceView.swift */; };
 		D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01DA78327E4CA9F00F19796 /* Extension+Date.swift */; };
@@ -317,6 +318,7 @@
 		D0080BA227B1690900C42096 /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
 		D00AFA9A27BD0A68004CE8AF /* BackToRootExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootExample.swift; sourceTree = "<group>"; };
 		D00AFA9C27BD0A9A004CE8AF /* BackToRootNavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToRootNavigationUtil.swift; sourceTree = "<group>"; };
+		D00AFE682C62666300C6C163 /* DismissingKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingKeyboard.swift; sourceTree = "<group>"; };
 		D012503427F3320500D315E7 /* ETBorderedTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBorderedTextFieldStyle.swift; sourceTree = "<group>"; };
 		D01DA78327E4CA9F00F19796 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		D01DCE45274FA5E50022C93C /* NeueMontreal-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueMontreal-Bold.otf"; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 				D068F29F290FEFDD00F74BB8 /* DataConverter.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D0921640291E4ADB008348DA /* DefaultCodable.swift */,
+				D00AFE682C62666300C6C163 /* DismissingKeyboard.swift */,
 				D0921642291E4C66008348DA /* UserDefault.swift */,
 				D022CA8927687ADD0002A5BB /* Instagram */,
 				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
@@ -1431,6 +1434,7 @@
 				D05F6A95271EC86100D97434 /* BounceView.swift in Sources */,
 				D06744432892A208004ED10A /* HotKeysModifier.swift in Sources */,
 				D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */,
+				D00AFE692C62666300C6C163 /* DismissingKeyboard.swift in Sources */,
 				C919EDFF26EBA5B800A15A27 /* MenuButton.swift in Sources */,
 				D0B3468C282BE9DE00625538 /* SwipeGesture.swift in Sources */,
 				C983642027108F18007BE5B0 /* SheetWithNavigationView.swift in Sources */,
