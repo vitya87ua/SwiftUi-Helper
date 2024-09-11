@@ -92,6 +92,12 @@ extension String {
             options: [.regularExpression]
         )
     }
+    
+    /// Parse CamelCase and return title e.g. "veryProductive" -> "Very Productive"
+    @available(iOS 16.0, *)
+    var titleCased: String {
+        replacing(#/[[:upper:]]/#) { " " + $0.output }.capitalized
+    }
 }
 
 extension String {
