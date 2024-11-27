@@ -188,6 +188,7 @@
 		D0B7C02028CF195200863EDD /* DeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C01F28CF195200863EDD /* DeviceRotation.swift */; };
 		D0B7C02228CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */; };
 		D0B7C02428CF30FF00863EDD /* SimpleUIViewRepresentable2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */; };
+		D0B9DE6E2CF73ABE002FCAAD /* Extension+KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B9DE6D2CF73ABE002FCAAD /* Extension+KeyPath.swift */; };
 		D0BB37EB2987D46A00E93E48 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */; };
 		D0BF2C6A2C3FED8B00C28FA0 /* SensoryFeedbacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BF2C692C3FED8B00C28FA0 /* SensoryFeedbacksView.swift */; };
 		D0C6AE9D286194A20090FC1E /* TimersMediumWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */; };
@@ -209,6 +210,7 @@
 		D0DDC6982864409200BC5631 /* Extension+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC6952864409200BC5631 /* Extension+Sequence.swift */; };
 		D0DE5B8F2769D74100FCF692 /* ProgressLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */; };
 		D0E0034329FAA3C90040295B /* Future-Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E0034229FAA3C90040295B /* Future-Promise.swift */; };
+		D0E4BAEB2CB3F40E00B080B8 /* NullEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4BAEA2CB3F40E00B080B8 /* NullEncodable.swift */; };
 		D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */; };
 		D0E536EA27FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */; };
 		D0E536ED27FB2AF100F45D08 /* DragAndDropUrlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */; };
@@ -432,6 +434,7 @@
 		D0B7C01F28CF195200863EDD /* DeviceRotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRotation.swift; sourceTree = "<group>"; };
 		D0B7C02128CF2E3A00863EDD /* SimpleUIViewRepresentableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentableView.swift; sourceTree = "<group>"; };
 		D0B7C02328CF30FF00863EDD /* SimpleUIViewRepresentable2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIViewRepresentable2.swift; sourceTree = "<group>"; };
+		D0B9DE6D2CF73ABE002FCAAD /* Extension+KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+KeyPath.swift"; sourceTree = "<group>"; };
 		D0BB37EA2987D46A00E93E48 /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 		D0BF2C692C3FED8B00C28FA0 /* SensoryFeedbacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensoryFeedbacksView.swift; sourceTree = "<group>"; };
 		D0C6AE9C286194A20090FC1E /* TimersMediumWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersMediumWidgetEntryView.swift; sourceTree = "<group>"; };
@@ -451,6 +454,7 @@
 		D0DDC6952864409200BC5631 /* Extension+Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Sequence.swift"; sourceTree = "<group>"; };
 		D0DE5B8E2769D74100FCF692 /* ProgressLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoadingView.swift; sourceTree = "<group>"; };
 		D0E0034229FAA3C90040295B /* Future-Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future-Promise.swift"; sourceTree = "<group>"; };
+		D0E4BAEA2CB3F40E00B080B8 /* NullEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullEncodable.swift; sourceTree = "<group>"; };
 		D0E536E727FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitSimpleExampleView.swift; sourceTree = "<group>"; };
 		D0E536E927FAE8B900F45D08 /* AsyncAwaitTaskGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTaskGroupExampleView.swift; sourceTree = "<group>"; };
 		D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUrlView.swift; sourceTree = "<group>"; };
@@ -496,26 +500,27 @@
 			children = (
 				D0790BDF28AE61520070AF99 /* Applyable.swift */,
 				D07BEAAE28C9E83E003AC656 /* AppNotification.swift */,
-				D06E07B1293F96B200B00CD6 /* NetworkLayer */,
-				D067443A2892A208004ED10A /* HotKeys(mac os) */,
-				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
-				D0E0034229FAA3C90040295B /* Future-Promise.swift */,
-				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
 				D068F29F290FEFDD00F74BB8 /* DataConverter.swift */,
+				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
 				D0921640291E4ADB008348DA /* DefaultCodable.swift */,
 				D00AFE682C62666300C6C163 /* DismissingKeyboard.swift */,
-				D0921642291E4C66008348DA /* UserDefault.swift */,
-				D022CA8927687ADD0002A5BB /* Instagram */,
-				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
-				D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */,
-				D080C275287590B700665E6F /* Log.swift */,
-				D06744472892D308004ED10A /* UndoRedoManager.swift */,
-				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
-				D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */,
-				D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */,
+				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
+				D0E0034229FAA3C90040295B /* Future-Promise.swift */,
 				D06F9A5D2AA7460400098E04 /* KeychainManager.swift */,
+				D080C275287590B700665E6F /* Log.swift */,
+				D029AEF92AB970F9008CE35C /* MultipartFormDataBuilder.swift */,
+				D076BBBD281BD587000507EE /* NetworkStatus.swift */,
+				D0968C722938AEA300476250 /* NormalizedDimensionConverter.swift */,
+				D0E4BAEA2CB3F40E00B080B8 /* NullEncodable.swift */,
+				D07A6FC12878138D0075F0A6 /* SettingsUtil.swift */,
+				D09254D628B8F34300080E1D /* TimeLapseBuilder.swift */,
 				D02B37792B8638F100F700A2 /* UIActivityHelper.swift */,
+				D06744472892D308004ED10A /* UndoRedoManager.swift */,
+				D0921642291E4C66008348DA /* UserDefault.swift */,
+				D067443A2892A208004ED10A /* HotKeys(mac os) */,
+				D022CA8927687ADD0002A5BB /* Instagram */,
+				D06E07B1293F96B200B00CD6 /* NetworkLayer */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -543,6 +548,7 @@
 				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
 				D02EF0932B6B9B36005D367D /* Extension+NSView.swift */,
 				D02EF0952B6B9B68005D367D /* Extension+UIView.swift */,
+				D0B9DE6D2CF73ABE002FCAAD /* Extension+KeyPath.swift */,
 				D056BE892AC40464000C9505 /* Extension+NSScreen.swift */,
 				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
 				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
@@ -1428,6 +1434,8 @@
 				D01DA78427E4CA9F00F19796 /* Extension+Date.swift in Sources */,
 				D0609F1529681CCB00308629 /* Extension+CGRect.swift in Sources */,
 				D0E536E827FADAFF00F45D08 /* AsyncAwaitSimpleExampleView.swift in Sources */,
+				D0B9DE6E2CF73ABE002FCAAD /* Extension+KeyPath.swift in Sources */,
+				D0E4BAEB2CB3F40E00B080B8 /* NullEncodable.swift in Sources */,
 				D05F6A92271EC75100D97434 /* Extension+View.swift in Sources */,
 				D06E07C1293F984000B00CD6 /* RequestManager.swift in Sources */,
 				D029AEFA2AB970F9008CE35C /* MultipartFormDataBuilder.swift in Sources */,

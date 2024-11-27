@@ -98,6 +98,21 @@ extension String {
     var titleCased: String {
         replacing(#/[[:upper:]]/#) { " " + $0.output }.capitalized
     }
+    
+    /// Remove characters from string
+    /// - Parameter characters: Array of characters to remove
+    /// - Returns: New String
+    /// e.g. "+96 (123) 456-0990 ".remove(" ", "(", ")", "-")
+    /// Return: "+961234560990"
+    func remove(_ characters: String...) -> String {
+        var newString: String = self
+        
+        characters.forEach {
+            newString = newString.replacingOccurrences(of: $0, with: "")
+        }
+        
+        return newString
+    }
 }
 
 extension String {
