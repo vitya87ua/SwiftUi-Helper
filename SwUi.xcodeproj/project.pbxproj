@@ -140,6 +140,7 @@
 		D068F2A0290FEFDD00F74BB8 /* DataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068F29F290FEFDD00F74BB8 /* DataConverter.swift */; };
 		D06A138129C896730079F16A /* Extension+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A138029C896730079F16A /* Extension+Binding.swift */; };
 		D06ADBF1278C6C9700CD7E2E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */; };
+		D06BC4382D7B409C006116BB /* OnHoverCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BC4372D7B409C006116BB /* OnHoverCursor.swift */; };
 		D06E07B3293F96BF00B00CD6 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B2293F96BF00B00CD6 /* NetworkLayer.swift */; };
 		D06E07B6293F96FF00B00CD6 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B5293F96FF00B00CD6 /* AuthenticationManager.swift */; };
 		D06E07B9293F975200B00CD6 /* PostSignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E07B8293F975200B00CD6 /* PostSignInRequest.swift */; };
@@ -385,6 +386,7 @@
 		D068F29F290FEFDD00F74BB8 /* DataConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConverter.swift; sourceTree = "<group>"; };
 		D06A138029C896730079F16A /* Extension+Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Binding.swift"; sourceTree = "<group>"; };
 		D06ADBF0278C6C9700CD7E2E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		D06BC4372D7B409C006116BB /* OnHoverCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnHoverCursor.swift; sourceTree = "<group>"; };
 		D06E07B2293F96BF00B00CD6 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		D06E07B5293F96FF00B00CD6 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		D06E07B8293F975200B00CD6 /* PostSignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSignInRequest.swift; sourceTree = "<group>"; };
@@ -891,6 +893,7 @@
 				D0B7C01F28CF195200863EDD /* DeviceRotation.swift */,
 				D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */,
 				D06248972C04B08F004C9B5F /* ScrollDetector.swift */,
+				D06BC4372D7B409C006116BB /* OnHoverCursor.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1385,6 +1388,7 @@
 				D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */,
 				D02EF0962B6B9B68005D367D /* Extension+UIView.swift in Sources */,
 				D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */,
+				D06BC4382D7B409C006116BB /* OnHoverCursor.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				D0A445932B35DD9600292875 /* FilledButtonStyle.swift in Sources */,
 				D012503527F3320500D315E7 /* ETBorderedTextFieldStyle.swift in Sources */,
