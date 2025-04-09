@@ -105,3 +105,21 @@ extension Sequence {
         return result
     }
 }
+
+/// https://forums.swift.org/t/mapping-a-dictionary-from-an-array/21599/2
+extension Sequence {
+    /// Returns a dictionary with mapped keys and values based on transformation block.
+    /// multiple items with duplicated keys will be overridden, only the last processed will be mantained.
+    ///
+    /// - Parameters:
+    ///   - transformBlock: launched for each Element of the array, returns a couple of Key and Value
+    /// - Returns: a dictionary with a couple of Key: Value for each Element of the array
+    func keyMap<Key: Hashable, Value>(_ transformBlock: (Element) -> (key: Key, value: Value)) -> [Key: Value] {
+        var dictionary: [Key: Value] = [:]
+        forEach { element in
+            let map = transformBlock(element)
+            dictionary[map.key] = map.value
+        }
+        return dictionary
+    }
+}

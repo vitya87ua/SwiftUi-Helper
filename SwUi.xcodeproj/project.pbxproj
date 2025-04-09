@@ -98,6 +98,7 @@
 		D02C279F29376784007FCE6F /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02C279E29376784007FCE6F /* Extension+FileManager.swift */; };
 		D02EF0942B6B9B36005D367D /* Extension+NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EF0932B6B9B36005D367D /* Extension+NSView.swift */; };
 		D02EF0962B6B9B68005D367D /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02EF0952B6B9B68005D367D /* Extension+UIView.swift */; };
+		D0315F132DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0315F122DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift */; };
 		D031D701283CB49700B190C4 /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031D700283CB49700B190C4 /* StopWatchView.swift */; };
 		D03260A029506CE90070714C /* CircleSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D032609F29506CE90070714C /* CircleSlider.swift */; };
 		D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */; };
@@ -346,6 +347,7 @@
 		D02C279E29376784007FCE6F /* Extension+FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
 		D02EF0932B6B9B36005D367D /* Extension+NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSView.swift"; sourceTree = "<group>"; };
 		D02EF0952B6B9B68005D367D /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		D0315F122DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustSheetHeightToContentModifier.swift; sourceTree = "<group>"; };
 		D031D700283CB49700B190C4 /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
 		D032609F29506CE90070714C /* CircleSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSlider.swift; sourceTree = "<group>"; };
 		D0336D64273CFEB800E6C69D /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
@@ -894,6 +896,7 @@
 				D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */,
 				D06248972C04B08F004C9B5F /* ScrollDetector.swift */,
 				D06BC4372D7B409C006116BB /* OnHoverCursor.swift */,
+				D0315F122DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1317,6 +1320,7 @@
 				D0336D65273CFEB800E6C69D /* ShareSheetButton.swift in Sources */,
 				D00AFA9B27BD0A68004CE8AF /* BackToRootExample.swift in Sources */,
 				D06E07C4293F98D000B00CD6 /* HTTPMethod.swift in Sources */,
+				D0315F132DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift in Sources */,
 				D0790BE028AE61520070AF99 /* Applyable.swift in Sources */,
 				D0AACCB32770C6680078DF2E /* AnimationsWithTransitions.swift in Sources */,
 				C92887D926DF5E06000EDD1C /* SignaturePencilKit.swift in Sources */,
