@@ -220,6 +220,7 @@
 		D0E78383282A98940059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0E78384282A98960059B513 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
 		D0E7EFEF27E4CFB200C76065 /* DraggablePinMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */; };
+		D0E8C6D22DAFF440005EDDB9 /* Extension+JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8C6D12DAFF440005EDDB9 /* Extension+JSONDecoder.swift */; };
 		D0EE54D628054E2E00914059 /* IsDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */; };
 		D0EE54E32805B03C00914059 /* PHImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE54E22805B03C00914059 /* PHImagePicker.swift */; };
 		D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F506952817E5E70061FE25 /* Extension+Data.swift */; };
@@ -464,6 +465,7 @@
 		D0E536EC27FB2AF100F45D08 /* DragAndDropUrlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropUrlView.swift; sourceTree = "<group>"; };
 		D0E6D5A72BF5E4D000CDBA86 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		D0E7EFEE27E4CFB200C76065 /* DraggablePinMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggablePinMapView.swift; sourceTree = "<group>"; };
+		D0E8C6D12DAFF440005EDDB9 /* Extension+JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+JSONDecoder.swift"; sourceTree = "<group>"; };
 		D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsDisabledModifier.swift; sourceTree = "<group>"; };
 		D0EE54E22805B03C00914059 /* PHImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImagePicker.swift; sourceTree = "<group>"; };
 		D0F506952817E5E70061FE25 /* Extension+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
@@ -540,27 +542,28 @@
 				D0609F1429681CCB00308629 /* Extension+CGRect.swift */,
 				D003400A28C881AF0043814C /* Extension+CGSize.swift */,
 				D056BE852AC402C0000C9505 /* Extension+CIImage.swift */,
-				C9D563C02716BD870094C04D /* Extension+Color.swift */,
-				D07C15192B5A812D0024E41C /* Extension+UIColor.swift */,
 				D038D29E2B16450500941153 /* Extension+Collection.swift */,
+				C9D563C02716BD870094C04D /* Extension+Color.swift */,
 				D0F506952817E5E70061FE25 /* Extension+Data.swift */,
 				D01DA78327E4CA9F00F19796 /* Extension+Date.swift */,
 				D02C279E29376784007FCE6F /* Extension+FileManager.swift */,
 				D01DCE54274FA6A20022C93C /* Extension+Font.swift */,
+				D0E8C6D12DAFF440005EDDB9 /* Extension+JSONDecoder.swift */,
+				D0B9DE6D2CF73ABE002FCAAD /* Extension+KeyPath.swift */,
 				D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */,
 				D06F5F962B021FF10056F60F /* Extension+NSFont.swift */,
 				D03A106B29B72F7C0009521E /* Extension+NSImage.swift */,
-				D02EF0932B6B9B36005D367D /* Extension+NSView.swift */,
-				D02EF0952B6B9B68005D367D /* Extension+UIView.swift */,
-				D0B9DE6D2CF73ABE002FCAAD /* Extension+KeyPath.swift */,
 				D056BE892AC40464000C9505 /* Extension+NSScreen.swift */,
+				D02EF0932B6B9B36005D367D /* Extension+NSView.swift */,
 				D0C9058A29ADEAD80054ECDC /* Extension+Pasteboard.swift */,
 				D0DDC6952864409200BC5631 /* Extension+Sequence.swift */,
 				C9190EA627049EC700D71907 /* Extension+String.swift */,
+				D02B377B2B86393800F700A2 /* Extension+UIApplication.swift */,
+				D07C15192B5A812D0024E41C /* Extension+UIColor.swift */,
 				D08A80F82927E1DB0038D3EF /* Extension+UIImage.swift */,
+				D02EF0952B6B9B68005D367D /* Extension+UIView.swift */,
 				D089B07928B5032E000FEEA3 /* Extension+URL.swift */,
 				D05F6A91271EC75100D97434 /* Extension+View.swift */,
-				D02B377B2B86393800F700A2 /* Extension+UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1408,6 +1411,7 @@
 				D056BE862AC402C0000C9505 /* Extension+CIImage.swift in Sources */,
 				D06E07D4293F9AE500B00CD6 /* MediaData.swift in Sources */,
 				D05DECDE2BDF9A2E00FE8ECC /* Regex+JSON.swift in Sources */,
+				D0E8C6D22DAFF440005EDDB9 /* Extension+JSONDecoder.swift in Sources */,
 				D0921645291E8A8C008348DA /* Modify.swift in Sources */,
 				C92CD40D26FE4D9C00E3C552 /* Lists.swift in Sources */,
 				D05E910827871AA4004EA46F /* Extension+Array.swift in Sources */,
