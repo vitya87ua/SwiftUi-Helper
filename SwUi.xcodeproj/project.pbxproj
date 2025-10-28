@@ -201,6 +201,7 @@
 		D0CDDC862BFC901300720C11 /* Extension+NSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */; };
 		D0CDE92027EC92AB0096F9CF /* TextFieldFormats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */; };
 		D0CE863227DF6D75001B7D12 /* EqualFrameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */; };
+		D0CEDAEC2EB0E4C000DD34EA /* UserDefaultsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CEDAEB2EB0E4C000DD34EA /* UserDefaultsDB.swift */; };
 		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
 		D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */; };
 		D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1C3A5290C199D00C0BCFD /* Fields.swift */; };
@@ -452,6 +453,7 @@
 		D0CDDC852BFC901300720C11 /* Extension+NSApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+NSApplication.swift"; sourceTree = "<group>"; };
 		D0CDE91F27EC92AB0096F9CF /* TextFieldFormats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldFormats.swift; sourceTree = "<group>"; };
 		D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualFrameModifierView.swift; sourceTree = "<group>"; };
+		D0CEDAEB2EB0E4C000DD34EA /* UserDefaultsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDB.swift; sourceTree = "<group>"; };
 		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
 		D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectArrowView.swift; sourceTree = "<group>"; };
 		D0D1C3A5290C199D00C0BCFD /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
@@ -513,7 +515,7 @@
 				D068F29F290FEFDD00F74BB8 /* DataConverter.swift */,
 				D089B07B28B503CD000FEEA3 /* Debounce.swift */,
 				C9058F40271A001000D1CE08 /* DeepLinkBuilder.swift */,
-				D0921640291E4ADB008348DA /* DefaultCodable.swift */,
+				D0CEDAEA2EB0E4B400DD34EA /* UserDefaults */,
 				D00AFE682C62666300C6C163 /* DismissingKeyboard.swift */,
 				D04B036C2760AD6A00BC54E7 /* EmailUtils.swift */,
 				D0E0034229FAA3C90040295B /* Future-Promise.swift */,
@@ -1119,6 +1121,15 @@
 			path = Sliders;
 			sourceTree = "<group>";
 		};
+		D0CEDAEA2EB0E4B400DD34EA /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D0921640291E4ADB008348DA /* DefaultCodable.swift */,
+				D0CEDAEB2EB0E4C000DD34EA /* UserDefaultsDB.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		D0D13C6D287DA3D200DF79FE /* Path */ = {
 			isa = PBXGroup;
 			children = (
@@ -1402,6 +1413,7 @@
 				D02EF0962B6B9B68005D367D /* Extension+UIView.swift in Sources */,
 				D06E07C6293F98DF00B00CD6 /* HTTPHeaders.swift in Sources */,
 				D0DCCCE62DFC3FAE001C24FD /* PrimaryButton.swift in Sources */,
+				D0CEDAEC2EB0E4C000DD34EA /* UserDefaultsDB.swift in Sources */,
 				D06BC4382D7B409C006116BB /* OnHoverCursor.swift in Sources */,
 				D0CB5402273D4CD1003F476E /* InstagramSharingDirectToStories.swift in Sources */,
 				D0A445932B35DD9600292875 /* FilledButtonStyle.swift in Sources */,
