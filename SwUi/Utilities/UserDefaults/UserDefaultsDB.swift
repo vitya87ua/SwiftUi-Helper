@@ -17,35 +17,44 @@ protocol DBKeyed {
 
 @propertyWrapper
 fileprivate struct UserDefaultsDB<T: Codable> {
+    typealias DBItem = Codable & DBKeyed
+    
     private let defaults: UserDefaults?
     private let dbKey: String
     private let defaultValue: T
     
     /// For case when `T` is NOT Optional
-    init(suiteName: String, defaultValue: T) where T: Codable & DBKeyed {
+    init(suiteName: String, defaultValue: T) where T: DBItem {
         self.defaults = UserDefaults(suiteName: suiteName)
         self.dbKey = T.dbKey
         self.defaultValue = defaultValue
     }
     
     /// For case when `T` is Optional
-    init<V>(suiteName: String, defaultValue: T) where V: Codable & DBKeyed, T == Optional<V> {
+    init<V>(suiteName: String, defaultValue: T) where V: DBItem, T == Optional<V> {
         self.defaults = UserDefaults(suiteName: suiteName)
         self.dbKey = V.dbKey
         self.defaultValue = defaultValue
     }
     
     /// For case when `T` is Sequence
-    init(suiteName: String, defaultValue: T) where T: Sequence, T.Element: Codable & DBKeyed {
+    init(suiteName: String, defaultValue: T) where T: Sequence, T.Element: DBItem {
         self.defaults = UserDefaults(suiteName: suiteName)
         self.dbKey = T.Element.dbKey
         self.defaultValue = defaultValue
     }
     
     /// For case when `T` is Dictionary
-    init<K, V>(suiteName: String, defaultValue: T) where T: Codable, K: Hashable, V: Codable & DBKeyed, T == Dictionary<K, V> {
+    init<K, V>(suiteName: String, defaultValue: T) where T: Codable, K: Hashable, V: DBItem, T == Dictionary<K, V> {
         self.defaults = UserDefaults(suiteName: suiteName)
         self.dbKey = V.dbKey
+        self.defaultValue = defaultValue
+    }
+    
+    /// For case when `T` is Dictionary & Dictionary.Value is Sequence
+    init<K, V>(suiteName: String, defaultValue: T) where T: Codable, K: Hashable, V: Sequence, V.Element: DBItem, T == Dictionary<K, V> {
+        self.defaults = UserDefaults(suiteName: suiteName)
+        self.dbKey = V.Element.dbKey
         self.defaultValue = defaultValue
     }
     
