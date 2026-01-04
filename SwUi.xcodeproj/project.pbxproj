@@ -205,6 +205,7 @@
 		D0D0814E283E5725004E9AE2 /* MarkdownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D0814D283E5725004E9AE2 /* MarkdownText.swift */; };
 		D0D13C6F287DA3F100DF79FE /* DirectArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */; };
 		D0D1C3A6290C199D00C0BCFD /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1C3A5290C199D00C0BCFD /* Fields.swift */; };
+		D0D67D0A2F0AAF5400F88348 /* SnapshotModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D67D092F0AAF5400F88348 /* SnapshotModifier.swift */; };
 		D0D8DE0C27D0E56A008313B1 /* TextFieldKeyboardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */; };
 		D0DA6D6B2A0E370F00C8EAC3 /* Modifier(available).swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */; };
 		D0DCCCE62DFC3FAE001C24FD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DCCCE52DFC3FAE001C24FD /* PrimaryButton.swift */; };
@@ -457,6 +458,7 @@
 		D0D0814D283E5725004E9AE2 /* MarkdownText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownText.swift; sourceTree = "<group>"; };
 		D0D13C6E287DA3F100DF79FE /* DirectArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectArrowView.swift; sourceTree = "<group>"; };
 		D0D1C3A5290C199D00C0BCFD /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		D0D67D092F0AAF5400F88348 /* SnapshotModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotModifier.swift; sourceTree = "<group>"; };
 		D0D8DE0B27D0E56A008313B1 /* TextFieldKeyboardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldKeyboardTypes.swift; sourceTree = "<group>"; };
 		D0DA6D6A2A0E370F00C8EAC3 /* Modifier(available).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier(available).swift"; sourceTree = "<group>"; };
 		D0DCCCE52DFC3FAE001C24FD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -908,6 +910,7 @@
 				D06248972C04B08F004C9B5F /* ScrollDetector.swift */,
 				D06BC4372D7B409C006116BB /* OnHoverCursor.swift */,
 				D0315F122DA6AE0C001150DE /* AdjustSheetHeightToContentModifier.swift */,
+				D0D67D092F0AAF5400F88348 /* SnapshotModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -1446,6 +1449,7 @@
 				D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */,
 				D04D846928083D2900D3D71A /* IsHiddenModifier.swift in Sources */,
 				C98364232711D263007BE5B0 /* UITestToggle.swift in Sources */,
+				D0D67D0A2F0AAF5400F88348 /* SnapshotModifier.swift in Sources */,
 				D0649493299CD6BA00DDD201 /* CombineTestView.swift in Sources */,
 				D0F506962817E5E70061FE25 /* Extension+Data.swift in Sources */,
 				C983641E27108CE0007BE5B0 /* Sheet.swift in Sources */,
