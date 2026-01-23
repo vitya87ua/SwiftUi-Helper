@@ -180,6 +180,7 @@
 		D0A41BA22784781E006C3669 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A41BA12784781E006C3669 /* StrokeText.swift */; };
 		D0A41BA5278478E0006C3669 /* Staatliches-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */; };
 		D0A445932B35DD9600292875 /* FilledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A445922B35DD9600292875 /* FilledButtonStyle.swift */; };
+		D0A4794B2F23BA9300D890D7 /* DebugFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A4794A2F23BA9300D890D7 /* DebugFrameView.swift */; };
 		D0A6D236272BF46F001F23DD /* HeaderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6D235272BF46F001F23DD /* HeaderTextField.swift */; };
 		D0AACCAC27707F6E0078DF2E /* ScaleAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */; };
 		D0AACCAE277085EA0078DF2E /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */; };
@@ -433,6 +434,7 @@
 		D0A41BA12784781E006C3669 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		D0A41BA4278478E0006C3669 /* Staatliches-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Staatliches-Regular.ttf"; sourceTree = "<group>"; };
 		D0A445922B35DD9600292875 /* FilledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonStyle.swift; sourceTree = "<group>"; };
+		D0A4794A2F23BA9300D890D7 /* DebugFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugFrameView.swift; sourceTree = "<group>"; };
 		D0A6D235272BF46F001F23DD /* HeaderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextField.swift; sourceTree = "<group>"; };
 		D0AACCAB27707F6E0078DF2E /* ScaleAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimations.swift; sourceTree = "<group>"; };
 		D0AACCAD277085EA0078DF2E /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -898,6 +900,7 @@
 			children = (
 				D043793F2746457C00B5F30A /* CustomModifier.swift */,
 				D0CE863127DF6D75001B7D12 /* EqualFrameModifierView.swift */,
+				D0A4794A2F23BA9300D890D7 /* DebugFrameView.swift */,
 				D0CBECC427ECC2D10068B3B9 /* CornerRadiusModifierView.swift */,
 				D0EE54D528054E2E00914059 /* IsDisabledModifier.swift */,
 				D04D846828083D2900D3D71A /* IsHiddenModifier.swift */,
@@ -1440,6 +1443,7 @@
 				D043794227464EDC00B5F30A /* RainbowText.swift in Sources */,
 				D0336D67273D05FB00E6C69D /* TakeScreenShot.swift in Sources */,
 				D0DA6D6B2A0E370F00C8EAC3 /* Modifier(available).swift in Sources */,
+				D0A4794B2F23BA9300D890D7 /* DebugFrameView.swift in Sources */,
 				D06F9A5E2AA7460400098E04 /* KeychainManager.swift in Sources */,
 				C9C5130727A6F7EC007131B4 /* TimerWithDelegate.swift in Sources */,
 				D0AACCB027708A9D0078DF2E /* RotationAnimation.swift in Sources */,
